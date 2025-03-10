@@ -1,0 +1,7 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+h1{
+    color: $colorh12;
+}
