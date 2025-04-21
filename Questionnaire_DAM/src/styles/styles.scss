@@ -1,7 +1,542 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
-h1{
-    color: $colorh12;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: $font-primary;
+  background-color: $bg-color;
+  color: $text-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Title
+.container-title {
+  text-align: center;
+  margin-bottom: 2rem;
+
+ 
+  &__title {
+    font-size: 2rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: 900;
+    }
+}
+
+
+// Cards Container
+.quizz-cards-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  &__card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    max-height:max-content;
+
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      background-color: rgba($primary-color, 0.15);
+
+      .quizz-card__description{
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+// Card Front
+.quizz-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    text-align: center;
+    color: $text-muted;
+  }
+
+  &__button {
+    padding: 0.75rem 1.5rem;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+
+    &:hover {
+      background-color: color.scale($primary-color, $lightness: -10%);
+      transform: scale(1.1);
+      font-weight: 700;
+
+    }
+  }
+
+  &--inactive {
+    display: none;
+    opacity: 0;
+  }
+}
+
+// Card Back
+.quizz-card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.8s ease, transform 0.5s ease;
+  z-index: 1;
+
+
+  &--active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.5s ease;
+    z-index: 2;
+   
+}
+
+  &-button,
+  &-backButton {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color:color.scale($primary-color, $lightness: 10%);
+    cursor: pointer;
+    width: 80%;
+    color: white;
+    transition: 0.3s ease-in-out;
+
+
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      transform: scale(1.1);
+      font-weight: 700;
+    }
+  }
+}
+
+
+footer {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 2rem 0;
+  text-align: center;
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+
+//aca maquetare las questions ya renderizadas
+
+
+
+.quiz{
+  
+  &__card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  
+}
+
+&__question{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+&__options{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+&__option{
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &--correct {
+    background-color: #3dde42; // Verde claro
+    font-weight: 900;
+  }
+
+  &--incorrect {
+    background-color: #e16672; // Rojo claro
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+      &:hover{
+        background-color: #d4d4d4;
+
+      }
+}
+}
+
+
+//ACA MAQUETO EL BTN QUE REGRESQ AL INICIO
+.containerBtn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: $gap-medium;
+
+
+&__btnBack, &__btnEnd,&__btnPrev,&__btnNext{
+   
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: $primary-color;
+    color: #fff;
+
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+    
+
+    &:hover {
+      background-color: color.scale($primary-color, $lightness: -10%);
+      transform: scale(1.05);
+      font-weight: 700;
+      transform: translateY(-2px);
+
+    }
+}}
+
+.containerBtn__controls{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-medium;
+  
+}
+
+.containerBtn__navButtons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gap-medium;
+
+}
+
+
+//aca se maqueta los btn prev, next y el contendor de los span 
+
+.containerBtn {
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__counter {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+
+
+// aca maqueto el btn leadeBoards y el btn home que comparten las mismas caracteristicas
+
+.leaderboard-btn, .header-leaderboards__btn {
+  position: fixed;
+  bottom: 40px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1000;
+  padding: 20px 40px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $font-primary;
+
+  &:hover {
+    background-color: #003f8a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateX(-50%) translateY(-3px);
+  }
+
+  span{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+.leaderbordBtn:hover {
+  background-color: #003d80;
+}
+
+//aca se maqueta el contenedor del title y btnhome
+
+
+.header-leaderboards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+    &__title{
+      font-size: 2rem;
+      color: $primary-color;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-weight: 900;
+      padding: $padding-medium;
+      margin-bottom: $margin-min;
+  
+    }
+    
+}
+
+//aca se maquetan los resultados
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-medium;
+  width: 100%;
+
+  &__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  
+      }
+
+        &-left,&-right{
+          display: flex;
+          padding: 1rem;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+        }
+
+          &-left{
+            flex: 0 0 40%;  
+            display: flex;
+            align-items: center;  
+            justify-content: center;
+          }
+
+          &-right{
+            flex: 0 0 60%; 
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 1rem;
+
+
+              span{
+                white-space: nowrap;
+              }
+          }
+  }
+
+      &-title{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+        color: #333;
+       
+      }
+
+      &-correct{
+        color: #2e7d32;
+      }
+      &-incorrect{
+        color: #c62828;
+      }
+      &-quizz{
+        color: #1976d2;
+      }
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .result {
+    width: 100%;  
+    padding: 0 1rem; 
+
+      &__item{
+        flex-direction: column;  
+        align-items: flex-start;  
+        padding: 1rem;  
+
+        &-left,&-right{
+          width: 100%;  
+          padding: 0.5rem; 
+          flex: none; 
+        }
+
+        &-right{
+          display: flex;
+          gap: 0.5rem;  
+          align-items: flex-start; 
+
+
+            span{
+              white-space: normal;
+              font-size: 0.8rem; 
+
+            }
+        }
+           
+      }
+
+        &-correct,&-incorrect{
+          font-size: 0.9rem; 
+
+        }
+        &-title{
+   
+          font-size: 0.9rem;
+        
+      }
+  }
+
+  
+}
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

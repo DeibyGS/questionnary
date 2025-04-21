@@ -9,9 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.32",
     "sass": "^1.85.1",
     "sass-embedded": "^1.85.1",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "sweetalert2": "^11.19.1"
   }
 }
