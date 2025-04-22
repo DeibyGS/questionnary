@@ -1,3 +1,4 @@
+
 # Questionnaire DAM
 
 **Author:** Deiby Gorrín
@@ -13,8 +14,12 @@ El objetivo es facilitar una forma de repaso activa mediante cuestionarios compl
 - Cuestionarios interactivos por materia.
 - Modo de "Sprint Rápido" para practicar rápidamente.
 - Modo "Quizz Completo" para cuestionarios más extensos.
-- Visualización de resultados con tablas de líderes.
 - Estilos responsivos y una interfaz amigable para los estudiantes.
+- **Próximas actualizaciones**:
+  - Cuestionarios con un límite de tiempo.
+  - Filtros para ver los resultados por materia.
+  - Funcionalidad de login y registro de usuarios.
+  - Comparación de resultados con otros usuarios.
 
 ## Tecnologías Utilizadas
 
@@ -27,7 +32,7 @@ El objetivo es facilitar una forma de repaso activa mediante cuestionarios compl
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/DeibyGorrin/Questionnaire-DAM.git
+   git clone https://github.com/DeibyGS/questionnary.git
    ```
 
 2. Accede al directorio del proyecto:
@@ -58,7 +63,7 @@ Al ingresar a la página, se mostrará la pantalla principal con tarjetas de las
 
 ### Resultados
 
-Los resultados se muestran al finalizar el cuestionario, y puedes ver tu desempeño en comparación con otros usuarios.
+Los resultados se muestran al finalizar el cuestionario. En futuras actualizaciones, se espera que los resultados puedan ser filtrados por materia y comparados con otros usuarios.
 
 ### Navegación
 
@@ -100,3 +105,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
+## Contacto
+
+Si deseas comunicarte conmigo o colaborar en mejoras, puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/deibygorrin).

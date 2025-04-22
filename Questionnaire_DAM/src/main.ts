@@ -24,34 +24,32 @@ const init = (): void => {
 
 };
 
-//funcion que me crea un contenedor donde va el title de la web
-const renderHeader = (): void => {
-  const containerTitle = document.createElement('div');
-  containerTitle.className = 'container-title';
-  containerTitle.innerHTML = `<h1 class="container-title__title">¿Listo para el Push Final?</h1>`;
-  main.append(containerTitle);
-};
+
 const main = document.querySelector('main') || document.createElement('main');
 if (!document.body.contains(main)) document.body.appendChild(main);
 
-//revisar mas adelantes, ya que si llamo a la funcion desde el init, se renderiza al final de la web, posiblemente es mal manejo dwl DOM
-renderHeader();
 
 
+const containerTitle = document.createElement('div');
+containerTitle.className = 'container-title';
+containerTitle.innerHTML = `<h1 class="container-title__title">¿Listo para el Push Final?</h1>`;
 
 
 // Cards
 const containerQuizzCards = document.createElement('div');
 containerQuizzCards.className = 'quizz-cards-container';
-main.appendChild(containerQuizzCards);
+main.append(containerTitle,containerQuizzCards);
 
 
 //Funcion que me renderiza la pantalla principal con las cards de todas las materias
 
 const renderCards = (): void => {
-  containerQuizzCards.innerHTML = "";
 
-  createLeaderBoardButton(main); // aca llamo a la funcion que me pinta el btn para ver los resultados
+  containerQuizzCards.innerHTML="";
+  createLeaderBoardButton(main); 
+
+
+  
 
 
   const ul = document.createElement('ul');
@@ -127,29 +125,27 @@ const renderCards = (): void => {
     const back = document.createElement('div');
     back.className = 'quizz-card__back';
 
-    const btnClassic = document.createElement('button');
-    btnClassic.textContent = '📚 Quiz Completo';
-    btnClassic.className = 'quizz-card__back-button';
-    btnClassic.dataset.link = card.dataLink;
-    btnClassic.dataset.mode = 'Quizz Completo';
+    const btnCompleteQuizz = document.createElement('button');
+    btnCompleteQuizz.textContent = '📚 Quiz Completo';
+    btnCompleteQuizz.className = 'quizz-card__back-button';
+    btnCompleteQuizz.dataset.link = card.dataLink;
+    btnCompleteQuizz.dataset.mode = 'Quizz Completo';
 
-    btnClassic.addEventListener('click',()=>{
-      handleQuizStart(btnClassic);
+    btnCompleteQuizz.addEventListener('click',()=>{
+      handleQuizStart(btnCompleteQuizz);
       
     })
 
-    const btnClassic20 = document.createElement('button');
-    btnClassic20.textContent = '⚡ Sprint Rápido';
-    btnClassic20.className = 'quizz-card__back-button';
-    btnClassic20.dataset.link = card.dataLink;
-    btnClassic20.dataset.mode = 'Sprint Rápido';
+    const btnSprintQuizz = document.createElement('button');
+    btnSprintQuizz.textContent = '⚡ Sprint Rápido';
+    btnSprintQuizz.className = 'quizz-card__back-button';
+    btnSprintQuizz.dataset.link = card.dataLink;
+    btnSprintQuizz.dataset.mode = 'Sprint Rápido';
 
 
-    btnClassic20.addEventListener('click', () => {
-      handleQuizStart(btnClassic20);
+    btnSprintQuizz.addEventListener('click', () => {
+      handleQuizStart(btnSprintQuizz);
 
-      
-      
   });
 
   let titleQuestionnarie: string = "";
@@ -181,7 +177,7 @@ const renderCards = (): void => {
       // Segun el mode que tenga el btn, renderizare la cantidad de preguntas
       const questionsToUse = selectedMode === 'Quizz Completo'
         ? allQuestions
-        : allQuestions.slice(0, 2); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SRPINT RAPIDO 
+        : allQuestions.slice(0, 20); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SPRINT RAPIDO 
   
       renderQuestions(questionsToUse, selectedMode,titleQuestionnarie);
       
@@ -201,7 +197,7 @@ const renderCards = (): void => {
       showCardFront(li);
     });
 
-    back.append(btnClassic, btnClassic20, backBtn);
+    back.append(btnCompleteQuizz, btnSprintQuizz, backBtn);
 
     li.append(divFront, back);
     ul.appendChild(li);
@@ -359,7 +355,6 @@ const renderQuestions = (questions: Question[], mode: QuizMode, titleQuestionnar
       card.append(title, optionsList);
       containerQuestion.appendChild(card);
     };
-    
     renderSingleQuestion(currentIndex.value);
     //aca agrego los btn que se encargaran de ir hacia adelante o atras para recorrer cada pregunta
     containerBtnControls.append(btnPrev(currentIndex,shuffledQuestions,renderSingleQuestion,),updateQuestionCounter(currentIndex.value,arrayLength),btnNext(currentIndex,shuffledQuestions,renderSingleQuestion));
@@ -620,9 +615,9 @@ const createHomeButton = (main: HTMLElement): HTMLButtonElement => {
     className: 'header-leaderboards__btn',
     onClick: () => {
       cleanContainer(main);
-      main.appendChild(containerQuizzCards);
-      containerQuizzCards.innerHTML = "";
-      renderHeader();
+
+      main.append(containerTitle,containerQuizzCards);
+
       renderCards();
     }
   });
