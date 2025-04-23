@@ -22,17 +22,20 @@ const init = (): void => {
   renderCards();
   createFooter();
 
+
 };
 
 
 const main = document.querySelector('main') || document.createElement('main');
-if (!document.body.contains(main)) document.body.appendChild(main);
+if (!document.body.contains(main)) {
+  document.body.appendChild(main);
+}
 
 
 
 const containerTitle = document.createElement('div');
 containerTitle.className = 'container-title';
-containerTitle.innerHTML = `<h1 class="container-title__title">¿Listo para el Push Final?</h1>`;
+containerTitle.innerHTML = '<h1 class="container-title__title">¿Listo para el Push Final?</h1>';
 
 
 // Cards
@@ -45,7 +48,7 @@ main.append(containerTitle,containerQuizzCards);
 
 const renderCards = (): void => {
 
-  containerQuizzCards.innerHTML="";
+  containerQuizzCards.innerHTML='';
   createLeaderBoardButton(main); 
 
 
@@ -73,7 +76,7 @@ const renderCards = (): void => {
     startBtn.textContent = '¡Demuestra lo que sabes!';
     startBtn.className = 'quizz-card__button';
     startBtn.addEventListener('click', () => {  
-        showCardBack(li);
+      showCardBack(li);
     });
 
     divFront.appendChild(startBtn);
@@ -89,31 +92,31 @@ const renderCards = (): void => {
 
     const questionSets: { [key: string]: QuestionSetEntry } = {
       lenguajeDeMarcas: {
-        title: "Lenguaje de Marcas",
+        title: 'Lenguaje de Marcas',
         questions: questionsLenguajeDeMarcas
       },
       programacion: {
-        title: "Programación",
+        title: 'Programación',
         questions: questionsProgramacion
       },
       baseDeDatos: {
-        title: "Base de Datos",
+        title: 'Base de Datos',
         questions: questionsBaseDeDatos
       },
       sistemasInformaticos: {
-        title: "Sistemas Informáticos",
+        title: 'Sistemas Informáticos',
         questions: questionsSistemasInformaticos
       },
       entornosDeDesarrollo: {
-        title: "Entornos de Desarrollo",
+        title: 'Entornos de Desarrollo',
         questions: questionsEntornosDesarrollo
       },
       itinerarioEmpleabilidad: {
-        title: "Itinerario de Empleabilidad",
+        title: 'Itinerario de Empleabilidad',
         questions: questionsItinerarioEmpleabilidad
       },
       fundamentosBBDD: {
-        title: "Fundamentos de Bases de Datos",
+        title: 'Fundamentos de Bases de Datos',
         questions: questionsFundamentosBBDD
       }
     };
@@ -134,7 +137,7 @@ const renderCards = (): void => {
     btnCompleteQuizz.addEventListener('click',()=>{
       handleQuizStart(btnCompleteQuizz);
       
-    })
+    });
 
     const btnSprintQuizz = document.createElement('button');
     btnSprintQuizz.textContent = '⚡ Sprint Rápido';
@@ -146,47 +149,47 @@ const renderCards = (): void => {
     btnSprintQuizz.addEventListener('click', () => {
       handleQuizStart(btnSprintQuizz);
 
-  });
+    });
 
-  let titleQuestionnarie: string = "";
+    let titleQuestionnarie: string = '';
   
 
-  //Funcion que me permite  conocer a que btn se le dio click y conocer que mode aplicarle 
-  const handleQuizStart =(button: HTMLButtonElement):void=>{
-    cleanContainer(containerQuizzCards);
+    //Funcion que me permite  conocer a que btn se le dio click y conocer que mode aplicarle 
+    const handleQuizStart =(button: HTMLButtonElement):void=>{
+      cleanContainer(containerQuizzCards);
   
-    const dataLink = button.dataset.link;
+      const dataLink = button.dataset.link;
 
-    if(dataLink && questionSets){
-      titleQuestionnarie = questionSets[dataLink].title;
+      if(dataLink && questionSets){
+        titleQuestionnarie = questionSets[dataLink].title;
       
-    }
+      }
 
-    const  isValidMode =(value: any): value is QuizMode =>{
-      return value === 'Quizz Completo' || value === 'Sprint Rápido';
-    }
+      const  isValidMode =(value: any): value is QuizMode =>{
+        return value === 'Quizz Completo' || value === 'Sprint Rápido';
+      };
     
-    const modeFromDataset = button.dataset.mode;
-    const selectedMode: QuizMode = isValidMode(modeFromDataset) ? modeFromDataset : 'Quizz Completo';
+      const modeFromDataset = button.dataset.mode;
+      const selectedMode: QuizMode = isValidMode(modeFromDataset) ? modeFromDataset : 'Quizz Completo';
     
 
   
-    if (dataLink && questionSets[dataLink]) {
-      const allQuestions = mixArrays([...questionSets[dataLink].questions]);
+      if (dataLink && questionSets[dataLink]) {
+        const allQuestions = mixArrays([...questionSets[dataLink].questions]);
   
-      // Segun el mode que tenga el btn, renderizare la cantidad de preguntas
-      const questionsToUse = selectedMode === 'Quizz Completo'
-        ? allQuestions
-        : allQuestions.slice(0, 20); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SPRINT RAPIDO 
+        // Segun el mode que tenga el btn, renderizare la cantidad de preguntas
+        const questionsToUse = selectedMode === 'Quizz Completo'
+          ? allQuestions
+          : allQuestions.slice(0, 20); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SPRINT RAPIDO 
   
-      renderQuestions(questionsToUse, selectedMode,titleQuestionnarie);
+        renderQuestions(questionsToUse, selectedMode,titleQuestionnarie);
       
       
       
-    } else {
-      console.error(`No se encontró un conjunto de preguntas para la clave: ${dataLink}`);
-    }
-  }
+      } else {
+        console.error(`No se encontró un conjunto de preguntas para la clave: ${dataLink}`);
+      }
+    };
   
 
 
@@ -210,280 +213,288 @@ const renderCards = (): void => {
 
 //Funcion que me muestra la parte trasera de la card
 const showCardBack = (cardElement: HTMLElement): void =>{
-    const front = cardElement.querySelector('.quizz-card') as HTMLElement;
-    const back = cardElement.querySelector('.quizz-card__back') as HTMLElement;
+  const front = cardElement.querySelector('.quizz-card') as HTMLElement;
+  const back = cardElement.querySelector('.quizz-card__back') as HTMLElement;
 
-  if (!front || !back) return;
+  if (!front || !back) {
+    return;
+  }
 
   front.classList.add('quizz-card--inactive');
   back.classList.add('quizz-card__back--active');
   
-}
+};
 
 
 //Funcion que me muestra la parte frontal de la card
 
 const showCardFront = (cardElement: HTMLElement): void =>{
-    const front = cardElement.querySelector('.quizz-card') as HTMLElement;
-    const back = cardElement.querySelector('.quizz-card__back') as HTMLElement;
+  const front = cardElement.querySelector('.quizz-card') as HTMLElement;
+  const back = cardElement.querySelector('.quizz-card__back') as HTMLElement;
 
-  if (!front || !back) return;
+  if (!front || !back) {
+    return;
+  }
 
   front.classList.remove('quizz-card--inactive');
   back.classList.remove('quizz-card__back--active');
-}
+};
 
 
 //funcion que me pinta todas las preguntas del questionario
 
 type QuizMode = 'Quizz Completo' | 'Sprint Rápido';
 const renderQuestions = (questions: Question[], mode: QuizMode, titleQuestionnarie: string): void => {
-    const containerQuizzCards = document.querySelector('.quizz-cards-container') as HTMLElement;
-    containerQuizzCards.innerHTML = '';
+  const containerQuizzCards = document.querySelector('.quizz-cards-container') as HTMLElement;
+  containerQuizzCards.innerHTML = '';
 
 
-     //variables que luego utilizare para mostrar la cantidad de respuestas correctas e incorrectas y el indice actual
-     const currentIndex = { value: 0 };
-     let correctAnswers :number =0;
-     let incorrectAnswers : number= 0;
-     let questionsAnswered: { [index: number]: string } = {};
-     let arrayLength :number = 0;
+  //variables que luego utilizare para mostrar la cantidad de respuestas correctas e incorrectas y el indice actual
+  const currentIndex = { value: 0 };
+  let correctAnswers :number =0;
+  let incorrectAnswers : number= 0;
+  let questionsAnswered: { [index: number]: string } = {};
+  let arrayLength :number = 0;
      
      
      
 
 
-     const getResults = () => ({
-      correct: correctAnswers,
-      incorrect: incorrectAnswers,
-    });
+  const getResults = () => ({
+    correct: correctAnswers,
+    incorrect: incorrectAnswers,
+  });
   
-    const shuffledQuestions = mixArrays([...questions]).map(question => ({
-      ...question,
-      options: mixArrays(question.options)
+  const shuffledQuestions = mixArrays([...questions]).map(question => ({
+    ...question,
+    options: mixArrays(question.options)
   }));
-// guardo la longitud del array
+  // guardo la longitud del array
 
   arrayLength = shuffledQuestions.length;
   
-    const containerQuestion = document.createElement('div');
-    containerQuestion.classList.add('container__quiz__card');
+  const containerQuestion = document.createElement('div');
+  containerQuestion.classList.add('container__quiz__card');
 
-    const containerBtn = document.createElement('div');
-    containerBtn.classList.add('containerBtn');
+  const containerBtn = document.createElement('div');
+  containerBtn.classList.add('containerBtn');
 
-    const containerBtnControls = document.createElement('div');
-    containerBtnControls.classList.add('containerBtn__controls');
-
-
-    const containerNavButtons = document.createElement('div');
-    containerNavButtons.classList.add('containerBtn__navButtons');
-
-    const result = document.createElement('div');
-    result.classList.add('containerResults');
+  const containerBtnControls = document.createElement('div');
+  containerBtnControls.classList.add('containerBtn__controls');
 
 
-    
-    
-    //  aca agrego los dos contenedores principales, el primero donde se cargan todas las preguntas y el segundo dionde se cargan los btn
-    containerQuizzCards.append(containerQuestion,containerBtn);
+  const containerNavButtons = document.createElement('div');
+  containerNavButtons.classList.add('containerBtn__navButtons');
 
-    const renderSingleQuestion = (index: number) => {
-      containerQuestion.innerHTML = '';
-      const question = shuffledQuestions[index];
+  const result = document.createElement('div');
+  result.classList.add('containerResults');
+
+
     
-      const card = document.createElement('div');
-      card.classList.add('quiz__card');
     
-      const title = document.createElement('h2');
-      title.classList.add('quiz__question');
-      title.textContent = question.question;
+  //  aca agrego los dos contenedores principales, el primero donde se cargan todas las preguntas y el segundo dionde se cargan los btn
+  containerQuizzCards.append(containerQuestion,containerBtn);
+
+  const renderSingleQuestion = (index: number) => {
+    containerQuestion.innerHTML = '';
+    const question = shuffledQuestions[index];
     
-      const optionsList = document.createElement('ul');
-      optionsList.classList.add('quiz__options');
+    const card = document.createElement('div');
+    card.classList.add('quiz__card');
     
-      const selectedOption = questionsAnswered[index]; // 👈 respuesta guardada (si existe)
+    const title = document.createElement('h2');
+    title.classList.add('quiz__question');
+    title.textContent = question.question;
     
-      question.options.forEach((option) => {
-        const optionItem = document.createElement('li');
-        optionItem.classList.add('quiz__option');
-        optionItem.textContent = option;
-        optionItem.setAttribute('data-correct', option === question.correctAnswer ? 'true' : 'false');
+    const optionsList = document.createElement('ul');
+    optionsList.classList.add('quiz__options');
     
-        if (selectedOption) {
-          // Ya respondió esta pregunta
-          optionItem.setAttribute('disabled', 'true');
+    const selectedOption = questionsAnswered[index]; // 👈 respuesta guardada (si existe)
     
-          if (option === selectedOption) {
-            optionItem.classList.add(
-              option === question.correctAnswer ? 'quiz__option--correct' : 'quiz__option--incorrect'
-            );
-          }
+    question.options.forEach((option) => {
+      const optionItem = document.createElement('li');
+      optionItem.classList.add('quiz__option');
+      optionItem.textContent = option;
+      optionItem.setAttribute('data-correct', option === question.correctAnswer ? 'true' : 'false');
     
-          if (
-            selectedOption !== question.correctAnswer &&
-            option === question.correctAnswer
-          ) {
-            optionItem.classList.add('quiz__option--correct');
-          }
-        } else {
-          // Aún no respondió esta pregunta
-          optionItem.addEventListener('click', () => {
-            // Guardamos la respuesta
-            questionsAnswered[index] = option;
+      if (selectedOption) {
+        // Ya respondió esta pregunta
+        optionItem.setAttribute('disabled', 'true');
     
-            const allOptions = optionsList.querySelectorAll('.quiz__option');
-            allOptions.forEach(opt => {
-              opt.setAttribute('disabled', 'true');
-            });
-    
-            if (optionItem.getAttribute('data-correct') === 'true') {
-              optionItem.classList.add('quiz__option--correct');
-              correctAnswers++;
-            } else {
-              optionItem.classList.add('quiz__option--incorrect');
-              const correctOption = optionsList.querySelector('[data-correct="true"]');
-              correctOption?.classList.add('quiz__option--correct');
-              incorrectAnswers++;
-            }
-          });
+        if (option === selectedOption) {
+          optionItem.classList.add(
+            option === question.correctAnswer ? 'quiz__option--correct' : 'quiz__option--incorrect'
+          );
         }
     
-        optionsList.appendChild(optionItem);
-      });
+        if (
+          selectedOption !== question.correctAnswer &&
+            option === question.correctAnswer
+        ) {
+          optionItem.classList.add('quiz__option--correct');
+        }
+      } else {
+        // Aún no respondió esta pregunta
+        optionItem.addEventListener('click', () => {
+          // Guardamos la respuesta
+          questionsAnswered[index] = option;
     
-      card.append(title, optionsList);
-      containerQuestion.appendChild(card);
-    };
-    renderSingleQuestion(currentIndex.value);
-    //aca agrego los btn que se encargaran de ir hacia adelante o atras para recorrer cada pregunta
-    containerBtnControls.append(btnPrev(currentIndex,shuffledQuestions,renderSingleQuestion,),updateQuestionCounter(currentIndex.value,arrayLength),btnNext(currentIndex,shuffledQuestions,renderSingleQuestion));
-
-    //aca agrego los btn que me llevaran al inicio o que me mostrarn el resultado de las preguntas correctas e incorrectas
-    containerNavButtons.append(btnEnd(getResults, questionsAnswered, shuffledQuestions,mode,titleQuestionnarie));
-    
-    
-    //este es el contenedor principal de todos los btn 
-    containerBtn.append(containerBtnControls,containerNavButtons,result);
-
-    };
-
-         //Funcion que me crea un btn que dice anterior,y que me permite retroceder a la pregunta anterior
-
-         const btnPrev = (
-          currentIndex: { value: number },
-          questions: Question[],
-          renderFn: (index: number) => void
-        ): HTMLButtonElement => {
-          return createNavButton({
-            label: 'Anterior',
-            className: 'containerBtn__btnPrev',
-            condition: () => currentIndex.value === 0,
-            onClick: () => {
-              if (currentIndex.value > 0) {
-                currentIndex.value--;
-                renderFn(currentIndex.value);
-                updateQuestionCounter(currentIndex.value, questions.length);
-        
-                const btnNext = document.querySelector<HTMLButtonElement>('#containerBtn__btnNext');
-                if (btnNext) btnNext.disabled = false;
-              }
-            }
+          const allOptions = optionsList.querySelectorAll('.quiz__option');
+          allOptions.forEach(opt => {
+            opt.setAttribute('disabled', 'true');
           });
-        };
-        
-
-      //Funcion que me crea un btn que dice siguiente, que me permite avanzar a la siguiente pregunta
-
-      const btnNext = (
-        currentIndex: { value: number },
-        questions: Question[],
-        renderFn: (index: number) => void
-      ): HTMLButtonElement => {
-        return createNavButton({
-          label: 'Siguiente',
-          className: 'containerBtn__btnNext',
-          id: 'containerBtn__btnNext',
-          condition: () => currentIndex.value >= questions.length - 1,
-          onClick: () => {
-            if (currentIndex.value < questions.length - 1) {
-              currentIndex.value++;
-              renderFn(currentIndex.value);
-              updateQuestionCounter(currentIndex.value, questions.length);
-      
-              const btnPrev = document.querySelector<HTMLButtonElement>('.containerBtn__btnPrev');
-              if (btnPrev) btnPrev.disabled = false;
-            }
+    
+          if (optionItem.getAttribute('data-correct') === 'true') {
+            optionItem.classList.add('quiz__option--correct');
+            correctAnswers++;
+          } else {
+            optionItem.classList.add('quiz__option--incorrect');
+            const correctOption = optionsList.querySelector('[data-correct="true"]');
+            correctOption?.classList.add('quiz__option--correct');
+            incorrectAnswers++;
           }
         });
-      };
+      }
+    
+      optionsList.appendChild(optionItem);
+    });
+    
+    card.append(title, optionsList);
+    containerQuestion.appendChild(card);
+  };
+  renderSingleQuestion(currentIndex.value);
+  //aca agrego los btn que se encargaran de ir hacia adelante o atras para recorrer cada pregunta
+  containerBtnControls.append(btnPrev(currentIndex,shuffledQuestions,renderSingleQuestion,),updateQuestionCounter(currentIndex.value,arrayLength),btnNext(currentIndex,shuffledQuestions,renderSingleQuestion));
+
+  //aca agrego los btn que me llevaran al inicio o que me mostrarn el resultado de las preguntas correctas e incorrectas
+  containerNavButtons.append(btnEnd(getResults, questionsAnswered, shuffledQuestions,mode,titleQuestionnarie));
+    
+    
+  //este es el contenedor principal de todos los btn 
+  containerBtn.append(containerBtnControls,containerNavButtons,result);
+
+};
+
+//Funcion que me crea un btn que dice anterior,y que me permite retroceder a la pregunta anterior
+
+const btnPrev = (
+  currentIndex: { value: number },
+  questions: Question[],
+  renderFn: (index: number) => void
+): HTMLButtonElement => {
+  return createNavButton({
+    label: 'Anterior',
+    className: 'containerBtn__btnPrev',
+    condition: () => currentIndex.value === 0,
+    onClick: () => {
+      if (currentIndex.value > 0) {
+        currentIndex.value--;
+        renderFn(currentIndex.value);
+        updateQuestionCounter(currentIndex.value, questions.length);
+        
+        const btnNext = document.querySelector<HTMLButtonElement>('#containerBtn__btnNext');
+        if (btnNext) {
+          btnNext.disabled = false;
+        }
+      }
+    }
+  });
+};
+        
+
+//Funcion que me crea un btn que dice siguiente, que me permite avanzar a la siguiente pregunta
+
+const btnNext = (
+  currentIndex: { value: number },
+  questions: Question[],
+  renderFn: (index: number) => void
+): HTMLButtonElement => {
+  return createNavButton({
+    label: 'Siguiente',
+    className: 'containerBtn__btnNext',
+    id: 'containerBtn__btnNext',
+    condition: () => currentIndex.value >= questions.length - 1,
+    onClick: () => {
+      if (currentIndex.value < questions.length - 1) {
+        currentIndex.value++;
+        renderFn(currentIndex.value);
+        updateQuestionCounter(currentIndex.value, questions.length);
+      
+        const btnPrev = document.querySelector<HTMLButtonElement>('.containerBtn__btnPrev');
+        if (btnPrev) {
+          btnPrev.disabled = false;
+        }
+      }
+    }
+  });
+};
       
 
-    //Funcion que me indica la posicion de la prehgunta en la que me encuentro y la longitud del array
+//Funcion que me indica la posicion de la prehgunta en la que me encuentro y la longitud del array
 
-  // Variable para mantener la referencia del contador
+// Variable para mantener la referencia del contador
 let questionCounterElement: HTMLElement | null = null;
 
 const updateQuestionCounter = (currentIndex: number, lengthArray: number): HTMLElement => {
-    if (!questionCounterElement) {
-        questionCounterElement = document.createElement('div');
-        questionCounterElement.classList.add('containerBtn__counter');
-    }
-    questionCounterElement.textContent = `${currentIndex + 1} / ${lengthArray}`;
-    return questionCounterElement;
+  if (!questionCounterElement) {
+    questionCounterElement = document.createElement('div');
+    questionCounterElement.classList.add('containerBtn__counter');
+  }
+  questionCounterElement.textContent = `${currentIndex + 1} / ${lengthArray}`;
+  return questionCounterElement;
 };
   
-    //Funcion que verifica si todas las opciones estan marcadas y luego me pinta los resultados o me muestra un alert indicandome que me faltan opciones spor marcar
+//Funcion que verifica si todas las opciones estan marcadas y luego me pinta los resultados o me muestra un alert indicandome que me faltan opciones spor marcar
    
 
 
-    const btnEnd = (
-      getResults: () => { correct: number; incorrect: number },
-      questionsAnswered: { [index: number]: string },
-      questions: Question[],
-      mode: QuizMode,
-      titleQuestionnarie: string 
-    ): HTMLButtonElement => {
-      const btnEnd = document.createElement('button');
-      btnEnd.textContent = 'Finalizar Intento';
-      btnEnd.classList.add('containerBtn__btnEnd');
+const btnEnd = (
+  getResults: () => { correct: number; incorrect: number },
+  questionsAnswered: { [index: number]: string },
+  questions: Question[],
+  mode: QuizMode,
+  titleQuestionnarie: string 
+): HTMLButtonElement => {
+  const btnEnd = document.createElement('button');
+  btnEnd.textContent = 'Finalizar Intento';
+  btnEnd.classList.add('containerBtn__btnEnd');
 
       
      
     
-      btnEnd.addEventListener('click', () => {
-        // Verificamos si todas las preguntas tienen respuesta
-        const allQuestionsAnswered = questions.length;
-        const totalAnswered = Object.keys(questionsAnswered).length; //aca voy guardando la cantidad de preguntas constestadas
+  btnEnd.addEventListener('click', () => {
+    // Verificamos si todas las preguntas tienen respuesta
+    const allQuestionsAnswered = questions.length;
+    const totalAnswered = Object.keys(questionsAnswered).length; //aca voy guardando la cantidad de preguntas constestadas
         
         
         
-        const currentQuestionnarie = questions; // aca guardo el cuestionario actual, para poder renderizarlo de nuevo en caso de ser necesario
-        if (totalAnswered < allQuestionsAnswered) {
+    const currentQuestionnarie = questions; // aca guardo el cuestionario actual, para poder renderizarlo de nuevo en caso de ser necesario
+    if (totalAnswered < allQuestionsAnswered) {
         
-          Swal.fire({
-            title: "¿Te vas sin terminar?",
-            text: "Todavía hay preguntas esperando tu sabiduría.",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonText: "¡Seguir jugando!",
-            cancelButtonText: "Me rindo 😢",
-            allowEscapeKey: false,  
-          allowOutsideClick: false 
+      Swal.fire({
+        title: '¿Te vas sin terminar?',
+        text: 'Todavía hay preguntas esperando tu sabiduría.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: '¡Seguir jugando!',
+        cancelButtonText: 'Me rindo 😢',
+        allowEscapeKey: false,  
+        allowOutsideClick: false 
 
-          }).then((result)=>{
-            if(result.dismiss){
-              renderCards();
-            }
-          });          
-          return;
-        }else{
+      }).then((result)=>{
+        if(result.dismiss){
+          renderCards();
+        }
+      });          
+      return;
+    }else{
             
 
-        const { correct, incorrect } = getResults();
-        let title = titleQuestionnarie;
+      const { correct, incorrect } = getResults();
+      let title = titleQuestionnarie;
 
-          //defino un type para tener un molde donde lo utilizare poara guardar el titulo, y las respuestas correctas e incorrectas
+      //defino un type para tener un molde donde lo utilizare poara guardar el titulo, y las respuestas correctas e incorrectas
         type Result = {
           title: string;
           correct: number;
@@ -501,22 +512,22 @@ const updateQuestionCounter = (currentIndex: number, lengthArray: number): HTMLE
           results.push({title,correct,incorrect,mode});
           localStorage.setItem('quizResults', JSON.stringify(results));
 
-        }
+        };
     
         saveResults();
         
         Swal.fire({
-          title: "¡Resultados del cuestionario!",
+          title: '¡Resultados del cuestionario!',
           html: `
             <p><strong>✅ Correctas:</strong> ${correct}</p>
             <p><strong>❌ Incorrectas:</strong> ${incorrect}</p>
           `,
-          icon: "success",
+          icon: 'success',
           showCancelButton: true,
           showDenyButton: true,
-          confirmButtonText: "👀 Comprobar resultados",
-          denyButtonText: "🔄 Empezar de nuevo",
-          cancelButtonText: "📝 Archivar conocimientos",
+          confirmButtonText: '👀 Comprobar resultados',
+          denyButtonText: '🔄 Empezar de nuevo',
+          cancelButtonText: '📝 Archivar conocimientos',
           allowEscapeKey: false,
           allowOutsideClick: false,
         }).then((result) => {
@@ -524,41 +535,40 @@ const updateQuestionCounter = (currentIndex: number, lengthArray: number): HTMLE
             //aca no se realiza ninguna accion ya que lo que se quiere es revisar los resultados
           } else if (result.isDenied) {
             // 🔄 Reiniciar cuestionario
-           renderQuestions(currentQuestionnarie,mode,titleQuestionnarie) 
+            renderQuestions(currentQuestionnarie,mode,titleQuestionnarie); 
           } else if (result.isDismissed) {
             renderCards();
           }
         });
       
-      }
-      });
+    }
+  });
     
-      return btnEnd;
-    };
+  return btnEnd;
+};
     
 
    
 
-    //FUNCION QUE ME PINTA EN LA PAGINA PRINCIPAL UN BTN QUE ME PERMITE VER MIS RESULTADOS OBTENIDOS
+//FUNCION QUE ME PINTA EN LA PAGINA PRINCIPAL UN BTN QUE ME PERMITE VER MIS RESULTADOS OBTENIDOS
 
 
-    const renderResults = (): void => {
-      const storedResults = localStorage.getItem('quizResults');
-      console.log(storedResults);
+const renderResults = (): void => {
+  const storedResults = localStorage.getItem('quizResults');
     
-      const results = storedResults ? JSON.parse(storedResults) : [];
+  const results = storedResults ? JSON.parse(storedResults) : [];
     
-      // Crear el contenedor principal de resultados
-      const resultContainer = document.createElement('div');
-      resultContainer.classList.add('result');
+  // Crear el contenedor principal de resultados
+  const resultContainer = document.createElement('div');
+  resultContainer.classList.add('result');
     
-      // Si hay resultados almacenados, renderizarlos
-      if (results.length > 0) {
-        results.forEach((result: any) => {
-          const resultItem = document.createElement('div');
-          resultItem.classList.add('result__item');
+  // Si hay resultados almacenados, renderizarlos
+  if (results.length > 0) {
+    results.forEach((result: any) => {
+      const resultItem = document.createElement('div');
+      resultItem.classList.add('result__item');
 
-          resultItem.innerHTML = `
+      resultItem.innerHTML = `
             <div class="result__item-left">
               <h3 class="result-title">🎯 ${result.title}</h3>
             </div>
@@ -569,25 +579,25 @@ const updateQuestionCounter = (currentIndex: number, lengthArray: number): HTMLE
             </div>
           `;
 
-resultContainer.appendChild(resultItem);
+      resultContainer.appendChild(resultItem);
 
     
-          resultContainer.appendChild(resultItem);
-        });
-      } else {
-        const noResultsMessage = document.createElement('p');
-        noResultsMessage.textContent = 'No hay resultados guardados.';
-        resultContainer.appendChild(noResultsMessage);
-      }
+      resultContainer.appendChild(resultItem);
+    });
+  } else {
+    const noResultsMessage = document.createElement('p');
+    noResultsMessage.textContent = 'No hay resultados guardados.';
+    resultContainer.appendChild(noResultsMessage);
+  }
     
-      // Agregar el contenedor de resultados al main (o donde tú prefieras)
-      const main = document.querySelector('main');
-      if (main) {
-        main.appendChild(resultContainer);
-      } else {
-        document.body.appendChild(resultContainer);
-      }
-    };
+  // Agregar el contenedor de resultados al main (o donde tú prefieras)
+  const main = document.querySelector('main');
+  if (main) {
+    main.appendChild(resultContainer);
+  } else {
+    document.body.appendChild(resultContainer);
+  }
+};
     
 
 // Función leaderBoard
@@ -675,80 +685,3 @@ const createLeaderBoardButton = (main: HTMLElement): HTMLButtonElement => {
 
 
 
-
-
-
-
-
-/*
-const createLeaderBoardButton = (): HTMLButtonElement => {
-  const btn = document.createElement('button');
-  btn.classList.add('leaderbordBtn');
-  btn.textContent = 'LeaderBoard';
-
-  const icon = document.createElement('span');
-  icon.textContent = '🏆';
-  btn.appendChild(icon);
-
-  return btn;
-};
-
-
-// ESTE BTN ESTARA CUANDO SE RENDERICEN LOS RESULATDOS, Y SE ENCARGARA DE VOLVER A LA PAGINA DE INICIO
-
-const createHomeButton = (main: HTMLElement): HTMLButtonElement => {
-  const btnHome = document.createElement('button');
-  btnHome.textContent = 'Home';
-  btnHome.classList.add('headerLeaderboards__btn')
-
-  const icon = document.createElement('span');
-  icon.textContent = '🏆';
-  btnHome.appendChild(icon)
-
-  //LISTENER QUE ME LLEVA A LA PAGINA DE INICIO
-
-  btnHome.addEventListener('click', () => {
-    cleanContainer(main);
-    main.appendChild(containerQuizzCards);
-    containerQuizzCards.innerHTML = "";
-    renderHeader();
-    renderCards();
-  });
-
-  return btnHome;
-};
-
-
-
-const leaderBoard = (): HTMLButtonElement | null => {
-  const main = document.querySelector('main') as HTMLElement;
-  const container = document.querySelector('.quizz-cards-container');
-
-  if (!container) return null;
-
-  const btn = createLeaderBoardButton();
-  container.append(btn);
-  main.appendChild(container);
-
-  btn.addEventListener('click', () => {
-    cleanContainer(main);
-
-    const headerLeaderboards = document.createElement('div');
-    headerLeaderboards.classList.add('headerLeaderboards');
-
-  
-    headerLeaderboards.innerHTML = ""; 
-
-    const title = document.createElement('h1');
-    title.classList.add('headerLeaderboards__title');
-    title.textContent = 'LeaderBoards';
-
-
-    headerLeaderboards.append(title,createHomeButton(main));
-    main.append(headerLeaderboards);
-    renderResults(); 
-  });
-
-  return btn;
-};
-*/
