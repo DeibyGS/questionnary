@@ -484,6 +484,13 @@ footer {
 
 
 @media (max-width: 1024px) {
+
+  .leaderboard-btn, .header-leaderboards__btn {
+    padding: 12px 24px;
+    display: inline-flex; 
+    align-items: center;
+
+  }
   .result {
     width: 100%;  
     padding: 0 1rem; 
