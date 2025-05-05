@@ -1115,7 +1115,519 @@ export const questionsProgramacion: Question[] = [
     'question': '¿Qué imprimirá el siguiente fragmento de código? for (int i = 0; i < 3; i++) { System.out.println(i); }',
     'options': ['0, 1, 2', '1, 2', '0, 1, 2, 3', '1, 2, 3'],
     'correctAnswer': '0, 1, 2'
+  },
+  {
+    'question': '¿Cuál de las siguientes afirmaciones describe mejor el polimorfismo en Java?',
+    'options': [
+      'La sobrecarga de operadores.',
+      'La capacidad de una variable, una función o un objeto de tomar varias formas.',
+      'La herencia de métodos de una clase padre.',
+      'La encapsulación de datos y métodos.'
+    ],
+    'correctAnswer': 'La capacidad de una variable, una función o un objeto de tomar varias formas.'
+  },
+  {
+    'question': '¿Cuál de las siguientes afirmaciones es verdadera sobre el uso de la palabra clave super en Java?',
+    'options': [
+      'Se usa para evitar la sobrecarga de métodos.',
+      'Permite acceder a los métodos y variables de clase padre desde una subclase.',
+      'Se usa para definir métodos abstractos.',
+      'Se usa para declarar una variable como estática.'
+    ],
+    'correctAnswer': 'Permite acceder a los métodos y variables de clase padre desde una subclase.'
+  },
+  {
+    'question': '¿Cuál es el método para agregar un elemento a un ArrayList en Java?',
+    'options': [
+      'addItem()',
+      'addElement()',
+      'add()',
+      'insert()'
+    ],
+    'correctAnswer': 'add()'
+  },
+  {
+    'question': '¿Cuál es el modificador de acceso más restrictivo en Java?',
+    'options': [
+      'default',
+      'public',
+      'private',
+      'protected'
+    ],
+    'correctAnswer': 'private'
+  },
+  {
+    'question': '¿Cuál es el modificador de acceso predeterminado si no se especifica ninguno en Java?',
+    'options': [
+      'protected',
+      'public',
+      'private',
+      'default'
+    ],
+    'correctAnswer': 'default'
+  },
+  {
+    'question': '¿Cuál es el propósito de la interfaz?\ninterface Dibujable {\n    void dibujar();\n}\nclass Cuadro implements Dibujable {\n    public void dibujar() {\n        System.out.println("Dibujando cuadro");\n    }\n}',
+    'options': [
+      'Crear objetos',
+      'Definir un contrato que la clase debe cumplir',
+      'Implementar herencia',
+      'Guardar datos'
+    ],
+    'correctAnswer': 'Definir un contrato que la clase debe cumplir'
+  },
+  {
+    'question': '¿Cuál es la forma correcta de crear un ArrayList en Java?',
+    'options': [
+      'ArrayList<Integer> list = new ArrayList<String>();',
+      'ArrayList<int> list = new ArrayList<>();',
+      'ArrayList<Integer> list = new ArrayList<Integer>();',
+      'ArrayList<int> list = new ArrayList<int>();'
+    ],
+    'correctAnswer': 'ArrayList<Integer> list = new ArrayList<Integer>();'
+  },
+  {
+    'question': '¿Cuál es la principal diferencia entre una clase abstracta y una interfaz en Java?',
+    'options': [
+      'Una interfaz puede tener variables de instancia, mientras que una clase abstracta no.',
+      'Una interfaz puede tener constructores, mientras que una clase abstracta no.',
+      'Una clase abstracta no puede ser heredada, mientras que una interfaz sí.',
+      'Una clase abstracta puede tener métodos con implementación, mientras que una interfaz solo puede tener métodos abstractos.'
+    ],
+    'correctAnswer': 'Una clase abstracta puede tener métodos con implementación, mientras que una interfaz solo puede tener métodos abstractos.'
+  },
+  {
+    'question': '¿Cuál es la salida del programa?\npublic class Recursiva {\n    public static int factorial(int n) {\n        if (n <= 1) return 1;\n        return n * factorial(n - 1);\n    }\n    public static void main(String[] args) {\n        System.out.println(factorial(5));\n    }\n}',
+    'options': [
+      '15',
+      '120',
+      'Error de compilación',
+      '5'
+    ],
+    'correctAnswer': '120'
+  },
+  {
+    'question': '¿Cuál es la salida del siguiente código recursivo al ser llamado con metodoRecursivo(4)?\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(metodoRecursivo(4));\n    }\n    public static int metodoRecursivo(int n) {\n        int resultado;\n        if (n == 1) {\n            resultado = 1;\n        } else {\n            resultado = n * metodoRecursivo(n - 1);\n        }\n        return resultado;\n    }\n}',
+    'options': [
+      '1',
+      '24',
+      '12',
+      '4'
+    ],
+    'correctAnswer': '24'
+  },
+  {
+    'question': '¿Cuál de las siguientes afirmaciones describe mejor el polimorfismo en Java?',
+    'options': [
+      'La sobrecarga de operadores.',
+      'La capacidad de una variable, una función o un objeto de tomar varias formas.',
+      'La herencia de métodos de una clase padre.',
+      'La encapsulación de datos y métodos.'
+    ],
+    'correctAnswer': 'La capacidad de una variable, una función o un objeto de tomar varias formas.'
+  },
+  {
+    'question': '¿Cuál de las siguientes afirmaciones es verdadera sobre el uso de la palabra clave super en Java?',
+    'options': [
+      'Se usa para evitar la sobrecarga de métodos.',
+      'Permite acceder a los métodos y variables de clase padre desde una subclase.',
+      'Se usa para definir métodos abstractos.',
+      'Se usa para declarar una variable como estática.'
+    ],
+    'correctAnswer': 'Permite acceder a los métodos y variables de clase padre desde una subclase.'
+  },
+  {
+    'question': '¿Cuál es el método para agregar un elemento a un ArrayList en Java?',
+    'options': [
+      'addItem()',
+      'addElement()',
+      'add()',
+      'insert()'
+    ],
+    'correctAnswer': 'add()'
+  },
+  {
+    'question': '¿Cuál es el modificador de acceso más restrictivo en Java?',
+    'options': [
+      'default',
+      'public',
+      'private',
+      'protected'
+    ],
+    'correctAnswer': 'private'
+  },
+  {
+    'question': '¿Cuál es el modificador de acceso predeterminado si no se especifica ninguno en Java?',
+    'options': [
+      'protected',
+      'public',
+      'private',
+      'default'
+    ],
+    'correctAnswer': 'default'
+  },
+  {
+    'question': '¿Cuál es el propósito de la interfaz?\ninterface Dibujable {\n    void dibujar();\n}\nclass Cuadro implements Dibujable {\n    public void dibujar() {\n        System.out.println("Dibujando cuadro");\n    }\n}',
+    'options': [
+      'Crear objetos',
+      'Definir un contrato que la clase debe cumplir',
+      'Implementar herencia',
+      'Guardar datos'
+    ],
+    'correctAnswer': 'Definir un contrato que la clase debe cumplir'
+  },
+  {
+    'question': '¿Cuál es la forma correcta de crear un ArrayList en Java?',
+    'options': [
+      'ArrayList<Integer> list = new ArrayList<String>();',
+      'ArrayList<int> list = new ArrayList<>();',
+      'ArrayList<Integer> list = new ArrayList<Integer>();',
+      'ArrayList<int> list = new ArrayList<int>();'
+    ],
+    'correctAnswer': 'ArrayList<Integer> list = new ArrayList<Integer>();'
+  },
+  {
+    'question': '¿Cuál es la principal diferencia entre una clase abstracta y una interfaz en Java?',
+    'options': [
+      'Una interfaz puede tener variables de instancia, mientras que una clase abstracta no.',
+      'Una interfaz puede tener constructores, mientras que una clase abstracta no.',
+      'Una clase abstracta no puede ser heredada, mientras que una interfaz sí.',
+      'Una clase abstracta puede tener métodos con implementación, mientras que una interfaz solo puede tener métodos abstractos.'
+    ],
+    'correctAnswer': 'Una clase abstracta puede tener métodos con implementación, mientras que una interfaz solo puede tener métodos abstractos.'
+  },
+  {
+    'question': '¿Cuál es la salida del programa?\npublic class Recursiva {\n    public static int factorial(int n) {\n        if (n <= 1) return 1;\n        return n * factorial(n - 1);\n    }\n    public static void main(String[] args) {\n        System.out.println(factorial(5));\n    }\n}',
+    'options': [
+      '15',
+      '120',
+      'Error de compilación',
+      '5'
+    ],
+    'correctAnswer': '120'
+  },
+  {
+    'question': '¿Cuál es la salida del siguiente código recursivo al ser llamado con metodoRecursivo(4)?\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(metodoRecursivo(4));\n    }\n    public static int metodoRecursivo(int n) {\n        int resultado;\n        if (n == 1) {\n            resultado = 1;\n        } else {\n            resultado = n * metodoRecursivo(n - 1);\n        }\n        return resultado;\n    }\n}',
+    'options': [
+      '1',
+      '24',
+      '12',
+      '4'
+    ],
+    'correctAnswer': '24'
+  },
+  {
+    'question': '¿Cuál es la salida del siguiente código?\npublic class Main {\n    public static void main(String[] args) {\n        int x = 5;\n        int y = 10;\n        x = x + y;\n        y = x - y;\n        x = x - y;\n        System.out.println("x: " + x + ", y: " + y);\n    }\n}',
+    'options': [
+      'x: 15, y: 0',
+      'x: 10, y: 5',
+      'x: 5, y: 10',
+      'x: 0, y: 15'
+    ],
+    'correctAnswer': 'x: 10, y: 5'
+  },
+  {
+    'question': '¿Cuál es la salida del siguiente código?\nString pattern = "a*b";\nString text = "aaaaab";\nboolean match = text.matches(pattern);\nSystem.out.println(match);',
+    'options': [
+      'true',
+      'false',
+      'Error de compilación',
+      'aaaaab'
+    ],
+    'correctAnswer': 'true'
+  },
+  {
+    'question': '¿Cuál es la salida?\npublic class Ciclo {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 3; i++) {\n            System.out.print(i + " ");\n        }\n    }\n}',
+    'options': [
+      '3 2 1',
+      'Error',
+      '0 1 2',
+      '1 2 3'
+    ],
+    'correctAnswer': '1 2 3'
+  },
+  {
+    'question': '¿Qué clase en Java se utiliza para leer datos de un archivo de texto?',
+    'options': [
+      'FileInputStream',
+      'FileReader',
+      'FileWriter',
+      'BufferedWriter'
+    ],
+    'correctAnswer': 'FileReader'
+  },
+  {
+    'question': '¿Qué es la recursividad en programación?',
+    'options': [
+      'Un método que se llama a sí mismo.',
+      'Un bucle que se repite indefinidamente.',
+      'Una técnica para sortear excepciones.',
+      'Una variable que cambia su valor automáticamente.'
+    ],
+    'correctAnswer': 'Un método que se llama a sí mismo.'
+  },
+  {
+    'question': '¿Qué estructura de datos en Java permite almacenar pares de clave y valor?',
+    'options': [
+      'HashMap',
+      'a y b son correctas.',
+      'ArrayList',
+      'Ninguna es correcta'
+    ],
+    'correctAnswer': 'HashMap'
+  },
+  {
+    'question': '¿Qué hace este código?\npublic class Hilo extends Thread {\n    public void run() {\n        System.out.println("Hilo ejecutándose");\n    }\n    public static void main(String[] args) {\n        Hilo h = new Hilo();\n        h.run();\n    }\n}',
+    'options': [
+      'Ejecuta un hilo con start()',
+      'Crea una interfaz',
+      'Lanza error',
+      'Ejecuta run() manualmente'
+    ],
+    'correctAnswer': 'Ejecuta run() manualmente'
+  },
+  {
+    'question': '¿Qué imprime el código?\npublic class Contador {\n    private static int cuenta = 0;\n    public Contador() {\n        cuenta++;\n    }\n    public static int getCuenta() {\n        return cuenta;\n    }\n    public static void main(String[] args) {\n        new Contador();\n        new Contador();\n        System.out.println(Contador.getCuenta());\n    }\n}',
+    'options': [
+      'Error',
+      '1',
+      '2',
+      '0'
+    ],
+    'correctAnswer': '2'
+  },
+  {
+    'question': '¿Qué imprime el siguiente código?\npublic class Main {\n    public static void main(String[] args) {\n        String s = "hello";\n        String t = "world";\n        String u = s + t;\n        System.out.println(u.length());\n    }\n}',
+    'options': [
+      '12',
+      '5',
+      '10',
+      '11'
+    ],
+    'correctAnswer': '10'
+  },
+  {
+    'question': '¿Qué imprime este código?\npublic class Incremento {\n    public static void main(String[] args) {\n        int a = 5;\n        System.out.println(++a);\n    }\n}',
+    'options': [
+      '6',
+      '4',
+      '5',
+      'Error'
+    ],
+    'correctAnswer': '6'
+  },
+
+  {
+    'question': '¿Qué imprime este código?\npublic class Suma {\n\n    public static int suma(int[] numeros) {\n        int total = 0;\n        for (int i = 0; i < numeros.length; i++) {\n            total += numeros[i];\n        }\n        return total;\n    }\n\n    public static void main(String[] args) {\n        int[] num = {1, 2, 3};\n        System.out.println(suma(num));\n    }\n}',
+    'options': [
+      '123',
+      '6',
+      '6.0',
+      'Error'
+    ],
+    'correctAnswer': '6'
+  },
+  {
+    'question': '¿Qué imprime este programa?\nimport java.util.ArrayList;\n\npublic class Lista {\n    public static void main(String[] args) {\n        ArrayList<String> lista = new ArrayList<>();\n        lista.add("uno");\n        lista.add("dos");\n        System.out.println(lista.get(0));\n    }\n}',
+    'options': [
+      'Error',
+      'dos',
+      '0',
+      'uno'
+    ],
+    'correctAnswer': 'uno'
+  },
+  {
+    'question': '¿Qué imprime este programa?\nimport java.util.HashMap;\n\npublic class Mapa {\n    public static void main(String[] args) {\n        HashMap<String, Integer> mapa = new HashMap<>();\n        mapa.put("clave", 100);\n        System.out.println(mapa.get("clave"));\n    }\n}',
+    'options': [
+      'Error',
+      '100',
+      'null',
+      '"clave"'
+    ],
+    'correctAnswer': '100'
+  },
+  {
+    'question': '¿Qué imprime?\npublic class StringTest {\n    public static void main(String[] args) {\n        String s1 = "Java";\n        String s2 = "Java";\n        System.out.println(s1 == s2);\n    }\n}',
+    'options': [
+      'null',
+      'false',
+      'Error',
+      'true'
+    ],
+    'correctAnswer': 'true'
+  },
+  {
+    'question': '¿Qué mensaje imprime?\npublic class Excepcion {\n    public static void main(String[] args) {\n        try {\n            int a = 5 / 0;\n        } catch (ArithmeticException e) {\n            System.out.println("Error aritmético");\n        }\n    }\n}',
+    'options': [
+      '0',
+      'Exception',
+      'Error aritmético',
+      '5'
+    ],
+    'correctAnswer': 'Error aritmético'
+  },
+  {
+    'question': '¿Qué método de la clase String se usa para convertir todas las letras de una cadena a minúsculas?',
+    'options': [
+      'toLowerCase()',
+      'convertToLower()',
+      'tolower()',
+      'toLower()'
+    ],
+    'correctAnswer': 'toLowerCase()'
+  },
+  {
+    'question': '¿Qué método se usa para cerrar un archivo después de escribir en él usando la clase FileWriter?',
+    'options': [
+      'finish()',
+      'closeFile()',
+      'close()',
+      'end()'
+    ],
+    'correctAnswer': 'close()'
+  },
+  {
+    'question': '¿Qué método se utiliza para obtener la longitud de un array en Java?',
+    'options': [
+      'size()',
+      'length()',
+      'length',
+      'getLength()'
+    ],
+    'correctAnswer': 'length'
+  },
+  {
+    'question': '¿Qué método se utiliza para obtener un valor a partir de una clave en un HashMap en Java?',
+    'options': [
+      'getValue()',
+      'retrieve()',
+      'find()',
+      'get()'
+    ],
+    'correctAnswer': 'get()'
+  },
+  {
+    'question': '¿Qué palabra clave se utiliza para definir una clase que no puede ser extendida?',
+    'options': [
+      'abstract',
+      'final',
+      'private',
+      'static'
+    ],
+    'correctAnswer': 'final'
+  },
+  {
+    'question': '¿Qué palabra clave se utiliza para implementar una interfaz en una clase en Java?',
+    'options': [
+      'extend',
+      'extends',
+      'implements',
+      'implement'
+    ],
+    'correctAnswer': 'implements'
+  },
+  {
+    'question': '¿Qué realiza este código?\nimport java.io.*;\n\npublic class Lectura {\n    public static void main(String[] args) throws IOException {\n        BufferedReader br = new BufferedReader(new FileReader("datos.txt"));\n        String linea;\n        while ((linea = br.readLine()) != null) {\n            System.out.println(linea);\n        }\n        br.close();\n    }\n}',
+    'options': [
+      'Lee línea por línea un archivo de texto, e imprime por consola la línea.',
+      'Escribe datos en un archivo',
+      'Borra un archivo',
+      'Imprime una línea vacía'
+    ],
+    'correctAnswer': 'Lee línea por línea un archivo de texto, e imprime por consola la línea.'
+  },
+  {
+    'question': '¿Qué representa la clase Figura?\nabstract class Figura {\n    abstract double area();\n}\nclass Circulo extends Figura {\n    double radio;\n    Circulo(double radio) {\n        this.radio = radio;\n    }\n    double area() {\n        return Math.PI * radio * radio;\n    }\n}',
+    'options': [
+      'Una interfaz',
+      'Una clase concreta',
+      'Una clase abstracta que sirve como base',
+      'Una excepción'
+    ],
+    'correctAnswer': 'Una clase abstracta que sirve como base'
+  },
+  {
+    'question': '¿Qué representa PI?\npublic class Constantes {\n    public static final double PI = 3.14;\n    public static void main(String[] args) {\n        System.out.println(PI);\n    }\n}',
+    'options': [
+      'Un método',
+      'Una constante',
+      'Una variable privada',
+      'Una clase'
+    ],
+    'correctAnswer': 'Una constante'
+  },
+  {
+    'question': '¿Qué resultado imprime?\npublic class Comparar {\n    public static void main(String[] args) {\n        String a = "hola";\n        String b = new String("hola");\n        System.out.println(a.equals(b));\n    }\n}',
+    'options': [
+      'hola',
+      'false',
+      'Error',
+      'true'
+    ],
+    'correctAnswer': 'true'
+  },
+  {
+    'question': '¿Qué salida produce este código?\npublic class Persona {\n    private String nombre;\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n    public void saludar() {\n        System.out.println("Hola, soy " + nombre);\n    }\n    public static void main(String[] args) {\n        Persona p = new Persona("Ana");\n        p.saludar();\n    }\n}',
+    'options': [
+      'nombre',
+      'Hola, soy Ana',
+      'Error de compilación',
+      'Hola, soy null'
+    ],
+    'correctAnswer': 'Hola, soy Ana'
+  },
+  {
+    'question': '¿Qué se imprime?\nclass A {\n    public A() {\n        System.out.println("Constructor A");\n    }\n}\nclass B extends A {\n    public B() {\n        System.out.println("Constructor B");\n    }\n    public static void main(String[] args) {\n        new B();\n    }\n}',
+    'options': [
+      'Constructor A\nConstructor B',
+      'Solo Constructor B',
+      'Constructor B\nConstructor A',
+      'Error'
+    ],
+    'correctAnswer': 'Constructor A\nConstructor B'
+  },
+  {
+    'question': '¿Qué se imprime?\npublic class Animal {\n    public void sonido() {\n        System.out.println("Sonido de animal");\n    }\n}\nclass Gato extends Animal {\n    @Override\n    public void sonido() {\n        System.out.println("Miau");\n    }\n    public static void main(String[] args) {\n        Animal a = new Gato();\n        a.sonido();\n    }\n}',
+    'options': [
+      'Miau',
+      'Gato',
+      'Sonido de animal',
+      'Error'
+    ],
+    'correctAnswer': 'Miau'
+  },
+  {
+    'question': '¿Qué se imprime?\npublic class Main {\n    public static void main(String[] args) {\n        String texto = "Hola Mundo";\n        System.out.println(texto.substring(5));\n    }\n}',
+    'options': [
+      'Error',
+      'Hola',
+      'Mundo',
+      'Hola Mundo'
+    ],
+    'correctAnswer': 'Mundo'
+  },
+  {
+    'question': '¿Qué valor se imprime?\npublic class Prueba {\n    public static void main(String[] args) {\n        int[] numeros = {1, 2, 3, 4};\n        System.out.println(numeros[2]);\n    }\n}',
+    'options': [
+      '2',
+      '1',
+      'Error',
+      '3'
+    ],
+    'correctAnswer': '3'
   }
+
+  
+  
+  
+    
+  
+  
+
+  
+    
+  
   
     
   

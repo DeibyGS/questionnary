@@ -1102,32 +1102,957 @@ export const questionsEntornosDesarrollo: Question[] = [
     'question': '¿Qué es una prueba unitaria?',
     'options': ['Una prueba de sistema', 'Una prueba que se hace sin software', 'Una prueba individual de un componente del programa', 'Una validación por parte del usuario final'],
     'correctAnswer': 'Una prueba individual de un componente del programa'
+  },
+  {
+    question: '¿Qué representa un diagrama de casos de uso?',
+    options: [
+      'El comportamiento interno de las clases',
+      'El diseño físico de la base de datos',
+      'Las funcionalidades que ofrece el sistema a los usuarios',
+      'El flujo de datos del sistema'
+    ],
+    correctAnswer: 'Las funcionalidades que ofrece el sistema a los usuarios'
+  },
+  {
+    question: 'En un diagrama de casos de uso, ¿qué representa un actor?',
+    options: [
+      'Un mensaje enviado entre módulos',
+      'Una función interna del sistema',
+      'Un usuario o sistema externo que interactúa con el sistema',
+      'Una clase principal'
+    ],
+    correctAnswer: 'Un usuario o sistema externo que interactúa con el sistema'
+  },
+  {
+    question: '¿Qué significa la relación «include» en un diagrama de casos de uso?',
+    options: [
+      'Una herencia entre casos de uso',
+      'Un error de diseño',
+      'Un caso de uso opcional',
+      'Un caso de uso que siempre se ejecuta dentro de otro'
+    ],
+    correctAnswer: 'Un caso de uso que siempre se ejecuta dentro de otro'
+  },
+  {
+    question: '¿Qué tipo de relación se usa para modelar un comportamiento opcional en un caso de uso?',
+    options: [
+      'association',
+      'extend',
+      'generalization',
+      'include'
+    ],
+    correctAnswer: 'extend'
+  },
+  {
+    question: '¿Qué sección contiene los atributos en una clase UML?',
+    options: [
+      'La segunda sección',
+      'La tercera sección',
+      'La última sección solo si es abstracta',
+      'La primera sección'
+    ],
+    correctAnswer: 'La segunda sección'
+  },
+  {
+    question: '¿Qué símbolo indica visibilidad pública en UML?',
+    options: [
+      '+',
+      '*',
+      '#',
+      '-'
+    ],
+    correctAnswer: '+'
+  },
+  {
+    question: '¿Cómo se representa una herencia en un diagrama de clases?',
+    options: [
+      'Línea continua con flecha rellena',
+      'Línea continua con rombo',
+      'Línea continua con flecha triangular vacía',
+      'Línea discontinua con flecha vacía'
+    ],
+    correctAnswer: 'Línea continua con flecha triangular vacía'
+  },
+  {
+    question: '¿Qué representa la composición en un diagrama de clases?',
+    options: [
+      'Relación jerárquica',
+      'Asociación opcional',
+      'Relación de pertenencia total (vida ligada)',
+      'Dependencia débil'
+    ],
+    correctAnswer: 'Relación de pertenencia total (vida ligada)'
+  },
+  {
+    question: '¿Cómo se representa la agregación en UML?',
+    options: [
+      'Línea discontinua',
+      'Rombo negro en la clase contenedora',
+      'Flecha negra',
+      'Rombo blanco en la clase contenedora'
+    ],
+    correctAnswer: 'Rombo blanco en la clase contenedora'
+  },
+  {
+    question: '¿Qué elemento puede agrupar varias clases en UML?',
+    options: [
+      'Interfaz',
+      'Atributo compuesto',
+      'Actor',
+      'Paquete'
+    ],
+    correctAnswer: 'Paquete'
+  },
+  {
+    question: '¿Qué muestra el flujo principal en un caso de uso?',
+    options: [
+      'La secuencia normal de pasos esperados',
+      'Las validaciones internas',
+      'Todas las excepciones posibles',
+      'Solamente los errores del sistema'
+    ],
+    correctAnswer: 'La secuencia normal de pasos esperados'
+  },
+  {
+    question: '¿Qué herramienta se usa para detallar el flujo interno de un caso de uso?',
+    options: [
+      'Diagrama de actividades',
+      'Diagrama entidad-relación',
+      'Diagrama de componentes',
+      'Diagrama de clases'
+    ],
+    correctAnswer: 'Diagrama de actividades'
+  },
+  {
+    question: '¿Qué se modela con asociaciones en un diagrama de clases?',
+    options: [
+      'La herencia de métodos',
+      'El flujo de eventos',
+      'La secuencia de llamadas',
+      'La relación estructural entre dos clases'
+    ],
+    correctAnswer: 'La relación estructural entre dos clases'
+  },
+  {
+    question: '¿Qué significa una línea discontinua en un diagrama de clases?',
+    options: [
+      'Una dependencia',
+      'Una herencia',
+      'Una composición',
+      'Una asociación fuerte'
+    ],
+    correctAnswer: 'Una dependencia'
+  },
+  {
+    question: '¿Cuál de las siguientes afirmaciones sobre los casos de uso es correcta?',
+    options: [
+      'Solo representan la base de datos del sistema',
+      'Muestran el diseño interno del sistema',
+      'Permiten definir los requisitos funcionales desde el punto de vista del usuario',
+      'Son útiles para programadores pero no para clientes'
+    ],
+    correctAnswer: 'Permiten definir los requisitos funcionales desde el punto de vista del usuario'
+  },
+  {
+    'question': '¿Cómo se representa un caso de uso en UML?',
+    'options': [
+      'Como un círculo',
+      'Como un rectángulo',
+      'Como una elipse',
+      'Como una flecha'
+    ],
+    'correctAnswer': 'Como una elipse'
+  },
+  {
+    'question': '¿Cuál de los siguientes elementos suele formar parte de un entorno de desarrollo integrado (IDE)?',
+    'options': [
+      'Consola de administración de red',
+      'Editor de código, compilador y depurador',
+      'Panel de configuración de hardware',
+      'Sistema de arranque'
+    ],
+    'correctAnswer': 'Editor de código, compilador y depurador'
+  },
+  {
+    'question': '¿Cuál de los siguientes es un beneficio directo de las pruebas automatizadas?',
+    'options': [
+      'Detectan fallos solo en producción',
+      'Evitan escribir documentación',
+      'Permiten ejecutar pruebas frecuentes con bajo esfuerzo',
+      'Requieren menos cobertura'
+    ],
+    'correctAnswer': 'Permiten ejecutar pruebas frecuentes con bajo esfuerzo'
+  },
+  {
+    'question': '¿Cuál de los siguientes lenguajes es típicamente considerado de bajo nivel?',
+    'options': [
+      'Kotlin',
+      'Python',
+      'C',
+      'Java'
+    ],
+    'correctAnswer': 'C'
+  },
+  {
+    'question': '¿Cuál es el principal beneficio de una prueba de integración?',
+    'options': [
+      'Ejecutar scripts automatizados',
+      'Asegurar que los módulos trabajan bien juntos',
+      'Validar interfaces gráficas',
+      'Verificar que las clases se construyen correctamente'
+    ],
+    'correctAnswer': 'Asegurar que los módulos trabajan bien juntos'
+  },
+  {
+    'question': '¿Cuál es el principal objetivo del mantenimiento perfectivo en el software?',
+    'options': [
+      'Corregir errores reportados por los usuarios',
+      'Mejorar el rendimiento o la funcionalidad sin que exista un fallo previo',
+      'Eliminar código duplicado',
+      'Adaptar el software a nuevas plataformas o entornos'
+    ],
+    'correctAnswer': 'Mejorar el rendimiento o la funcionalidad sin que exista un fallo previo'
+  },
+  {
+    'question': '¿Cuál es el propósito principal del mantenimiento adaptativo del software?',
+    'options': [
+      'Modificar el software por cambios en el entorno o requisitos externos',
+      'Añadir funcionalidades opcionales',
+      'Corregir errores de compilación',
+      'Mejorar la interfaz gráfica'
+    ],
+    'correctAnswer': 'Modificar el software por cambios en el entorno o requisitos externos'
+  },
+  {
+    'question': "¿Cuál es el rol de un 'actor' en un diagrama de casos de uso?",
+    'options': [
+      'Es un método invocable',
+      'Es una clase del sistema',
+      'Es un usuario o sistema externo que interactúa',
+      'Es un componente lógico'
+    ],
+    'correctAnswer': 'Es un usuario o sistema externo que interactúa'
+  },
+  {
+    'question': '¿Cuál es la utilidad de la relación «extends» en UML?',
+    'options': [
+      'Definir atributos de una clase',
+      'Obligar la ejecución conjunta de casos de uso',
+      'Indicar herencia entre actores',
+      'Permitir comportamiento opcional o alternativo'
+    ],
+    'correctAnswer': 'Permitir comportamiento opcional o alternativo'
+  },
+  {
+    'question': '¿Cuál es una característica de una máquina virtual de proceso?',
+    'options': [
+      'Gestiona múltiples sistemas operativos',
+      'Ejecuta código específico del lenguaje de programación',
+      'Emula hardware completo',
+      'Requiere hipervisor de tipo 1'
+    ],
+    'correctAnswer': 'Ejecuta código específico del lenguaje de programación'
+  },
+  {
+    'question': '¿Cuál es una solución común para métodos con muchos parámetros?',
+    'options': [
+      'Eliminar parámetros sin revisión',
+      'Escribir comentarios detallados',
+      'Agrupar los parámetros en un objeto',
+      'Duplicar el método con variantes'
+    ],
+    'correctAnswer': 'Agrupar los parámetros en un objeto'
+  },
+  {
+    'question': '¿Por qué es recomendable mantener documentación técnica actualizada?',
+    'options': [
+      'Porque acelera la compilación del código',
+      'Porque evita usar herramientas externas',
+      'Porque facilita el mantenimiento incluso si cambian los desarrolladores',
+      'Porque mejora la calidad del diseño gráfico'
+    ],
+    'correctAnswer': 'Porque facilita el mantenimiento incluso si cambian los desarrolladores'
+  },
+  {
+    'question': '¿Por qué las máquinas virtuales son útiles en entornos de desarrollo?',
+    'options': [
+      'No requieren pruebas',
+      'No consumen memoria',
+      'El software se ejecuta más rápido',
+      'Facilitan la replicación de entornos para distintos proyectos'
+    ],
+    'correctAnswer': 'Facilitan la replicación de entornos para distintos proyectos'
+  },
+  {
+    'question': '¿Por qué se prefiere un lenguaje de alto nivel en desarrollo ágil?',
+    'options': [
+      'Mejor rendimiento sin compilación',
+      'Mayor legibilidad y facilidad de mantenimiento',
+      'Mayor acceso a registros de CPU',
+      'Menor seguridad'
+    ],
+    'correctAnswer': 'Mayor legibilidad y facilidad de mantenimiento'
+  },
+  {
+    'question': '¿Por qué se recomienda dividir las responsabilidades de una clase en componentes más pequeños?',
+    'options': [
+      'Para evitar el uso de bucles',
+      'Para cumplir con el principio de responsabilidad única',
+      'Para evitar que la clase tenga atributos',
+      'Para reducir el tamaño del archivo'
+    ],
+    'correctAnswer': 'Para cumplir con el principio de responsabilidad única'
+  },
+  {
+    'question': '¿Qué característica define a una prueba unitaria?',
+    'options': [
+      'Se realiza después del despliegue',
+      'Evalúa toda la aplicación de forma integral',
+      'Se enfoca en la experiencia del usuario',
+      'Evalúa funciones o métodos de forma aislada y controlada'
+    ],
+    'correctAnswer': 'Evalúa funciones o métodos de forma aislada y controlada'
+  },
+  {
+    'question': '¿Qué característica distingue a una prueba de sistema?',
+    'options': [
+      'Solo se enfoca en bases de datos',
+      'Verifica que todos los componentes del software funcionen correctamente en conjunto',
+      'Evalúa cada método individualmente',
+      'Comprueba errores ortográficos en la interfaz'
+    ],
+    'correctAnswer': 'Verifica que todos los componentes del software funcionen correctamente en conjunto'
+  },
+  {
+    'question': '¿Qué comando de Git permite subir los cambios locales al repositorio remoto?',
+    'options': [
+      'git export',
+      'git push',
+      'git upload',
+      'git deploy'
+    ],
+    'correctAnswer': 'git push'
+  },
+  {
+    'question': '¿Qué comando de Git se utiliza para combinar los cambios de una rama en otra?',
+    'options': [
+      'git connect',
+      'git commit',
+      'git join',
+      'git merge'
+    ],
+    'correctAnswer': 'git merge'
+  },
+  {
+    'question': '¿Qué elemento se considera un nodo en el análisis del grafo de control de flujo?',
+    'options': [
+      'Una dependencia entre módulos',
+      'Una condición lógica',
+      'Una instrucción secuencial o bloque sin bifurcaciones',
+      'Un test de regresión'
+    ],
+    'correctAnswer': 'Una instrucción secuencial o bloque sin bifurcaciones'
+  },
+  {
+    'question': '¿Qué fase del ciclo de vida del software se encarga de verificar que se cumplan los requisitos establecidos?',
+    'options': [
+      'Pruebas',
+      'Mantenimiento',
+      'Implementación',
+      'Diseño'
+    ],
+    'correctAnswer': 'Pruebas'
+  },
+  {
+    'question': '¿Qué función clave cumple la documentación en proyectos con múltiples desarrolladores?',
+    'options': [
+      'Evita que se comenten los cambios',
+      'Reduce la velocidad del desarrollo',
+      'Permite alinear la comprensión entre equipos distribuidos',
+      'Elimina la necesidad de reuniones'
+    ],
+    'correctAnswer': 'Permite alinear la comprensión entre equipos distribuidos'
+  },
+  {
+    'question': '¿Qué función tiene el hipervisor en un entorno de virtualización?',
+    'options': [
+      'Traducir código de alto nivel',
+      'Gestionar el diseño del sistema',
+      'Compilar el kernel',
+      'Administrar y aislar máquinas virtuales sobre el hardware físico'
+    ],
+    'correctAnswer': 'Administrar y aislar máquinas virtuales sobre el hardware físico'
+  },
+  {
+    'question': '¿Qué herramienta forma parte habitual de un IDE moderno?',
+    'options': [
+      'Depurador integrado',
+      'Cable de red',
+      'Sistema operativo',
+      'Antivirus'
+    ],
+    'correctAnswer': 'Depurador integrado'
+  },
+  {
+    'question': '¿Qué herramienta gráfica permite trabajar con ramas y commits en Git sin usar terminal?',
+    'options': [
+      'Git Script',
+      'Git GUI',
+      'Git Manual',
+      'GitHub CLI'
+    ],
+    'correctAnswer': 'Git GUI'
+  },
+  {
+    'question': '¿Qué herramienta permite virtualizar sistemas operativos con facilidad en entornos educativos?',
+    'options': [
+      'VMware vSphere',
+      'Oracle VirtualBox',
+      'IntelliJ IDEA',
+      'GitHub Desktop'
+    ],
+    'correctAnswer': 'Oracle VirtualBox'
+  },
+  {
+    'question': '¿Qué IDE es frecuentemente usado en desarrollo de aplicaciones móviles Android?',
+    'options': [
+      'Eclipse',
+      'Visual Studio Code',
+      'NetBeans',
+      'Android Studio'
+    ],
+    'correctAnswer': 'Android Studio'
+  },
+  {
+    'question': '¿Qué nivel de abstracción se considera intermedio entre binario y lenguajes de alto nivel?',
+    'options': [
+      'Lenguaje natural',
+      'SQL',
+      'Ensamblador',
+      'Binario'
+    ],
+    'correctAnswer': 'Ensamblador'
+  },
+  {
+    'question': '¿Qué parte del IDE ayuda a rastrear y resolver errores durante la ejecución del programa?',
+    'options': [
+      'Autocompletado',
+      'Editor de texto',
+      'Consola de comandos',
+      'Depurador'
+    ],
+    'correctAnswer': 'Depurador'
+  },
+  {
+    'question': '¿Qué permite determinar la complejidad ciclomática de una función?',
+    'options': [
+      'La cantidad de decisiones y bifurcaciones que contiene el flujo del código',
+      'El número de comentarios por línea',
+      'La cantidad de clases',
+      'El número de variables locales'
+    ],
+    'correctAnswer': 'La cantidad de decisiones y bifurcaciones que contiene el flujo del código'
+  },
+  {
+    'question': '¿Qué problema refleja el mal olor de código llamado "Shotgun Surgery"?',
+    'options': [
+      'Uso excesivo de herencia',
+      'Cambiar una parte del sistema implica modificar muchas otras',
+      'Clases sin métodos',
+      'Repetición de estructuras de control'
+    ],
+    'correctAnswer': 'Cambiar una parte del sistema implica modificar muchas otras'
+  },
+  {
+    'question': '¿Qué problema se conoce como “Shotgun Surgery”?',
+    'options': [
+      'Cambiar una clase provoca errores de compilación',
+      'El código se divide en métodos demasiado pequeños',
+      'Se mezclan demasiadas responsabilidades en una clase',
+      'Un cambio en una clase requiere cambios en muchas otras'
+    ],
+    'correctAnswer': 'Un cambio en una clase requiere cambios en muchas otras'
+  },
+  {
+    'question': '¿Qué representa la complejidad ciclomática en un bloque de código?',
+    'options': [
+      'El número de caminos independientes en el flujo del programa',
+      'La cantidad de clases heredadas',
+      'La cantidad de comentarios por línea',
+      'El número de variables globales'
+    ],
+    'correctAnswer': 'El número de caminos independientes en el flujo del programa'
+  },
+  {
+    'question': '¿Qué representa un componente en un diagrama de componentes UML?',
+    'options': [
+      'Un entorno de ejecución',
+      'Una unidad funcional ejecutable del sistema',
+      'Un actor externo',
+      'Un flujo de datos'
+    ],
+    'correctAnswer': 'Una unidad funcional ejecutable del sistema'
+  },
+  {
+    'question': '¿Qué representa una entrada fuera del rango permitido en una clase de equivalencia?',
+    'options': [
+      'Un valor duplicado',
+      'Un dato opcional',
+      'Una partición inválida',
+      'Una entrada crítica'
+    ],
+    'correctAnswer': 'Una partición inválida'
+  },
+  {
+    'question': '¿Qué tipo de prueba se utiliza para verificar que una nueva funcionalidad no rompe lo ya existente?',
+    'options': [
+      'Prueba de rendimiento',
+      'Prueba alfa',
+      'Prueba de humo',
+      'Prueba de regresión'
+    ],
+    'correctAnswer': 'Prueba de regresión'
+  },
+  {
+    'question': '¿Qué tipo de relación UML indica que una clase utiliza otra de forma temporal sin necesidad de poseerla?',
+    'options': [
+      'Dependencia',
+      'Asociación',
+      'Composición',
+      'Agregación'
+    ],
+    'correctAnswer': 'Dependencia'
+  },
+  {
+    'question': '¿Qué ventaja ofrece el uso de clases de equivalencia en pruebas?',
+    'options': [
+      'Elimina pruebas funcionales',
+      'Automatiza todo el proceso de pruebas',
+      'Evita documentar los casos',
+      'Reduce la cantidad de casos necesarios sin perder cobertura'
+    ],
+    'correctAnswer': 'Reduce la cantidad de casos necesarios sin perder cobertura'
+  },
+  {
+    'question': '¿Qué ventaja ofrece una refactorización frecuente en lugar de una única y compleja?',
+    'options': [
+      'Disminuye la cobertura de pruebas',
+      'Reduce la reutilización del código',
+      'Mejora el mantenimiento y minimiza el riesgo',
+      'Evita errores en producción'
+    ],
+    'correctAnswer': 'Mejora el mantenimiento y minimiza el riesgo'
+  },
+  {
+    'question': '¿Qué ventaja tiene un lenguaje de alto nivel frente a uno de bajo nivel?',
+    'options': [
+      'Mayor complejidad en la sintaxis',
+      'Mayor control de memoria',
+      'Mayor legibilidad y menor complejidad para el programador',
+      'Acceso directo a registros del procesador'
+    ],
+    'correctAnswer': 'Mayor legibilidad y menor complejidad para el programador'
+  },
+  {
+    'question': '¿A qué clase pertenece la IP 192.0.2.1?',
+    'options': [
+      'E',
+      'C',
+      'A',
+      'B'
+    ],
+    'correctAnswer': 'C'
+  },
+  {
+    'question': '¿Cuál de estas direcciones pertenece a una clase A?',
+    'options': [
+      '224.0.0.1',
+      '172.20.30.40',
+      '10.5.6.7',
+      '192.168.1.1'
+    ],
+    'correctAnswer': '10.5.6.7'
+  },
+  {
+    'question': '¿Cuál de las siguientes acciones se puede realizar desde la BIOS?',
+    'options': [
+      'Instalar programas',
+      'Configurar el orden de arranque de los discos',
+      'Abrir archivos de Word',
+      'Cambiar la resolución del monitor'
+    ],
+    'correctAnswer': 'Configurar el orden de arranque de los discos'
+  },
+  {
+    'question': '¿Cuál de los siguientes componentes es considerado un dispositivo de almacenamiento secundario?',
+    'options': [
+      'Procesador',
+      'GPU',
+      'RAM',
+      'SSD'
+    ],
+    'correctAnswer': 'SSD'
+  },
+  {
+    'question': '¿Cuál es el uso principal del comando cp?',
+    'options': [
+      'Mover archivos',
+      'Eliminar archivos',
+      'Crear enlaces',
+      'Copiar archivos'
+    ],
+    'correctAnswer': 'Copiar archivos'
+  },
+  {
+    'question': '¿Cuál es la dirección de broadcast para la red 192.168.1.64/26?',
+    'options': [
+      '192.168.1.255',
+      '192.168.1.64',
+      '192.168.1.63',
+      '192.168.1.127'
+    ],
+    'correctAnswer': '192.168.1.127'
+  },
+  {
+    'question': '¿Cuál es la dirección de red de 192.168.50.123/26?',
+    'options': [
+      '192.168.50.64',
+      '192.168.50.64',
+      '192.168.50.128',
+      '192.168.50.0'
+    ],
+    'correctAnswer': '192.168.50.64'
+  },
+  {
+    'question': '¿Cuál es la función de la máscara de subred?',
+    'options': [
+      'Identificar si la IP es pública o privada',
+      'Aumentar la velocidad de la red',
+      'Establecer la dirección MAC',
+      'Determinar qué parte de la IP es red y cuál es host'
+    ],
+    'correctAnswer': 'Determinar qué parte de la IP es red y cuál es host'
+  },
+  {
+    'question': '¿Cuál es la máscara por defecto de una red de clase B?',
+    'options': [
+      '255.255.255.255',
+      '255.0.0.0',
+      '255.255.0.0',
+      '255.255.255.0'
+    ],
+    'correctAnswer': '255.255.0.0'
+  },
+  {
+    'question': '¿Cuál es la principal diferencia entre una dirección IP pública y una privada?',
+    'options': [
+      'Las IP públicas no necesitan pasar por un router',
+      'Las IP públicas tienen más velocidad de conexión',
+      'Las IP privadas se usan solo en redes gubernamentales',
+      'Las IP privadas no son accesibles directamente desde Internet'
+    ],
+    'correctAnswer': 'Las IP privadas no son accesibles directamente desde Internet'
+  },
+  {
+    'question': '¿Cuál es la principal función de la memoria RAM en un ordenador?',
+    'options': [
+      'Controlar dispositivos de entrada/salida',
+      'Almacenar archivos a largo plazo',
+      'Almacenar temporalmente instrucciones y datos para que el procesador los ejecute',
+      'Procesar señales gráficas'
+    ],
+    'correctAnswer': 'Almacenar temporalmente instrucciones y datos para que el procesador los ejecute'
+  },
+  {
+    'question': '¿Cuál es una diferencia clave entre la memoria RAM y la memoria ROM?',
+    'options': [
+      'Ambas almacenan datos permanentemente',
+      'La RAM contiene el sistema BIOS, la ROM solo guarda programas temporales',
+      'La ROM pierde sus datos al apagar el equipo, la RAM no',
+      'La RAM es volátil y la ROM no lo es'
+    ],
+    'correctAnswer': 'La RAM es volátil y la ROM no lo es'
+  },
+  {
+    'question': '¿Cuál sería la dirección de broadcast para la red 192.168.10.0/24?',
+    'options': [
+      '192.168.10.0',
+      '192.168.10.255',
+      '192.168.0.0',
+      '192.168.255.255'
+    ],
+    'correctAnswer': '192.168.10.255'
+  },
+  {
+    'question': '¿Cuántos bits tiene una dirección IPv4?',
+    'options': [
+      '32',
+      '16',
+      '64',
+      '128'
+    ],
+    'correctAnswer': '32'
+  },
+  {
+    'question': '¿Cuántos hosts útiles puede tener la red 192.168.1.0/25?',
+    'options': [
+      '64',
+      '126',
+      '128',
+      '254'
+    ],
+    'correctAnswer': '126'
+  },
+  {
+    'question': '¿Por qué es importante que un desarrollador de aplicaciones web (DAW) tenga conocimientos de hardware?',
+    'options': [
+      'Para optimizar el rendimiento de sus aplicaciones y entender mejor el entorno de ejecución',
+      'Porque es obligatorio para programar en HTML',
+      'Para evitar usar software de terceros',
+      'Para poder reparar físicamente ordenadores'
+    ],
+    'correctAnswer': 'Para optimizar el rendimiento de sus aplicaciones y entender mejor el entorno de ejecución'
+  },
+  {
+    'question': '¿Por qué es peligroso usar rm -r sin cuidado?',
+    'options': [
+      'Congela el equipo',
+      'Puede borrar todo el sistema',
+      'Oculta archivos',
+      'Cambia contraseñas'
+    ],
+    'correctAnswer': 'Puede borrar todo el sistema'
+  },
+  {
+    'question': '¿Qué añade el parámetro -a al comando ls?',
+    'options': [
+      'Cambia permisos',
+      'Muestra el propietario',
+      'Borra archivos',
+      'Muestra archivos ocultos'
+    ],
+    'correctAnswer': 'Muestra archivos ocultos'
+  },
+  {
+    'question': '¿Qué clase es la dirección IP 172.16.0.1?',
+    'options': [
+      'C',
+      'A',
+      'D',
+      'B'
+    ],
+    'correctAnswer': 'B'
+  },
+  {
+    'question': '¿Qué comando crea un nuevo archivo vacío?',
+    'options': [
+      'touch',
+      'nano',
+      'cat',
+      'mkfile'
+    ],
+    'correctAnswer': 'touch'
+  },
+  {
+    'question': '¿Qué comando elimina un directorio y todo su contenido?',
+    'options': [
+      'rm -r',
+      'delete',
+      'rm',
+      'rmdir'
+    ],
+    'correctAnswer': 'rm -r'
+  },
+  {
+    'question': '¿Qué comando se usa para copiar un directorio con todo su contenido?',
+    'options': [
+      'mv -r',
+      'cp',
+      'ln -r',
+      'cp -r'
+    ],
+    'correctAnswer': 'cp -r'
+  },
+  {
+    'question': '¿Qué comando se utiliza para cambiar de directorio en Linux?',
+    'options': [
+      'ls',
+      'mv',
+      'pwd',
+      'cd'
+    ],
+    'correctAnswer': 'cd'
+  },
+  {
+    'question': '¿Qué componente se encarga de realizar los cálculos y ejecutar instrucciones?',
+    'options': [
+      'Disco duro',
+      'Placa base',
+      'CPU',
+      'Fuente de alimentación'
+    ],
+    'correctAnswer': 'CPU'
+  },
+  {
+    'question': '¿Qué contiene el archivo /etc/passwd?',
+    'options': [
+      'Información del hardware',
+      'Permisos del sistema',
+      'Información de usuarios',
+      'Logs del sistema'
+    ],
+    'correctAnswer': 'Información de usuarios'
+  },
+  {
+    'question': '¿Qué dirección IP representa el primer host en la red 10.0.0.0/8?',
+    'options': [
+      '10.0.0.255',
+      '10.0.0.1',
+      '10.255.255.255',
+      '10.0.0.0'
+    ],
+    'correctAnswer': '10.0.0.1'
+  },
+  {
+    'question': '¿Qué es la BIOS en una computadora?',
+    'options': [
+      'Un programa para editar textos',
+      'Una aplicación de seguridad',
+      'Un firmware que inicia y prueba el hardware del sistema',
+      'Un sistema operativo secundario'
+    ],
+    'correctAnswer': 'Un firmware que inicia y prueba el hardware del sistema'
+  },
+  {
+    'question': '¿Qué función tiene la placa base en una computadora?',
+    'options': [
+      'Ejecutar gráficos complejos',
+      'Aumentar la velocidad de red',
+      'Alimentar directamente la CPU',
+      'Servir de soporte e interconexión entre todos los componentes'
+    ],
+    'correctAnswer': 'Servir de soporte e interconexión entre todos los componentes'
+  },
+  {
+    'question': '¿Qué hace el comando man en Linux?',
+    'options': [
+      'Cambia usuarios',
+      'Lista procesos',
+      'Elimina archivos',
+      'Muestra manuales'
+    ],
+    'correctAnswer': 'Muestra manuales'
+  },
+  {
+    'question': '¿Qué hace el comando rm?',
+    'options': [
+      'Elimina archivos',
+      'Cambia nombre',
+      'Lista archivos',
+      'Muestra contenido'
+    ],
+    'correctAnswer': 'Elimina archivos'
+  },
+  {
+    'question': '¿Qué hace el modificador -l en ls -l?',
+    'options': [
+      'Muestra detalles',
+      'Ordena alfabéticamente',
+      'Muestra inodos',
+      'Muestra archivos ocultos'
+    ],
+    'correctAnswer': 'Muestra detalles'
+  },
+  {
+    'question': "¿Qué indica una 'd' al principio de una línea de ls -l?",
+    'options': [
+      'Archivo oculto',
+      'Directorio',
+      'Enlace simbólico',
+      'Archivo ejecutable'
+    ],
+    'correctAnswer': 'Directorio'
+  },
+  {
+    'question': '¿Qué parte de la IP representa el host en 192.168.5.10/24?',
+    'options': [
+      '5.10',
+      '192.168',
+      '10',
+      '5'
+    ],
+    'correctAnswer': '10'
+  },
+  {
+    'question': '¿Qué rango de IPs cubre la subred 192.168.0.0/24?',
+    'options': [
+      '192.168.0.0 – 192.168.0.255',
+      '192.168.0.10 – 192.168.0.240',
+      '192.168.0.1 – 192.168.0.254',
+      '192.168.1.0 – 192.168.1.255'
+    ],
+    'correctAnswer': '192.168.0.0 – 192.168.0.255'
+  },
+  {
+    'question': '¿Qué representa el símbolo ~ en Linux?',
+    'options': [
+      'El directorio temporal',
+      'El directorio /',
+      'El directorio del usuario actual',
+      'El directorio /etc'
+    ],
+    'correctAnswer': 'El directorio del usuario actual'
+  },
+  {
+    'question': '¿Qué sucede si borras el archivo original de un enlace simbólico?',
+    'options': [
+      'El enlace queda roto',
+      'Se oculta',
+      'Se borra también el enlace',
+      'Se mantiene el contenido'
+    ],
+    'correctAnswer': 'El enlace queda roto'
+  },
+  {
+    'question': '¿Qué tipo de dispositivo es un teclado en términos de hardware?',
+    'options': [
+      'Dispositivo de procesamiento',
+      'Dispositivo mixto',
+      'Dispositivo de salida',
+      'Dispositivo de entrada'
+    ],
+    'correctAnswer': 'Dispositivo de entrada'
+  },
+  {
+    'question': '¿Qué tipo de enlace apunta al mismo inodo que el archivo original?',
+    'options': [
+      'Alias',
+      'Symbolic link',
+      'Hard link',
+      'Soft link'
+    ],
+    'correctAnswer': 'Hard link'
+  },
+  {
+    'question': '¿Qué tipo de memoria se usa normalmente para almacenar la BIOS?',
+    'options': [
+      'ROM',
+      'DRAM',
+      'RAM',
+      'HDD'
+    ],
+    'correctAnswer': 'ROM'
+  },
+  {
+    'question': 'Dada la IP 192.168.1.1 con máscara 255.255.255.0, ¿cuál es la parte de red?',
+    'options': [
+      '1.1',
+      '192',
+      '192.168',
+      '192.168.1'
+    ],
+    'correctAnswer': '192.168.1'
   }
   
-    
-  
-  
 
-  
-    
-  
-
-
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-  
-  
-   
-  
-  
-    
-  
 ];

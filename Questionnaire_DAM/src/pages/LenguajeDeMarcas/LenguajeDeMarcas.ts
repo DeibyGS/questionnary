@@ -369,8 +369,8 @@ export const questionsLenguajeDeMarcas: Question[] = [
   },
   {
     'question': '¿Qué clase de Bootstrap se usa para hacer que un elemento tenga un fondo azul predeterminado?',
-    'options': ['.bg-blue', '.bg-info', '.bg-light', '.bg-primary-blue'],
-    'correctAnswer': '.bg-info'
+    'options': ['.bg-blue', '.bg-info', '.bg-light', '.bg-primary'],
+    'correctAnswer': '.bg-primary'
   },
   {
     'question': '¿Cuál de estas clases de Bootstrap se usa para crear un botón de color rojo?',
@@ -1196,15 +1196,532 @@ export const questionsLenguajeDeMarcas: Question[] = [
       'type="clear"'
     ],
     'correctAnswer': 'type="reset"'
+  },
+  {
+    'question': '¿Cuál de estas clases de Bootstrap se usa para crear un botón de color rojo?',
+    'options': ['.btn-red', '.btn-warning', '.btn-danger', '.btn-error'],
+    'correctAnswer': '.btn-danger'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap hace que un texto sea más grande y destacado, usado para subtítulos?',
+    'options': ['.h1', '.lead', '.text-lg', '.highlight'],
+    'correctAnswer': '.lead'
+  },
+  {
+    'question': '¿Qué clase se usa para alinear texto al centro en Bootstrap?',
+    'options': ['.text-start', '.text-center', '.text-right', '.center-text'],
+    'correctAnswer': '.text-center'
+  },
+  {
+    'question': '¿Qué clase agrega margen superior en Bootstrap?',
+    'options': ['.mt-3', '.pt-3', '.mb-3', '.pb-3'],
+    'correctAnswer': '.mt-3'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap se usa para crear una fila flexible?',
+    'options': ['.row', '.flex', '.container', '.grid'],
+    'correctAnswer': '.row'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap aplica sombra a un elemento?',
+    'options': ['.shadow', '.box-shadow', '.shadow-sm', '.drop-shadow'],
+    'correctAnswer': '.shadow'
+  },
+  {
+    'question': '¿Cuál de estas clases crea un contenedor fluido en Bootstrap?',
+    'options': ['.container-fluid', '.container', '.row', '.fluid-container'],
+    'correctAnswer': '.container-fluid'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap establece un padding interno de 3 unidades?',
+    'options': ['.p-3', '.pt-3', '.pl-3', '.pb-3'],
+    'correctAnswer': '.p-3'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap se usa para un fondo de color azul primario?',
+    'options': ['.bg-primary', '.bg-blue', '.bg-info', '.bg-light'],
+    'correctAnswer': '.bg-primary'
+  },
+  {
+    'question': '¿Qué clase se usa para crear una tabla con rayas en Bootstrap?',
+    'options': ['.table-striped', '.table-hover', '.table-bordered', '.table-primary'],
+    'correctAnswer': '.table-striped'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap aplica un color de fondo gris claro?',
+    'options': ['.bg-secondary', '.bg-dark', '.bg-light', '.bg-white'],
+    'correctAnswer': '.bg-light'
+  },
+  {
+    'question': '¿Qué clase sirve para ocultar un elemento en Bootstrap v5.3.5?',
+    'options': ['.invisible', '.d-none', '.hidden', '.no-display'],
+    'correctAnswer': '.d-none'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap se usa para dar un borde redondeado completo?',
+    'options': ['.rounded', '.rounded-circle', '.rounded-lg', '.rounded-pill'],
+    'correctAnswer': '.rounded-circle'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap aplica un botón de color amarillo?',
+    'options': ['.btn-warning', '.btn-danger', '.btn-primary', '.btn-info'],
+    'correctAnswer': '.btn-warning'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap se usa para un formulario horizontal?',
+    'options': ['.form-horizontal', '.form-inline', '.form-control', '.form-group'],
+    'correctAnswer': '.form-horizontal'
+  },
+  {
+    'question': '¿Qué clase hace que un botón ocupe todo el ancho disponible?',
+    'options': ['.btn-full', '.btn-block', '.btn-100', '.w-100'],
+    'correctAnswer': '.w-100'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap muestra una alerta de color rojo?',
+    'options': ['.alert-danger', '.alert-error', '.alert-warning', '.alert-red'],
+    'correctAnswer': '.alert-danger'
+  },
+  {
+    'question': '¿Qué clase se usa para justificar el contenido entre los extremos en flexbox?',
+    'options': ['.justify-content-around', '.justify-content-center', '.justify-content-between', '.justify-content-end'],
+    'correctAnswer': '.justify-content-between'
+  },
+  {
+    'question': '¿Qué clase aplica una imagen responsiva en Bootstrap?',
+    'options': ['.img-fluid', '.img-responsive', '.img-auto', '.responsive-img'],
+    'correctAnswer': '.img-fluid'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap cambia el orden de los elementos flexibles?',
+    'options': ['.order-first', '.flex-order', '.order-0', '.first-order'],
+    'correctAnswer': '.order-first'
+  },
+  {
+    'question': '¿Qué clase elimina el padding horizontal en un contenedor?',
+    'options': ['.px-0', '.p-0', '.py-0', '.pl-0'],
+    'correctAnswer': '.px-0'
+  },
+  {
+    'question': '¿Qué clase elimina el margen vertical de un elemento?',
+    'options': ['.my-0', '.mx-0', '.mt-0', '.mb-0'],
+    'correctAnswer': '.my-0'
+  },
+  {
+    'question': '¿Qué clase hace que un elemento sea visible solo en pantallas grandes?',
+    'options': ['.d-none d-lg-block', '.d-lg-none', '.d-md-block', '.visible-lg'],
+    'correctAnswer': '.d-none d-lg-block'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap se usa para un botón de tamaño pequeño?',
+    'options': ['.btn-sm', '.btn-xs', '.btn-small', '.btn-compact'],
+    'correctAnswer': '.btn-sm'
+  },
+  {
+    'question': '¿Qué clase de utilidad permite mostrar un spinner de carga?',
+    'options': ['.spinner-border', '.spinner-grow', '.loading-circle', '.progress-spinner'],
+    'correctAnswer': '.spinner-border'
+  },
+  {
+    'question': '¿Qué clase en Bootstrap crea un contenedor centrado con padding estándar?',
+    'options': ['.container', '.container-fluid', '.container-sm', '.container-md'],
+    'correctAnswer': '.container'
+  },
+  {
+    'question': '¿Qué clase aplica un color de texto gris?',
+    'options': ['.text-muted', '.text-light', '.text-dark', '.text-gray'],
+    'correctAnswer': '.text-muted'
+  },
+  {
+    'question': '¿Qué clase establece display flex?',
+    'options': ['.d-flex', '.display-flex', '.flex', '.flex-d'],
+    'correctAnswer': '.d-flex'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap crea un dropdown?',
+    'options': ['.dropdown', '.dropmenu', '.dropdown-menu', '.menu-dropdown'],
+    'correctAnswer': '.dropdown'
+  },
+  {
+    'question': '¿Qué clase se usa para aplicar un badge?',
+    'options': ['.badge', '.label', '.badge-pill', '.badge-label'],
+    'correctAnswer': '.badge'
+  },
+  {
+    'question': '¿Qué clase aplica borde a un div?',
+    'options': ['.border', '.b-1', '.bordered', '.div-border'],
+    'correctAnswer': '.border'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap resalta un texto?',
+    'options': ['.mark', '.highlight', '.text-highlight', '.bg-highlight'],
+    'correctAnswer': '.mark'
+  },
+  {
+    'question': '¿Qué clase ajusta automáticamente el ancho de un input al 100%?',
+    'options': ['.w-100', '.input-full', '.input-block', '.full-width'],
+    'correctAnswer': '.w-100'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap cambia un texto a mayúsculas?',
+    'options': ['.text-uppercase', '.text-upper', '.capitalize', '.text-capitalize'],
+    'correctAnswer': '.text-uppercase'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap hace un texto centrado verticalmente en flex?',
+    'options': ['.align-items-center', '.justify-content-center', '.text-middle', '.align-middle'],
+    'correctAnswer': '.align-items-center'
+  },
+  {
+    'question': '¿Qué clase se usa para hacer que un input sea de solo lectura?',
+    'options': ['.form-control-plaintext', '.input-readonly', '.input-disabled', '.readonly-input'],
+    'correctAnswer': '.form-control-plaintext'
+  },
+  {
+    'question': '¿Qué clase crea un grupo de botones?',
+    'options': ['.btn-group', '.buttons', '.group-buttons', '.button-group'],
+    'correctAnswer': '.btn-group'
+  },
+  {
+    'question': '¿Qué clase se usa para hacer que un div sea responsivo horizontalmente?',
+    'options': ['.overflow-auto', '.scroll-horizontal', '.h-scroll', '.responsive-div'],
+    'correctAnswer': '.overflow-auto'
+  },
+  {
+    'question': '¿Qué combinación de clases Bootstrap permite tener 3 columnas iguales en pantallas medianas en adelante?',
+    'options': ['.col-lg-3', '.col-sm-6', '.col-12', '.col-md-4'],
+    'correctAnswer': '.col-md-4'
+  },
+  {
+    'question': 'En Bootstrap, ¿qué clase debes usar junto con d-flex para centrar contenido verticalmente?',
+    'options': ['.align-items-center', '.text-center', '.m-auto', '.justify-content-center'],
+    'correctAnswer': '.align-items-center'
+  },
+  {
+    'question': '¿Qué clase de Bootstrap hace que una imagen se adapte al ancho del contenedor manteniendo su proporción?',
+    'options': ['.img-responsive', '.img-fluid', '.responsive-img', '.img-full'],
+    'correctAnswer': '.img-fluid'
+  },
+  {
+    'question': '¿Cuál es la diferencia principal entre box-sizing: content-box y box-sizing: border-box en CSS?',
+    'options': [
+      'content-box incluye borde y padding en el tamaño total',
+      'border-box no permite usar padding',
+      'No hay ninguna diferencia entre ambas propiedades',
+      'border-box incluye padding y borde dentro del ancho y alto especificado'
+    ],
+    'correctAnswer': 'border-box incluye padding y borde dentro del ancho y alto especificado'
+  },
+  {
+    'question': '¿Qué significa el valor auto en la propiedad margin de CSS?',
+    'options': [
+      'Aplica el margen por defecto del navegador',
+      'Elimina los márgenes',
+      'Ajusta el margen al tamaño del contenido',
+      'Centra el elemento horizontalmente'
+    ],
+    'correctAnswer': 'Centra el elemento horizontalmente'
+  },
+  {
+    'question': '¿Cuál de estas propiedades permite aplicar una animación en CSS?',
+    'options': ['animate', 'motion', 'transition', 'hover'],
+    'correctAnswer': 'transition'
+  },
+  {
+    'question': '¿Qué propiedad CSS permite definir el espacio entre filas y columnas en CSS Grid?',
+    'options': ['spacing', 'padding', 'margin', 'gap'],
+    'correctAnswer': 'gap'
+  },
+  {
+    'question': '¿Cuál es el valor de display para ocultar un elemento completamente en CSS?',
+    'options': ['visibility: hidden', 'display: none', 'opacity: 0', 'hidden: true'],
+    'correctAnswer': 'display: none'
+  },
+  {
+    'question': '¿Qué propiedad CSS se usa para aplicar sombra a un texto?',
+    'options': ['shadow-text', 'box-shadow', 'font-shadow', 'text-shadow'],
+    'correctAnswer': 'text-shadow'
+  },
+  {
+    'question': 'Para que align-items afecte a los elementos hijos, ¿qué propiedad debe tener el contenedor?',
+    'options': ['float: left;', 'display: flex;', 'grid-template-rows:', 'width: 100%;'],
+    'correctAnswer': 'display: flex;'
+  },
+  {
+    'question': '¿Qué unidad de medida en CSS representa un tamaño fijo, sin depender del contexto?',
+    'options': ['em', 'px', 'rem', '%'],
+    'correctAnswer': 'px'
+  },
+  {
+    'question': '¿Qué afirmación sobre gap y margin es correcta?',
+    'options': [
+      'margin es más precisa que gap',
+      'Ambas propiedades se usan solo en Grid',
+      'gap reemplaza a margin',
+      'gap separa elementos entre sí, margin separa un elemento del exterior'
+    ],
+    'correctAnswer': 'gap separa elementos entre sí, margin separa un elemento del exterior'
+  },
+  {
+    'question': '¿Qué unidad en CSS es relativa al tamaño de fuente del elemento raíz (<html>) y no al padre?',
+    'options': ['rem', 'vh', 'em', 'pt'],
+    'correctAnswer': 'rem'
+  },
+  {
+    'question': '¿Qué ocurre si usamos display: grid; sin definir filas ni columnas?',
+    'options': ['No cambia nada', 'Se crea una cuadrícula automática', 'Se aplica block', 'Los elementos se superponen'],
+    'correctAnswer': 'Se crea una cuadrícula automática'
+  },
+  {
+    'question': '¿Cuál es el propósito de usar repeat(3, 1fr) en una definición de columnas en CSS Grid?',
+    'options': [
+      'Agrupa columnas por nombre',
+      'Define tres márgenes horizontales',
+      'Se usa para repetir colores de fondo',
+      'Distribuye el contenido en 3 columnas iguales dentro del espacio disponible'
+    ],
+    'correctAnswer': 'Distribuye el contenido en 3 columnas iguales dentro del espacio disponible'
+  },
+  {
+    'question': '¿Qué sintaxis es válida para declarar zonas con nombre en una cuadrícula de CSS Grid?',
+    'options': [
+      'grid-template-areas: "nav nav" "content aside";',
+      'grid-template-columns: 1fr 1fr;',
+      'grid-template: repeat(2, 1fr);',
+      'grid-position: "nav" "content";'
+    ],
+    'correctAnswer': 'grid-template-areas: "nav nav" "content aside";'
+  },
+  {
+    'question': 'En un contenedor con display: flex, ¿qué propiedad se utiliza para alinear los elementos horizontalmente (a lo largo del eje principal)?',
+    'options': ['order', 'align-items', 'justify-content', 'flex-direction'],
+    'correctAnswer': 'justify-content'
+  },
+  {
+    'question': '¿Qué valor de Flexbox hace que los elementos no se queden todos en una misma línea si no hay espacio suficiente?',
+    'options': [
+      'justify-content: space-around;',
+      'flex-grow: 1;',
+      'flex-shrink: 0;',
+      'flex-wrap: wrap;'
+    ],
+    'correctAnswer': 'flex-wrap: wrap;'
+  },
+  {
+    'question': '¿Qué valor de justify-content en Flexbox distribuye los elementos dejando espacio entre ellos, pero no en los bordes?',
+    'options': ['space-around', 'space-evenly', 'space-between', 'center'],
+    'correctAnswer': 'space-between'
+  },
+  {
+    'question': '¿Qué afirmación sobre el atributo id en HTML es correcta?',
+    'options': [
+      'Solo se puede usar en formularios',
+      'Debe ser único dentro de la página',
+      'Puede aplicarse a varios elementos',
+      'Se escribe con punto (.)'
+    ],
+    'correctAnswer': 'Debe ser único dentro de la página'
+  },
+  {
+    'question': '¿Qué atributo de la etiqueta <img> se utiliza para mostrar un texto alternativo si la imagen no se carga?',
+    'options': [
+      'text',
+      'description',
+      'title',
+      'alt'
+    ],
+    'correctAnswer': 'alt'
+  },
+  {
+    'question': '¿Qué atributo HTML es necesario para que un campo <input> de tipo checkbox esté seleccionado por defecto?',
+    'options': [
+      'checked',
+      'default',
+      'value',
+      'selected'
+    ],
+    'correctAnswer': 'checked'
+  },
+  {
+    'question': '¿Qué método permite seleccionar elementos del DOM por su atributo name?',
+    'options': [
+      'getElementsByClassName()',
+      'querySelector()',
+      'getElementById()',
+      'getElementsByName()'
+    ],
+    'correctAnswer': 'getElementsByName()'
+  },
+  {
+    'question': '¿Qué propiedad contiene el contenido del archivo leído en un FileReader dentro del evento onload?',
+    'options': [
+      'e.file.content',
+      'e.target.value',
+      'e.result',
+      'e.target.result'
+    ],
+    'correctAnswer': 'e.target.result'
+  },
+  {
+    'question': '¿Qué evento debe capturarse para ejecutar código tras leer un archivo con FileReader?',
+    'options': [
+      'onload',
+      'oncomplete',
+      'onread',
+      'ondone'
+    ],
+    'correctAnswer': 'onload'
+  },
+  {
+    'question': '¿Qué método de JavaScript convierte un una lista de nodos en un array, usada en el proceso para importar o exportar XML?',
+    'options': [
+      'Array.from()',
+      'convertToArray()',
+      'toArray()',
+      'listToArray()'
+    ],
+    'correctAnswer': 'Array.from()'
+  },
+  {
+    'question': '¿Qué evento de JavaScript se dispara cuando un formulario es enviado?',
+    'options': [
+      'oninput',
+      'onchange',
+      'onwrite',
+      'onsubmit'
+    ],
+    'correctAnswer': 'onsubmit'
+  },
+  {
+    'question': '¿Qué método de localStorage permite eliminar un elemento por su clave?',
+    'options': [
+      'deleteItem()',
+      'localStorage.removeItem()',
+      'localStorage.delete()',
+      'remove()'
+    ],
+    'correctAnswer': 'localStorage.removeItem()'
+  },
+  {
+    'question': '¿Qué hace la propiedad .innerText en JavaScript?',
+    'options': [
+      'Modifica el atributo value de un input',
+      'Inserta etiquetas HTML',
+      'Muestra o modifica el texto visible de un elemento',
+      'Cambia el valor de un botón'
+    ],
+    'correctAnswer': 'Muestra o modifica el texto visible de un elemento'
+  },
+  {
+    'question': '¿Qué valor devuelve element.value si el elemento existe pero el campo está vacío?',
+    'options': [
+      '""',
+      'false',
+      'null',
+      'undefined'
+    ],
+    'correctAnswer': '""'
+  },
+  {
+    'question': "¿Qué hace document.querySelector(\"input[type='email']\")?",
+    'options': [
+      'Selecciona todos los campos de texto',
+      'Selecciona cualquier input',
+      'Crea un input automáticamente',
+      'Selecciona el primer input de tipo email'
+    ],
+    'correctAnswer': 'Selecciona el primer input de tipo email'
+  },
+  {
+    'question': '¿Cuál de estas formas es correcta para reaccionar a un clic en un botón en JavaScript moderno?',
+    'options': [
+      'btn.on("click", function)',
+      'addClick(btn, function)',
+      'document.querySelector("#btn").addEventListener("click", function() { /*...*/ })',
+      'click(btn, function)'
+    ],
+    'correctAnswer': 'document.querySelector("#btn").addEventListener("click", function() { /*...*/ })'
+  },
+  {
+    'question': '¿Qué selecciona document.querySelector(".activo")?',
+    'options': [
+      'Todos los elementos activos',
+      'El primer elemento con clase activo',
+      'Una lista de nodos con esa clase',
+      'El primer elemento con id="activo"'
+    ],
+    'correctAnswer': 'El primer elemento con clase activo'
+  },
+  {
+    'question': '¿Cuál de estas propiedades se utiliza para acceder o cambiar el texto que un usuario ve en pantalla (sin etiquetas HTML)?',
+    'options': [
+      '.innerHTML',
+      '.innerText',
+      '.placeholder',
+      '.value'
+    ],
+    'correctAnswer': '.innerText'
+  },
+  {
+    'question': '¿Qué método de localStorage sirve para guardar un valor?',
+    'options': [
+      'storeItem()',
+      'set()',
+      'setItem()',
+      'localStorage.save()'
+    ],
+    'correctAnswer': 'setItem()'
+  },
+  {
+    'question': '¿Qué propiedad de un input de tipo file permite acceder al archivo seleccionado?',
+    'options': [
+      'input.file',
+      'input.value',
+      'input.selectedFile',
+      'input.files[0]'
+    ],
+    'correctAnswer': 'input.files[0]'
+  },
+  {
+    'question': '¿Cuál de estos objetos permite convertir el contenido de un archivo en texto en el navegador?',
+    'options': [
+      'FileReader',
+      'JSONParser',
+      'DocumentReader',
+      'LocalStorage'
+    ],
+    'correctAnswer': 'FileReader'
+  },
+  {
+    'question': '¿Cuál de los siguientes métodos devuelve un documento navegable a partir de texto XML?',
+    'options': [
+      'DOMParser.parseFromString()',
+      'createElementFromXML()',
+      'FileParser.readAsDOM()',
+      'XMLLoader.parse()'
+    ],
+    'correctAnswer': 'DOMParser.parseFromString()'
+  },
+  {
+    'question': '¿Cómo se accede al texto que contiene una etiqueta XML, como <nombre>Juan</nombre>?',
+    'options': [
+      '.text()',
+      '.nodeText',
+      '.innerValue',
+      '.textContent'
+    ],
+    'correctAnswer': '.textContent'
+  },
+  {
+    'question': '¿Qué método permite acceder a todos los nodos <persona> en un XML parseado?',
+    'options': [
+      'getXMLNodes("persona")',
+      'getElementsByClass("persona")',
+      'getElementByName("persona")',
+      'getElementsByTagName("persona")'
+    ],
+    'correctAnswer': 'getElementsByTagName("persona")'
   }
-      
-        
-      
-      
-      
-        
-      
-      
     
         
       

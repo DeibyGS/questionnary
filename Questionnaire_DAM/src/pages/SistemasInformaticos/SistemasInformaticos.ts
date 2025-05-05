@@ -1290,21 +1290,408 @@ export const questionsSistemasInformaticos: Question[] = [
       '1000000'
     ],
     'correctAnswer': '1000000'
+  },
+  {
+    'question': '¿Qué pasa si se ejecuta cp archivo1 archivo1?',
+    'options': ['No hace nada', 'Cambia su nombre', 'Lo renombra', 'Elimina el archivo'],
+    'correctAnswer': 'No hace nada'
+  },
+  {
+    'question': '¿Cuál de las siguientes es una distribución de Linux orientada a la seguridad informática?',
+    'options': ['Ubuntu', 'Debian', 'Kali Linux', 'Fedora'],
+    'correctAnswer': 'Kali Linux'
+  },
+  {
+    'question': '¿Qué es un entorno de desarrollo integrado (IDE)?',
+    'options': ['Un lenguaje de programación', 'Un tipo de sistema operativo', 'Un conjunto de herramientas para programar', 'Una base de datos'],
+    'correctAnswer': 'Un conjunto de herramientas para programar'
+  },
+  {
+    'question': '¿Cuál de los siguientes comandos muestra la ruta del directorio actual?',
+    'options': ['pwd', 'ls', 'cd', 'echo'],
+    'correctAnswer': 'pwd'
+  },
+  {
+    'question': '¿Qué extensión suelen tener los scripts de shell en Linux?',
+    'options': ['.sh', '.exe', '.bat', '.py'],
+    'correctAnswer': '.sh'
+  },
+  {
+    'question': '¿Qué comando se usa para dar permisos de ejecución a un archivo en Linux?',
+    'options': ['chmod +x', 'perm +r', 'exec +e', 'chmod -e'],
+    'correctAnswer': 'chmod +x'
+  },
+  {
+    'question': '¿Qué es Git?',
+    'options': ['Un lenguaje de programación', 'Un sistema de bases de datos', 'Un sistema de control de versiones', 'Un entorno de desarrollo'],
+    'correctAnswer': 'Un sistema de control de versiones'
+  },
+  {
+    'question': '¿Cuál es la función del comando mkdir?',
+    'options': ['Crear un archivo', 'Cambiar el nombre de un archivo', 'Crear un directorio', 'Eliminar un archivo'],
+    'correctAnswer': 'Crear un directorio'
+  },
+  {
+    'question': '¿Qué comando se utiliza para cambiar de directorio?',
+    'options': ['cd', 'mv', 'ls', 'pwd'],
+    'correctAnswer': 'cd'
+  },
+  {
+    'question': '¿Qué representa el carácter punto (.) en la terminal de Linux?',
+    'options': ['El directorio raíz', 'El directorio padre', 'El directorio actual', 'Una ruta absoluta'],
+    'correctAnswer': 'El directorio actual'
+  },
+  {
+    'question': '¿Cuál es la extensión común de los archivos comprimidos con gzip?',
+    'options': ['.gz', '.zip', '.rar', '.tar'],
+    'correctAnswer': '.gz'
+  },
+  {
+    'question': '¿Para qué sirve el comando top en Linux?',
+    'options': ['Ver archivos ocultos', 'Mostrar procesos en ejecución', 'Eliminar procesos', 'Actualizar el sistema'],
+    'correctAnswer': 'Mostrar procesos en ejecución'
+  },
+  {
+    'question': '¿Qué tipo de software es Eclipse?',
+    'options': ['Navegador web', 'IDE', 'Sistema operativo', 'Servidor web'],
+    'correctAnswer': 'IDE'
+  },
+  {
+    'question': '¿Qué hace el comando man en Linux?',
+    'options': ['Ejecuta programas', 'Abre el manual de un comando', 'Cierra la terminal', 'Instala paquetes'],
+    'correctAnswer': 'Abre el manual de un comando'
+  },
+  {
+    'question': '¿Qué comando se usa para ver el contenido de un archivo en la terminal?',
+    'options': ['cat', 'ls', 'cd', 'pwd'],
+    'correctAnswer': 'cat'
+  },
+  {
+    'question': '¿Qué comando sirve para buscar texto dentro de archivos?',
+    'options': ['grep', 'find', 'search', 'locate'],
+    'correctAnswer': 'grep'
+  },
+  {
+    'question': '¿Qué comando se utiliza para cambiar los permisos de un archivo?',
+    'options': ['chmod', 'chperm', 'chown', 'perm'],
+    'correctAnswer': 'chmod'
+  },
+  {
+    'question': '¿Qué comando se usa para mover o renombrar archivos?',
+    'options': ['mv', 'cp', 'rm', 'rename'],
+    'correctAnswer': 'mv'
+  },
+  {
+    'question': '¿Cuál es el propósito de un sistema de control de versiones?',
+    'options': ['Eliminar versiones antiguas de software', 'Gestionar el acceso a redes', 'Controlar cambios en el código fuente', 'Proteger el código con antivirus'],
+    'correctAnswer': 'Controlar cambios en el código fuente'
+  },
+  {
+    'question': '¿Qué comando muestra la cantidad de espacio libre en disco?',
+    'options': ['df -h', 'free -m', 'ls -l', 'du -s'],
+    'correctAnswer': 'df -h'
+  },
+  {
+    'question': '¿Cómo puedes ver el contenido de un archivo de texto?',
+    'options': ['kill', 'mkdir', 'chmod', 'cat'],
+    'correctAnswer': 'cat'
+  },
+  {
+    'question': '¿Cómo verías el uso de espacio de archivos y carpetas con formato legible (human)?',
+    'options': ['ls -lh', 'df', 'du', 'du -h'],
+    'correctAnswer': 'du -h'
+  },
+  {
+    'question': '¿Cuál comando te lleva al directorio /etc desde cualquier ubicación?',
+    'options': ['cd etc', 'cd /etc', 'cd ../etc', 'cd ./etc'],
+    'correctAnswer': 'cd /etc'
+  },
+  {
+    'question': '¿Cuál de los siguientes comandos permite ver procesos en tiempo real?',
+    'options': ['ls', 'top', 'kill', 'pstree'],
+    'correctAnswer': 'top'
+  },
+  {
+    'question': '¿Cuál es una distribución de Linux?',
+    'options': ['Ubuntu', 'Windows XP', 'Solaris', 'macOS'],
+    'correctAnswer': 'Ubuntu'
+  },
+  {
+    'question': '¿Cuál es una ruta absoluta válida?',
+    'options': ['/home/usuario/Documentos', 'Ninguna de las opciones.', '../usuario/Documentos', 'home/usuario/Documentos'],
+    'correctAnswer': '/home/usuario/Documentos'
+  },
+  {
+    'question': '¿Cuántas secciones de permisos muestra ls -l?',
+    'options': ['Dos', 'Una', 'Cuatro', 'Tres (usuario, grupo, otros)'],
+    'correctAnswer': 'Tres (usuario, grupo, otros)'
+  },
+  {
+    'question': '¿Qué archivo contiene información sobre las cuentas de usuario?',
+    'options': ['/etc/passwd', '/home/passwd', '/etc/shadow', '/etc/users'],
+    'correctAnswer': '/etc/passwd'
+  },
+  {
+    'question': '¿Qué comando cambia los permisos de un archivo de forma octal?',
+    'options': ['chmod 777 archivo', 'chperm archivo', 'chmod u+x archivo', 'chown archivo'],
+    'correctAnswer': 'chmod 777 archivo'
+  },
+  {
+    'question': '¿Qué comando daría permiso de ejecución al propietario de un archivo?',
+    'options': ['chmod g+x archivo', 'chmod u+x archivo', 'chmod +x archivo', 'chmod o+x archivo'],
+    'correctAnswer': 'chmod u+x archivo'
+  },
+  {
+    'question': '¿Qué comando elimina un archivo?',
+    'options': ['rm', 'del', 'erase', 'mv'],
+    'correctAnswer': 'rm'
+  },
+  {
+    'question': '¿Qué comando lista archivos ocultos?',
+    'options': ['ls -R', 'ls', 'ls -l', 'ls -la'],
+    'correctAnswer': 'ls -la'
+  },
+  {
+    'question': '¿Qué comando muestra cuánto espacio ocupa cada archivo/directorio?',
+    'options': ['free', 'top', 'df', 'du'],
+    'correctAnswer': 'du'
+  },
+  {
+    'question': '¿Qué comando muestra un árbol de procesos?',
+    'options': ['pstree', 'top', 'ps', 'grep'],
+    'correctAnswer': 'pstree'
+  },
+  {
+    'question': '¿Qué comando se usa para copiar archivos?',
+    'options': ['mv', 'ls', 'cat', 'cp'],
+    'correctAnswer': 'cp'
+  },
+  {
+    'question': '¿Qué comando te permite ver el contenido detallado de un directorio?',
+    'options': ['ls -l', 'cat', 'ls', 'dir'],
+    'correctAnswer': 'ls -l'
+  },
+  {
+    'question': '¿Qué comando usarías para redirigir la salida de ls al archivo lista.txt (sobrescribiendo)?',
+    'options': ['ls &> lista.txt', 'ls < lista.txt', 'ls >> lista.txt', 'ls > lista.txt'],
+    'correctAnswer': 'ls > lista.txt'
+  },
+  {
+    'question': '¿Qué hace cd .?',
+    'options': ['Va al directorio home', 'Va al directorio padre', 'Va al directorio raíz', 'Se queda en el mismo directorio'],
+    'correctAnswer': 'Se queda en el mismo directorio'
+  },
+  {
+    'question': '¿Qué hace cd ..?',
+    'options': ['Cambia al directorio raíz', 'Sube un nivel en el árbol de directorios', 'Va al directorio home', 'Muestra el contenido del directorio'],
+    'correctAnswer': 'Sube un nivel en el árbol de directorios'
+  },
+  {
+    'question': '¿Qué hace chmod o+x archivo.sh?',
+    'options': ['Da permiso de escritura a otros', 'Da permiso de ejecución a otros', 'Quita permisos de ejecución a otros', 'Da permiso de lectura a otros'],
+    'correctAnswer': 'Da permiso de ejecución a otros'
+  },
+  {
+    question: '¿Qué hace comando > salida.txt 2>&1?',
+    options: [
+      'Redirige solo errores',
+      'Redirige la entrada estándar',
+      'Redirige salida y errores al mismo archivo',
+      'Copia el archivo salida.txt'
+    ],
+    correctAnswer: 'Redirige salida y errores al mismo archivo'
+  },
+  {
+    question: '¿Qué hace el comando chmod g-w archivo.txt?',
+    options: [
+      'Elimina el permiso de lectura del grupo',
+      'Da permiso de escritura al grupo',
+      'Elimina el permiso de escritura del grupo',
+      'Elimina el permiso de escritura para todos'
+    ],
+    correctAnswer: 'Elimina el permiso de escritura del grupo'
+  },
+  {
+    question: '¿Qué hace el comando comando 2> errores.txt?',
+    options: [
+      'Redirige todo al archivo errores.txt',
+      'Redirige la salida estándar al archivo errores.txt',
+      'Elimina el archivo errores.txt',
+      'Redirige los errores al archivo errores.txt'
+    ],
+    correctAnswer: 'Redirige los errores al archivo errores.txt'
+  },
+  {
+    question: '¿Qué hace el comando mkdir?',
+    options: [
+      'Cambia permisos',
+      'Mueve un archivo',
+      'Borra un archivo',
+      'Crea un directorio'
+    ],
+    correctAnswer: 'Crea un directorio'
+  },
+  {
+    question: '¿Qué hace el comando ps?',
+    options: [
+      'Lista directorios',
+      'Cambia los permisos de un archivo',
+      'Elimina procesos',
+      'Muestra los procesos en ejecución'
+    ],
+    correctAnswer: 'Muestra los procesos en ejecución'
+  },
+  {
+    question: '¿Qué hace el símbolo <?',
+    options: [
+      'Redirige la salida al terminal',
+      'Redirige la entrada estándar desde un archivo',
+      'Redirige los errores al terminal',
+      'Añade líneas al archivo'
+    ],
+    correctAnswer: 'Redirige la entrada estándar desde un archivo'
+  },
+  {
+    question: '¿Qué hace el símbolo > en un comando de Linux?',
+    options: [
+      'Redirige la entrada desde un archivo',
+      'Redirige la salida estándar a un archivo (sobrescribiendo)',
+      'Redirige errores al archivo',
+      'Compara archivos'
+    ],
+    correctAnswer: 'Redirige la salida estándar a un archivo (sobrescribiendo)'
+  },
+  {
+    question: '¿Qué hace el símbolo >>?',
+    options: [
+      'Borra un archivo antes de escribir',
+      'Redirige la entrada',
+      'Crea un nuevo archivo',
+      'Redirige la salida estándar y añade (no sobrescribe) al archivo'
+    ],
+    correctAnswer: 'Redirige la salida estándar y añade (no sobrescribe) al archivo'
+  },
+  {
+    question: '¿Qué hace ls -la que no hace ls -l?',
+    options: [
+      'Ordena por fecha',
+      'Ordena por tamaño',
+      'Muestra permisos octales',
+      'Muestra archivos ocultos'
+    ],
+    correctAnswer: 'Muestra archivos ocultos'
+  },
+  {
+    question: '¿Qué hace man chmod?',
+    options: [
+      'Cambia la contraseña del usuario',
+      'Ejecuta el comando chmod',
+      'Muestra la ayuda del comando chmod',
+      'Elimina chmod'
+    ],
+    correctAnswer: 'Muestra la ayuda del comando chmod'
+  },
+  {
+    question: '¿Qué hace mv archivo.txt /home/usuario/?',
+    options: [
+      'Mueve el archivo a la ruta dada',
+      'Crea un nuevo archivo',
+      'Cambia los permisos',
+      'Muestra el archivo'
+    ],
+    correctAnswer: 'Mueve el archivo a la ruta dada'
+  },
+  {
+    question: '¿Qué indica el número 2 en 2> archivo.txt?',
+    options: [
+      'La salida estándar',
+      'El identificador del proceso',
+      'El número de líneas',
+      'El canal de error estándar (stderr)'
+    ],
+    correctAnswer: 'El canal de error estándar (stderr)'
+  },
+  {
+    question: '¿Qué indica un archivo que empieza por .?',
+    options: [
+      'Archivo de sistema',
+      'Archivo temporal',
+      'Archivo oculto',
+      'Archivo ejecutable'
+    ],
+    correctAnswer: 'Archivo oculto'
+  },
+  {
+    question: '¿Qué indica una d al inicio de los permisos en ls -l?',
+    options: [
+      'Un archivo ejecutable',
+      'Un archivo de dispositivo',
+      'Un directorio',
+      'Un enlace simbólico'
+    ],
+    correctAnswer: 'Un directorio'
+  },
+  {
+    question: '¿Qué información guarda /etc/passwd?',
+    options: [
+      'Lista de permisos de archivos',
+      'Claves encriptadas',
+      'Historial de comandos',
+      'Usuarios, UID, GID y shell'
+    ],
+    correctAnswer: 'Usuarios, UID, GID y shell'
+  },
+  {
+    question: '¿Qué significa el operador | (pipe) en Linux?',
+    options: [
+      'Redirige errores al mismo lugar',
+      'Envía la salida de un comando como entrada de otro',
+      'Redirige la salida al mismo archivo',
+      'Copia archivos de un directorio a otro'
+    ],
+    correctAnswer: 'Envía la salida de un comando como entrada de otro'
+  },
+  {
+    question: '¿Qué significa el punto (.) en rutas relativas?',
+    options: [
+      'Directorio actual',
+      'Directorio raíz',
+      'Directorio home',
+      'Directorio padre'
+    ],
+    correctAnswer: 'Directorio actual'
+  },
+  {
+    question: '¿Qué significa r--r--r--?',
+    options: [
+      'Todos pueden leer, nadie puede escribir ni ejecutar',
+      'Todos pueden leer y escribir',
+      'Nadie puede leer',
+      'Solo el propietario puede escribir'
+    ],
+    correctAnswer: 'Todos pueden leer, nadie puede escribir ni ejecutar'
+  },
+  {
+    question: '¿Qué significa rwxr-xr--?',
+    options: [
+      'Nadie puede leer ni escribir',
+      'Todos pueden escribir',
+      'El propietario tiene todos los permisos, el grupo puede leer y ejecutar, los demás solo leer',
+      'Solo el grupo puede ejecutar'
+    ],
+    correctAnswer: 'El propietario tiene todos los permisos, el grupo puede leer y ejecutar, los demás solo leer'
+  },
+  {
+    question: '¿Quién creó el núcleo de Linux?',
+    options: [
+      'Steve Jobs',
+      'Richard Stallman',
+      'Linus Torvalds',
+      'Dennis Ritchie'
+    ],
+    correctAnswer: 'Linus Torvalds'
   }
   
-  
-  
-  
 
-  
-    
-  
-  
-    
-  
-  
-  
-    
-  
   
 ];

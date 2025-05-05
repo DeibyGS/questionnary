@@ -32,7 +32,7 @@ export default [
       eqeqeq: ["warn", "always"],
       curly: ["warn", "all"],
       semi: ["warn", "always"],
-      quotes: ["warn", "single"],
+      quotes: ["error", "single", { avoidEscape: true }],
       indent: ["warn", 2],
       "brace-style": ["warn", "1tbs"],
       "no-undef": ["warn", { typeof: true }],

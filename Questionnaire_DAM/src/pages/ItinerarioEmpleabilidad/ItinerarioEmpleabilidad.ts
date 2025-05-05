@@ -535,7 +535,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'Al menos 3',
       'Al menos 5'
     ],
-    'correctAnswer': 'Al menos 4'
+    'correctAnswer': 'Al menos 3'
   },
   {
     'question': 'Aplicando la matriz de riesgos has llegado a la conclusión de que una persona que corta jamón en una empresa de despiece de carne se encuentra ante un riesgo intolerable. ¿Qué actuaciones deberá llevar a cabo?',
@@ -686,7 +686,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'La voluntariedad del trabajador',
       'La pertenencia del trabajador a un sindicato'
     ],
-    'correctAnswer': 'La existencia de un contrato escrito'
+    'correctAnswer': 'La voluntariedad del trabajador'
   },
   {
     'question': 'Además de la voluntariedad, otro elemento esencial de una relación laboral es:',
@@ -766,7 +766,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'La de un directivo de alta dirección',
       'La de un médico de cabecera en un hospital público'
     ],
-    'correctAnswer': 'La de un médico de cabecera en un hospital público'
+    'correctAnswer': 'La de un directivo de alta dirección'
   },
   {
     'question': 'La jerarquía normativa en el ordenamiento jurídico español se basa en:',
@@ -906,7 +906,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'Solo extranjeros residentes.',
       'Mayores de 18 años emancipados.'
     ],
-    'correctAnswer': 'Mayores de 18 años emancipados.'
+    'correctAnswer': 'Personas mayores de 16 años con permiso.'
   },
   {
     'question': 'Leopoldo ha conseguido la nacionalidad española, por lo que decide dejar su puesto de trabajo actual en una empresa que lo tenía contratado sin papeles y con condiciones mucho peores a las que indica el contrato de trabajo. Su jefe actual le avisa que, de no renovar el actual contrato, tendrá que dar aviso a las autoridades de la situación ilegal de la mujer de Leopoldo. Este decide firmar el contrato. ¿Sería dicho contrato válido?',
@@ -916,7 +916,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'No, ya que carece de consentimiento.',
       'Sí, ya que Leopoldo venía prestando servicios en la empresa referida.'
     ],
-    'correctAnswer': 'Sí, ya que Leopoldo venía prestando servicios en la empresa referida.'
+    'correctAnswer': 'No, ya que le faltaría una causa válida.'
   },
   {
     'question': '¿Qué tipo de contrato puede celebrarse verbalmente?',
@@ -926,7 +926,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'Contrato formativo.',
       'Ninguno.'
     ],
-    'correctAnswer': 'Ninguno.'
+    'correctAnswer': 'Contrato indefinido ordinario a jornada completa.'
   },
   {
     'question': 'Clara es hija de un bibliotecario. Ha conseguido un trabajo temporal para cubrir una baja de maternidad, por una duración de 16 semanas. Su jefe, que es un poco descuidado no ha formalizado con ella el contrato por escrito. ¿Qué naturaleza tendría dicho contrato?',
@@ -1096,7 +1096,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'La misma duración que tiene la jubilación anticipada.',
       'Un año desde que se formalice el contrato de relevo.'
     ],
-    'correctAnswer': 'La misma duración que tiene la jubilación anticipada.'
+    'correctAnswer': 'Dos años después de formalizarse la jubilación total.'
   },
   
   {
@@ -1157,7 +1157,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'Doce horas.',
       'Quince horas.'
     ],
-    'correctAnswer': 'Ocho horas.'
+    'correctAnswer': 'Doce horas.'
   },
   {
     'question': 'Carlos es profesor, autónomo y, aunque sabe que no lo va a respetar, se propone tener los mismos días libres entre semana que un trabajador normal. ¿Cuál es el descanso semanal mínimo que establece el Estatuto de los trabajadores?',
@@ -1167,7 +1167,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       'Medio día.',
       'Día y medio.'
     ],
-    'correctAnswer': 'Un día.'
+    'correctAnswer': 'Día y medio.'
   },
   {
     'question': 'Lola es insomne. Prefiere trabajar por las noches. ¿Qué se considera trabajo nocturno?',
@@ -1247,7 +1247,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       '3 años',
       '4 años'
     ],
-    'correctAnswer': '3 años.'
+    'correctAnswer': '3 años'
   },
   {
     'question': '¿Cuánto puede reducirse la jornada por guarda legal?',
@@ -1287,7 +1287,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       '80',
       '90'
     ],
-    'correctAnswer': '80.'
+    'correctAnswer': '80'
   },
   {
     'question': '¿Cuántas horas extraordinarias para atender eventos de fuerza mayor se pueden trabajar en un año?',
@@ -1377,7 +1377,7 @@ export const questionsItinerarioEmpleabilidad: Question[] = [
       '1 año',
       'No tiene un tiempo mínimo'
     ],
-    'correctAnswer': '4 meses'
+    'correctAnswer': 'No tiene un tiempo mínimo'
   },
   {
     'question': '¿En qué tipo de excedencia el trabajador tiene reserva de su puesto de trabajo?',

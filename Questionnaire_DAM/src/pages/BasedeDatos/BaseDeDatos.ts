@@ -1333,6 +1333,556 @@ export const questionsBaseDeDatos: Question[] = [
       'AFTER GROUP'
     ],
     'correctAnswer': 'HAVING'
+  },
+  {
+    question: '¿Qué sección del archivo my.ini define las opciones del cliente de MySQL?',
+    options: [
+      '[mysql]',
+      '[client]',
+      '[mysqld]',
+      '[server]'
+    ],
+    correctAnswer: '[client]'
+  },
+  {
+    question: '¿Qué opción en my.ini define el puerto en el que escucha el servidor?',
+    options: [
+      'basedir',
+      'server-port',
+      'bind-address',
+      'port'
+    ],
+    correctAnswer: 'port'
+  },
+  {
+    question: '¿Dónde suele estar el archivo my.ini en Windows si se instaló MySQL con el instalador oficial?',
+    options: [
+      'C:\\ProgramData\\MySQL',
+      'C:\\AppData\\MySQL',
+      'C:\\Program Files\\MySQL',
+      'C:\\MySQL'
+    ],
+    correctAnswer: 'C:\\ProgramData\\MySQL'
+  },
+  {
+    question: '¿Qué significa bind-address = 0.0.0.0?',
+    options: [
+      'El servidor escucha solo conexiones SSL.',
+      'El servidor está bloqueado.',
+      'El servidor solo escucha en localhost.',
+      'El servidor escucha en cualquier IP.'
+    ],
+    correctAnswer: 'El servidor escucha en cualquier IP.'
+  },
+  {
+    question: '¿Qué opción define el límite máximo de conexiones simultáneas?',
+    options: [
+      'table_open_cache',
+      'max_connections',
+      'open_files_limit',
+      'thread_cache_size'
+    ],
+    correctAnswer: 'max_connections'
+  },
+  {
+    question: '¿Qué define lower_case_table_names=1 en Windows?',
+    options: [
+      'Las consultas deben usar exactamente el mismo nombre.',
+      'Solo permite minúsculas en nombres de columnas.',
+      'Tablas con nombres obligatoriamente en mayúsculas.',
+      'No se diferencian mayúsculas y minúsculas.'
+    ],
+    correctAnswer: 'Las consultas deben usar exactamente el mismo nombre.'
+  },
+  {
+    question: '¿Qué opción impide insertar fechas inválidas como "0000-00-00"?',
+    options: [
+      'ONLY_FULL_GROUP_BY',
+      'NO_ZERO_IN_DATE',
+      'MAX_DATE_CHECK',
+      'STRICT_MODE'
+    ],
+    correctAnswer: 'NO_ZERO_IN_DATE'
+  },
+  {
+    question: '¿Qué comando permite ver todos los usuarios en MySQL?',
+    options: [
+      'SHOW DATABASES;',
+      'SELECT user FROM mysql.user;',
+      'SELECT * FROM users;',
+      'SHOW USERS;'
+    ],
+    correctAnswer: 'SELECT user FROM mysql.user;'
+  },
+  {
+    question: '¿Qué comando crea un usuario en MySQL?',
+    options: [
+      "ADD USER 'nombre';",
+      "NEW USER 'nombre';",
+      "CREATE USER 'nombre'@'localhost' IDENTIFIED BY 'contraseña';",
+      "GRANT USER 'nombre';"
+    ],
+    correctAnswer: "CREATE USER 'nombre'@'localhost' IDENTIFIED BY 'contraseña';"
+  },
+  {
+    question: '¿Qué comando otorga privilegios a un usuario?',
+    options: [
+      "ACCESS GRANT TO 'usuario';",
+      "GRANT SELECT, INSERT ON basedatos.* TO 'usuario'@'localhost';",
+      "PERMIT ALL TO 'usuario';",
+      "ALLOW PRIVILEGES 'usuario';"
+    ],
+    correctAnswer: "GRANT SELECT, INSERT ON basedatos.* TO 'usuario'@'localhost';"
+  },
+  {
+    question: '¿Qué comando elimina un privilegio otorgado a un usuario?',
+    options: [
+      "REVOKE INSERT ON basedatos.* FROM 'usuario'@'localhost';",
+      "DENY SELECT ON basedatos.* TO 'usuario';",
+      "DISABLE ACCESS 'usuario';",
+      "REMOVE PRIVILEGE 'usuario';"
+    ],
+    correctAnswer: "REVOKE INSERT ON basedatos.* FROM 'usuario'@'localhost';"
+  },
+  {
+    question: '¿Qué comando muestra los privilegios actuales de un usuario?',
+    options: [
+      "SHOW GRANTS FOR 'usuario'@'localhost';",
+      "DESCRIBE GRANTS 'usuario';",
+      'SHOW PRIVILEGES;',
+      'SELECT * FROM privileges;'
+    ],
+    correctAnswer: "SHOW GRANTS FOR 'usuario'@'localhost';"
+  },
+  {
+    question: '¿Qué hace OPTIMIZE TABLE en MySQL?',
+    options: [
+      'Elimina los datos antiguos.',
+      'Analiza el rendimiento de la tabla.',
+      'Cierra la tabla de inmediato.',
+      'Compacta y reorganiza los datos para ahorrar espacio.'
+    ],
+    correctAnswer: 'Compacta y reorganiza los datos para ahorrar espacio.'
+  },
+  {
+    question: '¿Qué hace ANALYZE TABLE?',
+    options: [
+      'Borra registros duplicados.',
+      'Copia la tabla a otro esquema.',
+      'Actualiza las estadísticas de índices para optimizar el planificador de consultas.',
+      'Cierra todas las conexiones abiertas.'
+    ],
+    correctAnswer: 'Actualiza las estadísticas de índices para optimizar el planificador de consultas.'
+  },
+  {
+    question: '¿Qué archivo almacena los errores de MySQL?',
+    options: [
+      'log-bin',
+      'general_log_file',
+      'log-error',
+      'slow_query_log_file'
+    ],
+    correctAnswer: 'log-error'
+  },
+  {
+    'question': '¿Cuál de los siguientes tipos de copia de seguridad guarda todos los datos seleccionados sin depender de copias anteriores?',
+    'options': [
+      'Copia completa',
+      'Copia de logs',
+      'Copia incremental',
+      'Copia diferencial'
+    ],
+    'correctAnswer': 'Copia completa'
+  },
+  {
+    'question': '¿Cuál es el efecto de usar LIMIT 5 en una consulta SQL?',
+    'options': [
+      'Devuelve del 11º al 15º resultado',
+      'Devuelve los primeros 5 resultados',
+      'Muestra los resultados hasta el décimo',
+      'Devuelve 10 resultados desde el quinto'
+    ],
+    'correctAnswer': 'Devuelve los primeros 5 resultados'
+  },
+  {
+    'question': '¿Cuál es la clave principal de una tabla resultado de una relación N:M?',
+    'options': [
+      'La combinación de las claves primarias de ambas entidades',
+      'La clave foránea de una de las entidades',
+      'La clave primaria de la entidad fuerte',
+      'Un campo autoincremental'
+    ],
+    'correctAnswer': 'La combinación de las claves primarias de ambas entidades'
+  },
+  {
+    'question': '¿Qué cláusula permite ordenar los resultados de una consulta SQL por varias columnas?',
+    'options': [
+      'SORT BY',
+      'GROUP BY',
+      'ARRANGE BY',
+      'ORDER BY columna1, columna2'
+    ],
+    'correctAnswer': 'ORDER BY columna1, columna2'
+  },
+  {
+    'question': '¿Qué devuelve esta consulta? SELECT Cliente.Nombre FROM Cliente WHERE idCliente NOT IN (SELECT idCliente FROM Orden);',
+    'options': [
+      'Clientes sin pedidos',
+      'Clientes con pedidos pendientes',
+      'Clientes que han hecho más de un pedido',
+      'Clientes que cancelaron sus pedidos'
+    ],
+    'correctAnswer': 'Clientes sin pedidos'
+  },
+  {
+    'question': '¿Qué devuelve esta consulta? SELECT Plato.Nombre, COUNT(*) FROM DetalleOrden JOIN Plato ON DetalleOrden.idPlato = Plato.idPlato GROUP BY Plato.Nombre;',
+    'options': [
+      'El número de veces que se ha pedido cada plato',
+      'El número de ingredientes por plato',
+      'Los platos ordenados por precio',
+      'La cantidad total vendida por plato'
+    ],
+    'correctAnswer': 'El número de veces que se ha pedido cada plato'
+  },
+  {
+    'question': "¿Qué devuelve esta subconsulta? SELECT NOMCE FROM TCENTR WHERE NUMCE IN (SELECT NUMCE FROM TDEPTO WHERE NUMDE IN (SELECT NUMDE FROM TEMPLE WHERE CARGO = 'Jefe'));",
+    'options': [
+      'Centros sin jefes',
+      'Centros con salario promedio alto',
+      'Centros con más de un departamento',
+      'Centros donde trabaja al menos un jefe'
+    ],
+    'correctAnswer': 'Centros donde trabaja al menos un jefe'
+  },
+  {
+    'question': '¿Qué efecto tiene ON DELETE SET NULL al definir una clave foránea?',
+    'options': [
+      'Elimina los registros relacionados',
+      'Bloquea la operación de eliminación',
+      'No permite claves foráneas vacías',
+      'Establece los valores foráneos como NULL'
+    ],
+    'correctAnswer': 'Establece los valores foráneos como NULL'
+  },
+  {
+    'question': '¿Qué estrategia de implementación permite representar una jerarquía con generalización en una sola tabla en SQL?',
+    'options': [
+      'Tabla puente',
+      'Tabla por subentidad',
+      'Tabla única con columna discriminadora',
+      'Tabla por superentidad'
+    ],
+    'correctAnswer': 'Tabla única con columna discriminadora'
+  },
+  {
+    'question': '¿Qué función SQL devuelve la cantidad de registros en una tabla?',
+    'options': [
+      'NUMBER()',
+      'TOTAL()',
+      'COUNT()',
+      'SUM()'
+    ],
+    'correctAnswer': 'COUNT()'
+  },
+  {
+    'question': '¿Qué hace esta consulta? SELECT TURNO.Turno, MAX(TURNO.NumOrden) FROM TURNO GROUP BY TURNO.Turno;',
+    'options': [
+      'Muestra el número de órdenes por turno',
+      'Muestra la última orden registrada por turno',
+      'Cuenta todos los turnos disponibles',
+      'Muestra el nombre de los empleados por turno'
+    ],
+    'correctAnswer': 'Muestra la última orden registrada por turno'
+  },
+  {
+    'question': '¿Qué hace esta consulta? SELECT NOMEM FROM TEMPLE WHERE SALAR < (SELECT AVG(SALAR) FROM TEMPLE);',
+    'options': [
+      'Empleados con salario exacto al promedio',
+      'Empleados sin salario definido',
+      'Empleados con salario mayor al promedio',
+      'Empleados con salario inferior al promedio'
+    ],
+    'correctAnswer': 'Empleados con salario inferior al promedio'
+  },
+  {
+    'question': '¿Qué hace esta consulta? SELECT * FROM Orden ORDER BY Fecha ASC LIMIT 1;',
+    'options': [
+      'Orden con cliente prioritario',
+      'Orden con mayor total',
+      'Orden más antigua',
+      'Orden más reciente'
+    ],
+    'correctAnswer': 'Orden más antigua'
+  },
+  {
+    'question': '¿Qué instrucción se utiliza para eliminar permanentemente una tabla y su definición en SQL?',
+    'options': [
+      'CLEAR TABLE',
+      'DROP TABLE',
+      'DELETE FROM tabla',
+      'REMOVE RECORDS'
+    ],
+    'correctAnswer': 'DROP TABLE'
+  },
+  {
+    'question': '¿Qué muestra esta consulta? SELECT Empresa.Nombre FROM Empresa JOIN Cliente ON Empresa.idCliente = Cliente.idCliente;',
+    'options': [
+      'Empresas que tienen asociado un cliente',
+      'Nombres duplicados de empresas',
+      'Empresas sin clientes',
+      'Clientes con múltiples empresas'
+    ],
+    'correctAnswer': 'Empresas que tienen asociado un cliente'
+  },
+  {
+    'question': '¿Qué obtiene esta consulta? SELECT Cliente.Nombre FROM Cliente LEFT JOIN Orden ON Cliente.idCliente = Orden.idCliente WHERE Orden.idCliente IS NULL;',
+    'options': [
+      'Clientes con órdenes canceladas',
+      'Clientes con facturación superior a la media',
+      'Clientes que no han realizado ninguna orden',
+      'Clientes que han realizado más de una orden'
+    ],
+    'correctAnswer': 'Clientes que no han realizado ninguna orden'
+  },
+  {
+    'question': "¿Qué obtiene la consulta? SELECT Nombre FROM Mesero WHERE FechaIncorporacion < '2020-01-01';",
+    'options': [
+      'Meseros incorporados antes de 2020',
+      'Meseros con contrato temporal',
+      'Meseros sin órdenes asignadas',
+      'Meseros que han atendido más de 10 órdenes'
+    ],
+    'correctAnswer': 'Meseros incorporados antes de 2020'
+  },
+  {
+    'question': '¿Qué ocurre al transformar una relación débil a tabla?',
+    'options': [
+      'Se ignora porque no puede tener independencia',
+      'Hereda la clave primaria de la relación fuerte',
+      'Se convierte en un atributo derivado',
+      'Su clave se convierte en clave foránea'
+    ],
+    'correctAnswer': 'Hereda la clave primaria de la relación fuerte'
+  },
+  {
+    'question': '¿Qué ocurre si se ejecuta un DELETE sin cláusula WHERE en una tabla con miles de registros?',
+    'options': [
+      'Aparece un error de sintaxis',
+      'No ocurre nada',
+      'Se borra solo el primer registro',
+      'Se eliminan todos los registros de la tabla'
+    ],
+    'correctAnswer': 'Se eliminan todos los registros de la tabla'
+  },
+  {
+    'question': '¿Qué operador lógico se utiliza en SQL para verificar si un valor no está dentro de un conjunto?',
+    'options': [
+      'NOT BETWEEN',
+      'IS NULL',
+      'EXCEPT',
+      'NOT IN'
+    ],
+    'correctAnswer': 'NOT IN'
+  },
+  {
+    'question': '¿Qué operador se usa en SQL para buscar coincidencias parciales en texto?',
+    'options': [
+      'EQUALS',
+      'FIND',
+      'MATCH',
+      'LIKE'
+    ],
+    'correctAnswer': 'LIKE'
+  },
+  {
+    'question': '¿Qué palabra clave en SQL se utiliza para asegurar que los valores de una columna sean únicos?',
+    'options': [
+      'NOT NULL',
+      'UNIQUE',
+      'DISTINCT',
+      'PRIMARY'
+    ],
+    'correctAnswer': 'UNIQUE'
+  },
+  {
+    'question': '¿Qué representa la siguiente situación en un diagrama ER: una entidad EMPLEADO vinculada a sí misma mediante una relación LLAMA?',
+    'options': [
+      'Entidad débil',
+      'Relación jerárquica',
+      'Relación reflexiva',
+      'Atributo compuesto'
+    ],
+    'correctAnswer': 'Relación reflexiva'
+  },
+  {
+    'question': '¿Qué representa un atributo subrayado en un modelo ER?',
+    'options': [
+      'Es un atributo compuesto',
+      'Es un atributo redundante',
+      'Es un atributo clave (clave primaria)',
+      'Es un atributo multivaluado'
+    ],
+    'correctAnswer': 'Es un atributo clave (clave primaria)'
+  },
+  {
+    'question': '¿Qué representa un rombo en un diagrama entidad-relación?',
+    'options': [
+      'Un atributo multivaluado',
+      'Una relación entre entidades',
+      'Una clave primaria',
+      'Una tabla de base de datos'
+    ],
+    'correctAnswer': 'Una relación entre entidades'
+  },
+  {
+    'question': "¿Qué resultado da esta consulta? SELECT COUNT(*) FROM Orden WHERE Fecha BETWEEN '2024-01-01' AND '2024-01-31';",
+    'options': [
+      'Total de productos vendidos',
+      'Número de clientes en enero',
+      'Número total de órdenes en enero',
+      'Total facturado en enero'
+    ],
+    'correctAnswer': 'Número total de órdenes en enero'
+  },
+  {
+    'question': '¿Qué sentencia elimina completamente una tabla y todos sus datos en MySQL?',
+    'options': [
+      'DROP TABLE nombre;',
+      'REMOVE TABLE nombre;',
+      'CLEAR TABLE nombre;',
+      'DELETE TABLE nombre;'
+    ],
+    'correctAnswer': 'DROP TABLE nombre;'
+  },
+  {
+    'question': '¿Qué sentencia se utiliza para cambiar el nombre de una tabla en MySQL?',
+    'options': [
+      'ALTER TABLE nombre RENAME TO nuevo_nombre',
+      'CHANGE TABLE nombre',
+      'MODIFY TABLE nombre',
+      'RENAME TABLE nombre AS nuevo_nombre'
+    ],
+    'correctAnswer': 'ALTER TABLE nombre RENAME TO nuevo_nombre'
+  },
+  {
+    'question': '¿Qué sentencia SQL se utiliza para agregar una nueva columna a una tabla existente?',
+    'options': [
+      'INSERT COLUMN',
+      'UPDATE COLUMN',
+      'ALTER TABLE ... ADD COLUMN',
+      'MODIFY TABLE'
+    ],
+    'correctAnswer': 'ALTER TABLE ... ADD COLUMN'
+  },
+  {
+    'question': '¿Qué significa que una relación tenga una cardinalidad 1:N entre dos entidades?',
+    'options': [
+      'Ambas entidades deben coincidir en valores',
+      'Cada entidad puede tener solo un valor',
+      'Hay una correspondencia muchos a muchos',
+      'Una entidad del lado 1 se relaciona con varias del lado N'
+    ],
+    'correctAnswer': 'Una entidad del lado 1 se relaciona con varias del lado N'
+  },
+  {
+    'question': '¿Qué sucede con los atributos de una relación si esta es eliminada del modelo relacional?',
+    'options': [
+      'Se transforman en atributos de una entidad',
+      'Se pierden, ya que solo pertenecen a la relación',
+      'Se agrupan como metadatos',
+      'Se convierten en claves foráneas'
+    ],
+    'correctAnswer': 'Se pierden, ya que solo pertenecen a la relación'
+  },
+  {
+    'question': '¿Qué tipo de atributo en un modelo ER puede descomponerse en subatributos más simples?',
+    'options': [
+      'Atributo compuesto',
+      'Atributo derivado',
+      'Atributo multivaluado',
+      'Atributo clave'
+    ],
+    'correctAnswer': 'Atributo compuesto'
+  },
+  {
+    'question': '¿Qué tipo de atributo requiere su propia tabla si un solo registro puede tener varios valores para ese atributo?',
+    'options': [
+      'Atributo compuesto',
+      'Atributo derivado',
+      'Atributo multivaluado',
+      'Atributo redundante'
+    ],
+    'correctAnswer': 'Atributo multivaluado'
+  },
+  {
+    'question': '¿Qué tipo de copia de seguridad es más rápida de ejecutar pero requiere siempre la última copia completa para poder restaurar?',
+    'options': [
+      'Copia diferencial',
+      'Copia lógica',
+      'Copia incremental',
+      'Copia manual'
+    ],
+    'correctAnswer': 'Copia incremental'
+  },
+  {
+    'question': '¿Qué tipo de copia se ejecuta después de una copia completa y registra los cambios desde esa copia completa, sin considerar incrementales anteriores?',
+    'options': [
+      'Copia de respaldo lógico',
+      'Copia diferencial',
+      'Copia automática',
+      'Copia de logs'
+    ],
+    'correctAnswer': 'Copia diferencial'
+  },
+  {
+    'question': '¿Qué tipo de JOIN devuelve todas las filas de la tabla izquierda y las coincidentes de la derecha o NULL si no hay coincidencia?',
+    'options': [
+      'INNER JOIN',
+      'RIGHT JOIN',
+      'FULL OUTER JOIN',
+      'LEFT JOIN'
+    ],
+    'correctAnswer': 'LEFT JOIN'
+  },
+  {
+    'question': '¿Qué tipo de relación existe cuando una entidad se relaciona con otra y ambas representan el mismo conjunto de elementos?',
+    'options': [
+      'Relación reflexiva',
+      'Asociación débil',
+      'Generalización',
+      'Agregación'
+    ],
+    'correctAnswer': 'Relación reflexiva'
+  },
+  {
+    'question': '¿Qué ventaja tiene una copia completa frente a una copia incremental?',
+    'options': [
+      'Consume menos espacio',
+      'Es más simple de restaurar',
+      'Es más rápida',
+      'No necesita programación previa'
+    ],
+    'correctAnswer': 'Es más simple de restaurar'
+  },
+  {
+    'question': 'En un diagrama ER, se modela una entidad general llamada "Vehículo" con las subentidades "Coche" y "Moto". ¿Qué tipo de relación representa esta estructura?',
+    'options': [
+      'Relación reflexiva',
+      'Agregación',
+      'Generalización/especialización',
+      'Asociación débil'
+    ],
+    'correctAnswer': 'Generalización/especialización'
+  },
+  {
+    'question': 'En un diagrama ER, un atributo que depende de otros atributos se denomina:',
+    'options': [
+      'Atributo multivaluado',
+      'Atributo derivado',
+      'Atributo independiente',
+      'Atributo compuesto'
+    ],
+    'correctAnswer': 'Atributo derivado'
   }
     
 ];

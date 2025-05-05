@@ -180,7 +180,7 @@ const renderCards = (): void => {
         // Segun el mode que tenga el btn, renderizare la cantidad de preguntas
         const questionsToUse = selectedMode === 'Quizz Completo'
           ? allQuestions
-          : allQuestions.slice(0, 20); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SPRINT RAPIDO 
+          : allQuestions.slice(0, 40); //  ACA COLOCAR LA CANTIDAD DE PREGUNTAS QUE QUIERES QUE SE RENDERICEN CUANDO SE LE DE CLICK AL BTN SPRINT RAPIDO 
   
         renderQuestions(questionsToUse, selectedMode,titleQuestionnarie);
       
