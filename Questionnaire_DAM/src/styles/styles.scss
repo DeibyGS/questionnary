@@ -326,6 +326,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: $gap-medium;
+  
 
 }
 
@@ -537,6 +538,19 @@ footer {
         
       }
   }
+.containerBtn{
+  &__btnBack, &__btnEnd,&__btnPrev,&__btnNext{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  &__counter{
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+
+  }
+}
+
 
   
 }
