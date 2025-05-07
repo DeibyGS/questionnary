@@ -489,6 +489,12 @@ footer {
     padding: 12px 34px;
     display: inline-flex; 
     align-items: center;
+    font-size: 0.7rem;
+    
+    span{
+      font-size: 14px;
+    }
+
   }
   .result {
     width: 100%;  
