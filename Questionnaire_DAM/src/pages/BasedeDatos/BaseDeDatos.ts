@@ -484,855 +484,855 @@ export const questionsBaseDeDatos: Question[] = [
     correctAnswer: 'SELECT empleados.nombre FROM empleados LEFT JOIN asignaciones ON empleados.id_empleado = asignaciones.id_empleado WHERE asignaciones.id_empleado IS NULL;'
   },
   {
-    'question': '¿Qué es una consulta de selección en SQL?',
-    'options': [
+    question: '¿Qué es una consulta de selección en SQL?',
+    options: [
       'Una instrucción que elimina datos de una tabla',
       'Una instrucción que extrae datos de una o más tablas y los presenta en forma de resultados tabulares',
       'Un comando para crear nuevas tablas en la base de datos',
       'Una operación para modificar la estructura de una tabla'
     ],
-    'correctAnswer': 'Una instrucción que extrae datos de una o más tablas y los presenta en forma de resultados tabulares'
+    correctAnswer: 'Una instrucción que extrae datos de una o más tablas y los presenta en forma de resultados tabulares'
   },
   {
-    'question': '¿Cuál es la función principal de la cláusula WHERE en SQL?',
-    'options': [
+    question: '¿Cuál es la función principal de la cláusula WHERE en SQL?',
+    options: [
       'Ordenar los resultados alfabéticamente',
       'Filtrar filas según condiciones específicas antes de recuperar los datos',
       'Agrupar datos para cálculos agregados',
       'Limitar el número de filas devueltas'
     ],
-    'correctAnswer': 'Filtrar filas según condiciones específicas antes de recuperar los datos'
+    correctAnswer: 'Filtrar filas según condiciones específicas antes de recuperar los datos'
   },
   {
-    'question': '¿Qué operador se utiliza en SQL para agrupar registros?',
-    'options': [
+    question: '¿Qué operador se utiliza en SQL para agrupar registros?',
+    options: [
       'ORDER BY',
       'GROUP BY',
       'HAVING',
       'LIMIT'
     ],
-    'correctAnswer': 'GROUP BY'
+    correctAnswer: 'GROUP BY'
   },
   {
-    'question': '¿Cuál es la diferencia entre INNER JOIN y LEFT JOIN?',
-    'options': [
+    question: '¿Cuál es la diferencia entre INNER JOIN y LEFT JOIN?',
+    options: [
       'INNER JOIN devuelve solo filas coincidentes, mientras que LEFT JOIN incluye todas las filas de la tabla izquierda aunque no tengan coincidencias',
       'LEFT JOIN solo devuelve filas coincidentes, mientras que INNER JOIN incluye filas sin coincidencias',
       'Ambos son iguales pero con sintaxis diferente',
       'LEFT JOIN ordena los resultados, INNER JOIN no'
     ],
-    'correctAnswer': 'INNER JOIN devuelve solo filas coincidentes, mientras que LEFT JOIN incluye todas las filas de la tabla izquierda aunque no tengan coincidencias'
+    correctAnswer: 'INNER JOIN devuelve solo filas coincidentes, mientras que LEFT JOIN incluye todas las filas de la tabla izquierda aunque no tengan coincidencias'
   },
   {
-    'question': '¿Para qué se usa la cláusula HAVING en SQL?',
-    'options': [
+    question: '¿Para qué se usa la cláusula HAVING en SQL?',
+    options: [
       'Para filtrar filas antes de agruparlas',
       'Para filtrar resultados después de aplicar funciones de agregación con GROUP BY',
       'Para ordenar los resultados de manera descendente',
       'Para unir múltiples tablas'
     ],
-    'correctAnswer': 'Para filtrar resultados después de aplicar funciones de agregación con GROUP BY'
+    correctAnswer: 'Para filtrar resultados después de aplicar funciones de agregación con GROUP BY'
   },
   {
-    'question': '¿Qué hace el comando DISTINCT en una consulta SQL?',
-    'options': [
+    question: '¿Qué hace el comando DISTINCT en una consulta SQL?',
+    options: [
       'Elimina duplicados y devuelve solo valores únicos en los resultados',
       'Ordena los resultados alfabéticamente',
       'Filtra registros nulos',
       'Agrupa automáticamente los datos'
     ],
-    'correctAnswer': 'Elimina duplicados y devuelve solo valores únicos en los resultados'
+    correctAnswer: 'Elimina duplicados y devuelve solo valores únicos en los resultados'
   },
   {
-    'question': '¿Cuál es la sintaxis correcta para ordenar resultados de forma descendente?',
-    'options': [
+    question: '¿Cuál es la sintaxis correcta para ordenar resultados de forma descendente?',
+    options: [
       'ORDER BY columna ASC',
       'ORDER BY columna UP',
       'ORDER BY columna DESC',
       'ORDER BY columna DOWN'
     ],
-    'correctAnswer': 'ORDER BY columna DESC'
+    correctAnswer: 'ORDER BY columna DESC'
   },
   {
-    'question': '¿Qué función de agregación cuenta el número de filas en SQL?',
-    'options': [
+    question: '¿Qué función de agregación cuenta el número de filas en SQL?',
+    options: [
       'SUM()',
       'AVG()',
       'COUNT()',
       'MAX()'
     ],
-    'correctAnswer': 'COUNT()'
+    correctAnswer: 'COUNT()'
   },
   {
-    'question': '¿Qué tipo de JOIN devuelve todas las filas de ambas tablas, con NULL donde no hay coincidencias?',
-    'options': [
+    question: '¿Qué tipo de JOIN devuelve todas las filas de ambas tablas, con NULL donde no hay coincidencias?',
+    options: [
       'INNER JOIN',
       'LEFT JOIN',
       'RIGHT JOIN',
       'FULL JOIN'
     ],
-    'correctAnswer': 'FULL JOIN'
+    correctAnswer: 'FULL JOIN'
   },
   {
-    'question': '¿Qué operador se usa para buscar patrones en cadenas de texto?',
-    'options': [
+    question: '¿Qué operador se usa para buscar patrones en cadenas de texto?',
+    options: [
       'BETWEEN',
       'LIKE',
       'IN',
       '='
     ],
-    'correctAnswer': 'LIKE'
+    correctAnswer: 'LIKE'
   },
   {
-    'question': '¿Qué es la normalización en bases de datos?',
-    'options': [
+    question: '¿Qué es la normalización en bases de datos?',
+    options: [
       'Un proceso para eliminar redundancias y mejorar la integridad de los datos mediante reglas basadas en claves primarias y dependencias funcionales',
       'Una técnica para aumentar la velocidad de las consultas SQL',
       'Un método para crear copias de seguridad de la base de datos',
       'Una estrategia para diseñar interfaces de usuario'
     ],
-    'correctAnswer': 'Un proceso para eliminar redundancias y mejorar la integridad de los datos mediante reglas basadas en claves primarias y dependencias funcionales'
+    correctAnswer: 'Un proceso para eliminar redundancias y mejorar la integridad de los datos mediante reglas basadas en claves primarias y dependencias funcionales'
   },
   {
-    'question': '¿Cuál es el objetivo principal de la Primera Forma Normal (1FN)?',
-    'options': [
+    question: '¿Cuál es el objetivo principal de la Primera Forma Normal (1FN)?',
+    options: [
       'Garantizar que los atributos contengan valores atómicos y no grupos repetitivos',
       'Eliminar dependencias transitivas entre atributos no primos',
       'Asegurar que todos los atributos no primos dependan totalmente de la clave primaria',
       'Dividir una tabla en múltiples tablas relacionadas'
     ],
-    'correctAnswer': 'Garantizar que los atributos contengan valores atómicos y no grupos repetitivos'
+    correctAnswer: 'Garantizar que los atributos contengan valores atómicos y no grupos repetitivos'
   },
   {
-    'question': '¿Qué problema resuelve la Segunda Forma Normal (2FN)?',
-    'options': [
+    question: '¿Qué problema resuelve la Segunda Forma Normal (2FN)?',
+    options: [
       'Eliminar redundancias causadas por dependencias funcionales parciales de atributos no primos respecto a la clave primaria',
       'Evitar anomalías de inserción, borrado y modificación',
       'Garantizar que no existan dependencias transitivas entre atributos no primos',
       'Dividir tablas con atributos multivaluados'
     ],
-    'correctAnswer': 'Eliminar redundancias causadas por dependencias funcionales parciales de atributos no primos respecto a la clave primaria'
+    correctAnswer: 'Eliminar redundancias causadas por dependencias funcionales parciales de atributos no primos respecto a la clave primaria'
   },
   {
-    'question': '¿Cuál es una característica de la Tercera Forma Normal (3FN)?',
-    'options': [
+    question: '¿Cuál es una característica de la Tercera Forma Normal (3FN)?',
+    options: [
       'Los atributos no primos no deben tener dependencias transitivas con la clave primaria',
       'Los atributos deben ser atómicos y no repetitivos',
       'La clave primaria debe ser un único atributo',
       'Permite grupos repetidos si están normalizados'
     ],
-    'correctAnswer': 'Los atributos no primos no deben tener dependencias transitivas con la clave primaria'
+    correctAnswer: 'Los atributos no primos no deben tener dependencias transitivas con la clave primaria'
   },
   {
-    'question': '¿Qué es una dependencia funcional en el contexto de la normalización?',
-    'options': [
+    question: '¿Qué es una dependencia funcional en el contexto de la normalización?',
+    options: [
       'Una restricción donde un conjunto de atributos X determina únicamente otro conjunto Y (X → Y)',
       'Una relación muchos-a-muchos entre dos tablas',
       'Un atributo que puede tomar múltiples valores en una tupla',
       'Una clave foránea que referencia a una clave primaria'
     ],
-    'correctAnswer': 'Una restricción donde un conjunto de atributos X determina únicamente otro conjunto Y (X → Y)'
+    correctAnswer: 'Una restricción donde un conjunto de atributos X determina únicamente otro conjunto Y (X → Y)'
   },
   {
-    'question': '¿Qué anomalías evita la normalización?',
-    'options': [
+    question: '¿Qué anomalías evita la normalización?',
+    options: [
       'Redundancia de datos, inconsistencias y pérdida de información',
       'Lentitud en las consultas complejas',
       'Falta de índices en las tablas',
       'Uso excesivo de memoria en el servidor'
     ],
-    'correctAnswer': 'Redundancia de datos, inconsistencias y pérdida de información'
+    correctAnswer: 'Redundancia de datos, inconsistencias y pérdida de información'
   },
   {
-    'question': '¿Cuál es un ejemplo de violación de la 1FN?',
-    'options': [
+    question: '¿Cuál es un ejemplo de violación de la 1FN?',
+    options: [
       'Un atributo \'Teléfono\' que almacena múltiples números separados por comas',
       'Un atributo \'Edad\' que depende transitivamente de \'Fecha_Nacimiento\'',
       'Una clave primaria compuesta por dos atributos',
       'Un atributo \'Nombre\' que permite valores nulos'
     ],
-    'correctAnswer': 'Un atributo \'Teléfono\' que almacena múltiples números separados por comas'
+    correctAnswer: 'Un atributo \'Teléfono\' que almacena múltiples números separados por comas'
   },
   {
-    'question': '¿Qué indica una dependencia transitiva?',
-    'options': [
+    question: '¿Qué indica una dependencia transitiva?',
+    options: [
       'Que un atributo no primo depende de otro atributo no primo, el cual a su vez depende de la clave primaria (A → B → C)',
       'Que un atributo depende parcialmente de una clave primaria compuesta',
       'Que un atributo es multivaluado',
       'Que una tabla no tiene clave primaria definida'
     ],
-    'correctAnswer': 'Que un atributo no primo depende de otro atributo no primo, el cual a su vez depende de la clave primaria (A → B → C)'
+    correctAnswer: 'Que un atributo no primo depende de otro atributo no primo, el cual a su vez depende de la clave primaria (A → B → C)'
   },
   {
-    'question': '¿Por qué se recomienda llegar al menos a la 3FN?',
-    'options': [
+    question: '¿Por qué se recomienda llegar al menos a la 3FN?',
+    options: [
       'Para evitar anomalías de actualización y garantizar que los datos dependan solo de la clave primaria',
       'Para permitir el uso de atributos multivaluados',
       'Para mejorar el rendimiento de las consultas JOIN',
       'Para eliminar todas las redundancias en la base de datos'
     ],
-    'correctAnswer': 'Para evitar anomalías de actualización y garantizar que los datos dependan solo de la clave primaria'
+    correctAnswer: 'Para evitar anomalías de actualización y garantizar que los datos dependan solo de la clave primaria'
   },
   {
-    'question': '¿Qué es la desnormalización?',
-    'options': [
+    question: '¿Qué es la desnormalización?',
+    options: [
       'Reintroducir redundancias controladas para mejorar el rendimiento o facilitar consultas complejas',
       'Eliminar todas las formas normales para simplificar el esquema',
       'Convertir una base de datos relacional en NoSQL',
       'Ignorar las dependencias funcionales en el diseño'
     ],
-    'correctAnswer': 'Reintroducir redundancias controladas para mejorar el rendimiento o facilitar consultas complejas'
+    correctAnswer: 'Reintroducir redundancias controladas para mejorar el rendimiento o facilitar consultas complejas'
   },
   {
-    'question': '¿Qué representa una entidad débil en un modelo entidad-relación?',
-    'options': [
+    question: '¿Qué representa una entidad débil en un modelo entidad-relación?',
+    options: [
       'Una entidad que no tiene atributos propios',
       'Una entidad que depende de otra para su existencia',
       'Una entidad con muchos atributos',
       'Una entidad que no puede tener relaciones'
     ],
-    'correctAnswer': 'Una entidad que depende de otra para su existencia'
+    correctAnswer: 'Una entidad que depende de otra para su existencia'
   },
   {
-    'question': '¿Qué se busca con la generalización en bases de datos?',
-    'options': [
+    question: '¿Qué se busca con la generalización en bases de datos?',
+    options: [
       'Eliminar las claves primarias',
       'Separar entidades sin atributos comunes',
       'Unir entidades similares para formar una entidad más general',
       'Duplicar atributos para facilitar el modelado'
     ],
-    'correctAnswer': 'Unir entidades similares para formar una entidad más general'
+    correctAnswer: 'Unir entidades similares para formar una entidad más general'
   },
   {
-    'question': '¿Cuál es una característica de la especialización?',
-    'options': [
+    question: '¿Cuál es una característica de la especialización?',
+    options: [
       'Se enfoca en unir entidades en una más general',
       'Todos los subtipos deben pertenecer al supertipo',
       'Permite dividir una entidad en subconjuntos más específicos',
       'Impide la herencia de atributos'
     ],
-    'correctAnswer': 'Permite dividir una entidad en subconjuntos más específicos'
+    correctAnswer: 'Permite dividir una entidad en subconjuntos más específicos'
   },
   {
-    'question': '¿Qué indica la cobertura total en una generalización?',
-    'options': [
+    question: '¿Qué indica la cobertura total en una generalización?',
+    options: [
       'Que un subtipo puede no pertenecer al supertipo',
       'Que una entidad debe pertenecer a al menos un subtipo',
       'Que los subtipos no pueden compartir atributos',
       'Que no se permite la herencia de atributos'
     ],
-    'correctAnswer': 'Que una entidad debe pertenecer a al menos un subtipo'
+    correctAnswer: 'Que una entidad debe pertenecer a al menos un subtipo'
   },
   {
-    'question': '¿Qué diferencia existe entre generalización y especialización?',
-    'options': [
+    question: '¿Qué diferencia existe entre generalización y especialización?',
+    options: [
       'La generalización divide entidades y la especialización las une',
       'La especialización requiere herencia obligatoria',
       'La generalización une entidades similares y la especialización las divide en subgrupos',
       'Ambas se usan para eliminar relaciones'
     ],
-    'correctAnswer': 'La generalización une entidades similares y la especialización las divide en subgrupos'
+    correctAnswer: 'La generalización une entidades similares y la especialización las divide en subgrupos'
   },
   {
-    'question': '¿Qué atributo es heredado en una generalización entre cliente y empleado?',
-    'options': [
+    question: '¿Qué atributo es heredado en una generalización entre cliente y empleado?',
+    options: [
       'Salario',
       'Dirección',
       'Ciudad',
       'Número de cuenta'
     ],
-    'correctAnswer': 'Ciudad'
+    correctAnswer: 'Ciudad'
   },
   {
-    'question': '¿Qué significa que la cobertura sea superpuesta en una generalización?',
-    'options': [
+    question: '¿Qué significa que la cobertura sea superpuesta en una generalización?',
+    options: [
       'Que los subtipos no comparten elementos',
       'Que los elementos del supertipo solo pertenecen a un subtipo',
       'Que un elemento del supertipo puede pertenecer a varios subtipos',
       'Que los subtipos no heredan atributos'
     ],
-    'correctAnswer': 'Que un elemento del supertipo puede pertenecer a varios subtipos'
+    correctAnswer: 'Que un elemento del supertipo puede pertenecer a varios subtipos'
   },
   {
-    'question': '¿Cuál es el propósito de la herencia de atributos en una generalización?',
-    'options': [
+    question: '¿Cuál es el propósito de la herencia de atributos en una generalización?',
+    options: [
       'Evitar la redundancia y repetir los atributos en cada subtipo',
       'Duplicar la información para mayor claridad',
       'Aumentar la complejidad del modelo',
       'Mejorar el rendimiento de las consultas'
     ],
-    'correctAnswer': 'Evitar la redundancia y repetir los atributos en cada subtipo'
+    correctAnswer: 'Evitar la redundancia y repetir los atributos en cada subtipo'
   },
   {
-    'question': '¿Qué es una entidad en el modelo Entidad-Relación?',
-    'options': [
+    question: '¿Qué es una entidad en el modelo Entidad-Relación?',
+    options: [
       'Una tabla dentro de una base de datos',
       'Un atributo clave que define relaciones',
       'Una persona, lugar, cosa o concepto de interés para la empresa',
       'Una ocurrencia única de una base de datos'
     ],
-    'correctAnswer': 'Una persona, lugar, cosa o concepto de interés para la empresa'
+    correctAnswer: 'Una persona, lugar, cosa o concepto de interés para la empresa'
   },
   {
-    'question': '¿Cuál es la finalidad del modelo conceptual en bases de datos?',
-    'options': [
+    question: '¿Cuál es la finalidad del modelo conceptual en bases de datos?',
+    options: [
       'Definir estructuras físicas de almacenamiento',
       'Describir con exactitud cómo se almacenan los datos',
       'Representar entidades, relaciones y atributos de forma abstracta',
       'Codificar directamente en SQL'
     ],
-    'correctAnswer': 'Representar entidades, relaciones y atributos de forma abstracta'
+    correctAnswer: 'Representar entidades, relaciones y atributos de forma abstracta'
   },
   {
-    'question': '¿Qué tipo de atributo puede dividirse en subpartes?',
-    'options': [
+    question: '¿Qué tipo de atributo puede dividirse en subpartes?',
+    options: [
       'Atributo derivado',
       'Atributo compuesto',
       'Atributo clave',
       'Atributo monovalorado'
     ],
-    'correctAnswer': 'Atributo compuesto'
+    correctAnswer: 'Atributo compuesto'
   },
   {
-    'question': '¿Qué representa gráficamente una relación en un diagrama E-R?',
-    'options': [
+    question: '¿Qué representa gráficamente una relación en un diagrama E-R?',
+    options: [
       'Un rectángulo',
       'Un círculo',
       'Un rombo',
       'Un triángulo'
     ],
-    'correctAnswer': 'Un rombo'
+    correctAnswer: 'Un rombo'
   },
   {
-    'question': '¿Cuál es una característica de una entidad débil?',
-    'options': [
+    question: '¿Cuál es una característica de una entidad débil?',
+    options: [
       'Tiene clave primaria propia',
       'No depende de ninguna entidad',
       'Debe participar en una relación 1:N con una entidad fuerte',
       'Sus atributos identifican completamente a la entidad'
     ],
-    'correctAnswer': 'Debe participar en una relación 1:N con una entidad fuerte'
+    correctAnswer: 'Debe participar en una relación 1:N con una entidad fuerte'
   },
   {
-    'question': '¿Qué indica la cardinalidad (1,N) en una relación?',
-    'options': [
+    question: '¿Qué indica la cardinalidad (1,N) en una relación?',
+    options: [
       'Una ocurrencia se relaciona con exactamente una de otra',
       'Una ocurrencia se relaciona con ninguna de otra',
       'Una ocurrencia se relaciona con varias de otra',
       'Una ocurrencia se relaciona con todas las de otra entidad'
     ],
-    'correctAnswer': 'Una ocurrencia se relaciona con varias de otra'
+    correctAnswer: 'Una ocurrencia se relaciona con varias de otra'
   },
   {
-    'question': '¿Qué es un atributo derivado?',
-    'options': [
+    question: '¿Qué es un atributo derivado?',
+    options: [
       'Un atributo obligatorio',
       'Un atributo que se calcula a partir de otros',
       'Un atributo multivalorado',
       'Un atributo compuesto'
     ],
-    'correctAnswer': 'Un atributo que se calcula a partir de otros'
+    correctAnswer: 'Un atributo que se calcula a partir de otros'
   },
   {
-    'question': '¿Qué función cumple el identificador en una entidad?',
-    'options': [
+    question: '¿Qué función cumple el identificador en una entidad?',
+    options: [
       'Determina el tipo de relación',
       'Permite diferenciar gráficamente las entidades',
       'Determina de forma única cada instancia de la entidad',
       'Agrupa las entidades similares'
     ],
-    'correctAnswer': 'Determina de forma única cada instancia de la entidad'
+    correctAnswer: 'Determina de forma única cada instancia de la entidad'
   },
   {
-    'question': '¿Qué es una copia de seguridad en bases de datos?',
-    'options': [
+    question: '¿Qué es una copia de seguridad en bases de datos?',
+    options: [
       'Un tipo de base de datos distribuida',
       'Una réplica de datos almacenada en otro medio para su recuperación',
       'Un algoritmo de encriptación para bases de datos',
       'Un script para automatizar consultas SQL'
     ],
-    'correctAnswer': 'Una réplica de datos almacenada en otro medio para su recuperación'
+    correctAnswer: 'Una réplica de datos almacenada en otro medio para su recuperación'
   },
   {
-    'question': '¿Cuál de los siguientes no es un motivo por el que las copias de seguridad son importantes?',
-    'options': [
+    question: '¿Cuál de los siguientes no es un motivo por el que las copias de seguridad son importantes?',
+    options: [
       'Protección ante fallos técnicos',
       'Prevención ante ciberataques',
       'Acelerar el acceso a los datos',
       'Recuperación ante errores humanos'
     ],
-    'correctAnswer': 'Acelerar el acceso a los datos'
+    correctAnswer: 'Acelerar el acceso a los datos'
   },
   {
-    'question': '¿Qué tipo de copia de seguridad guarda todos los datos seleccionados en el momento de realizarla?',
-    'options': [
+    question: '¿Qué tipo de copia de seguridad guarda todos los datos seleccionados en el momento de realizarla?',
+    options: [
       'Copia incremental',
       'Copia diferencial',
       'Copia completa',
       'Copia virtual'
     ],
-    'correctAnswer': 'Copia completa'
+    correctAnswer: 'Copia completa'
   },
   {
-    'question': '¿Cuál es una ventaja de la copia completa?',
-    'options': [
+    question: '¿Cuál es una ventaja de la copia completa?',
+    options: [
       'Es la más ligera',
       'Es la más rápida de realizar',
       'No necesita ninguna otra copia para restaurar',
       'Ocupa menos espacio'
     ],
-    'correctAnswer': 'No necesita ninguna otra copia para restaurar'
+    correctAnswer: 'No necesita ninguna otra copia para restaurar'
   },
   {
-    'question': '¿Qué tipo de copia guarda solo los datos modificados desde la última copia completa?',
-    'options': [
+    question: '¿Qué tipo de copia guarda solo los datos modificados desde la última copia completa?',
+    options: [
       'Copia incremental',
       'Copia paralela',
       'Copia de seguridad diferencial',
       'Copia total'
     ],
-    'correctAnswer': 'Copia de seguridad diferencial'
+    correctAnswer: 'Copia de seguridad diferencial'
   },
   {
-    'question': '¿Cuál es una desventaja de la copia diferencial?',
-    'options': [
+    question: '¿Cuál es una desventaja de la copia diferencial?',
+    options: [
       'Es la más compleja de restaurar',
       'Ocupa mucho espacio desde el inicio',
       'Necesita todas las copias anteriores para restaurar',
       'Aumenta su tamaño cuanto más tiempo pasa desde la última completa'
     ],
-    'correctAnswer': 'Aumenta su tamaño cuanto más tiempo pasa desde la última completa'
+    correctAnswer: 'Aumenta su tamaño cuanto más tiempo pasa desde la última completa'
   },
   {
-    'question': '¿Qué tipo de copia guarda solo los cambios desde la última copia, ya sea completa o incremental?',
-    'options': [
+    question: '¿Qué tipo de copia guarda solo los cambios desde la última copia, ya sea completa o incremental?',
+    options: [
       'Copia de espejo',
       'Copia completa',
       'Copia incremental',
       'Copia diferencial'
     ],
-    'correctAnswer': 'Copia incremental'
+    correctAnswer: 'Copia incremental'
   },
   {
-    'question': '¿Qué desventaja tiene la copia incremental?',
-    'options': [
+    question: '¿Qué desventaja tiene la copia incremental?',
+    options: [
       'Es más costosa que otras',
       'Requiere restaurar varias copias para recuperar los datos',
       'No permite copias frecuentes',
       'Ocupa más espacio que las demás'
     ],
-    'correctAnswer': 'Requiere restaurar varias copias para recuperar los datos'
+    correctAnswer: 'Requiere restaurar varias copias para recuperar los datos'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para crear una nueva tabla en SQL?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para crear una nueva tabla en SQL?',
+    options: [
       'INSERT',
       'CREATE TABLE',
       'ALTER TABLE',
       'ADD TABLE'
     ],
-    'correctAnswer': 'CREATE TABLE'
+    correctAnswer: 'CREATE TABLE'
   },
   {
-    'question': '¿Qué comando DDL se usa para eliminar una tabla existente?',
-    'options': [
+    question: '¿Qué comando DDL se usa para eliminar una tabla existente?',
+    options: [
       'DELETE TABLE',
       'DROP TABLE',
       'REMOVE TABLE',
       'TRUNCATE TABLE'
     ],
-    'correctAnswer': 'DROP TABLE'
+    correctAnswer: 'DROP TABLE'
   },
   {
-    'question': '¿Cuál es la función del comando ALTER TABLE en SQL?',
-    'options': [
+    question: '¿Cuál es la función del comando ALTER TABLE en SQL?',
+    options: [
       'Insertar datos en una tabla',
       'Modificar la estructura de una tabla existente',
       'Eliminar una tabla',
       'Crear una nueva base de datos'
     ],
-    'correctAnswer': 'Modificar la estructura de una tabla existente'
+    correctAnswer: 'Modificar la estructura de una tabla existente'
   },
   {
-    'question': '¿Qué comando se utiliza para crear una nueva base de datos en SQL?',
-    'options': [
+    question: '¿Qué comando se utiliza para crear una nueva base de datos en SQL?',
+    options: [
       'CREATE DATABASE',
       'NEW DATABASE',
       'MAKE DATABASE',
       'INIT DATABASE'
     ],
-    'correctAnswer': 'CREATE DATABASE'
+    correctAnswer: 'CREATE DATABASE'
   },
   {
-    'question': '¿Qué comando DDL se emplea para eliminar una base de datos?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para eliminar una base de datos?',
+    options: [
       'DELETE DATABASE',
       'DROP DATABASE',
       'REMOVE DATABASE',
       'TRUNCATE DATABASE'
     ],
-    'correctAnswer': 'DROP DATABASE'
+    correctAnswer: 'DROP DATABASE'
   },
   {
-    'question': '¿Cuál es la función del comando TRUNCATE TABLE en SQL?',
-    'options': [
+    question: '¿Cuál es la función del comando TRUNCATE TABLE en SQL?',
+    options: [
       'Eliminar la tabla y su estructura',
       'Eliminar todos los registros de una tabla sin eliminar su estructura',
       'Eliminar una base de datos completa',
       'Modificar la estructura de una tabla'
     ],
-    'correctAnswer': 'Eliminar todos los registros de una tabla sin eliminar su estructura'
+    correctAnswer: 'Eliminar todos los registros de una tabla sin eliminar su estructura'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para agregar una nueva columna a una tabla existente?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para agregar una nueva columna a una tabla existente?',
+    options: [
       'ADD COLUMN',
       'INSERT COLUMN',
       'ALTER TABLE ... ADD',
       'MODIFY TABLE'
     ],
-    'correctAnswer': 'ALTER TABLE ... ADD'
+    correctAnswer: 'ALTER TABLE ... ADD'
   },
   {
-    'question': '¿Qué comando DDL se usa para cambiar el nombre de una tabla?',
-    'options': [
+    question: '¿Qué comando DDL se usa para cambiar el nombre de una tabla?',
+    options: [
       'RENAME TABLE',
       'ALTER TABLE ... RENAME TO',
       'MODIFY TABLE',
       'CHANGE TABLE NAME'
     ],
-    'correctAnswer': 'ALTER TABLE ... RENAME TO'
+    correctAnswer: 'ALTER TABLE ... RENAME TO'
   },
   {
-    'question': '¿Qué comando DDL se emplea para definir una clave primaria en una tabla?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para definir una clave primaria en una tabla?',
+    options: [
       'ADD PRIMARY KEY',
       'DEFINE PRIMARY',
       'ALTER TABLE ... ADD PRIMARY KEY',
       'SET PRIMARY KEY'
     ],
-    'correctAnswer': 'ALTER TABLE ... ADD PRIMARY KEY'
+    correctAnswer: 'ALTER TABLE ... ADD PRIMARY KEY'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para eliminar una columna de una tabla?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para eliminar una columna de una tabla?',
+    options: [
       'DELETE COLUMN',
       'DROP COLUMN',
       'ALTER TABLE ... DROP COLUMN',
       'REMOVE COLUMN'
     ],
-    'correctAnswer': 'ALTER TABLE ... DROP COLUMN'
+    correctAnswer: 'ALTER TABLE ... DROP COLUMN'
   },
   {
-    'question': '¿Qué comando DDL se usa para crear un índice en una tabla?',
-    'options': [
+    question: '¿Qué comando DDL se usa para crear un índice en una tabla?',
+    options: [
       'CREATE INDEX',
       'ADD INDEX',
       'MAKE INDEX',
       'NEW INDEX'
     ],
-    'correctAnswer': 'CREATE INDEX'
+    correctAnswer: 'CREATE INDEX'
   },
   {
-    'question': '¿Qué comando DDL se emplea para eliminar un índice existente?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para eliminar un índice existente?',
+    options: [
       'DROP INDEX',
       'DELETE INDEX',
       'REMOVE INDEX',
       'ALTER INDEX'
     ],
-    'correctAnswer': 'DROP INDEX'
+    correctAnswer: 'DROP INDEX'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para modificar el tipo de datos de una columna?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para modificar el tipo de datos de una columna?',
+    options: [
       'CHANGE COLUMN TYPE',
       'MODIFY COLUMN',
       'ALTER TABLE ... MODIFY',
       'SET COLUMN TYPE'
     ],
-    'correctAnswer': 'ALTER TABLE ... MODIFY'
+    correctAnswer: 'ALTER TABLE ... MODIFY'
   },
   {
-    'question': '¿Qué comando DDL se usa para establecer una restricción UNIQUE en una columna?',
-    'options': [
+    question: '¿Qué comando DDL se usa para establecer una restricción UNIQUE en una columna?',
+    options: [
       'ADD UNIQUE',
       'ALTER TABLE ... ADD CONSTRAINT UNIQUE',
       'SET UNIQUE',
       'DEFINE UNIQUE'
     ],
-    'correctAnswer': 'ALTER TABLE ... ADD CONSTRAINT UNIQUE'
+    correctAnswer: 'ALTER TABLE ... ADD CONSTRAINT UNIQUE'
   },
   {
-    'question': '¿Qué comando DDL se emplea para eliminar una restricción de una tabla?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para eliminar una restricción de una tabla?',
+    options: [
       'DROP CONSTRAINT',
       'REMOVE CONSTRAINT',
       'ALTER TABLE ... DROP CONSTRAINT',
       'DELETE CONSTRAINT'
     ],
-    'correctAnswer': 'ALTER TABLE ... DROP CONSTRAINT'
+    correctAnswer: 'ALTER TABLE ... DROP CONSTRAINT'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para crear una vista en SQL?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para crear una vista en SQL?',
+    options: [
       'CREATE VIEW',
       'MAKE VIEW',
       'NEW VIEW',
       'ADD VIEW'
     ],
-    'correctAnswer': 'CREATE VIEW'
+    correctAnswer: 'CREATE VIEW'
   },
   {
-    'question': '¿Qué comando DDL se usa para eliminar una vista existente?',
-    'options': [
+    question: '¿Qué comando DDL se usa para eliminar una vista existente?',
+    options: [
       'DROP VIEW',
       'DELETE VIEW',
       'REMOVE VIEW',
       'ALTER VIEW'
     ],
-    'correctAnswer': 'DROP VIEW'
+    correctAnswer: 'DROP VIEW'
   },
   {
-    'question': '¿Qué comando DDL se emplea para crear una secuencia en SQL?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para crear una secuencia en SQL?',
+    options: [
       'CREATE SEQUENCE',
       'MAKE SEQUENCE',
       'NEW SEQUENCE',
       'ADD SEQUENCE'
     ],
-    'correctAnswer': 'CREATE SEQUENCE'
+    correctAnswer: 'CREATE SEQUENCE'
   },
   {
-    'question': '¿Qué comando DDL se utiliza para eliminar una secuencia existente?',
-    'options': [
+    question: '¿Qué comando DDL se utiliza para eliminar una secuencia existente?',
+    options: [
       'DROP SEQUENCE',
       'DELETE SEQUENCE',
       'REMOVE SEQUENCE',
       'ALTER SEQUENCE'
     ],
-    'correctAnswer': 'DROP SEQUENCE'
+    correctAnswer: 'DROP SEQUENCE'
   },
   {
-    'question': '¿Qué comando DDL se usa para modificar una secuencia existente?',
-    'options': [
+    question: '¿Qué comando DDL se usa para modificar una secuencia existente?',
+    options: [
       'ALTER SEQUENCE',
       'MODIFY SEQUENCE',
       'CHANGE SEQUENCE',
       'UPDATE SEQUENCE'
     ],
-    'correctAnswer': 'ALTER SEQUENCE'
+    correctAnswer: 'ALTER SEQUENCE'
   },
   {
-    'question': '¿Qué comando DDL se emplea para crear un esquema en SQL?',
-    'options': [
+    question: '¿Qué comando DDL se emplea para crear un esquema en SQL?',
+    options: [
       'CREATE SCHEMA',
       'MAKE SCHEMA',
       'NEW SCHEMA',
       'ADD SCHEMA'
     ],
-    'correctAnswer': 'CREATE SCHEMA'
+    correctAnswer: 'CREATE SCHEMA'
   }
   ,
   {
-    'question': '¿Qué comando DML se utiliza para insertar nuevos registros en una tabla?',
-    'options': [
+    question: '¿Qué comando DML se utiliza para insertar nuevos registros en una tabla?',
+    options: [
       'INSERT INTO',
       'ADD RECORD',
       'CREATE ROW',
       'APPEND'
     ],
-    'correctAnswer': 'INSERT INTO'
+    correctAnswer: 'INSERT INTO'
   },
   {
-    'question': '¿Qué comando se usa para actualizar registros existentes en una tabla?',
-    'options': [
+    question: '¿Qué comando se usa para actualizar registros existentes en una tabla?',
+    options: [
       'MODIFY',
       'UPDATE',
       'CHANGE',
       'SET RECORD'
     ],
-    'correctAnswer': 'UPDATE'
+    correctAnswer: 'UPDATE'
   },
   {
-    'question': '¿Cuál es la instrucción DML para eliminar registros de una tabla?',
-    'options': [
+    question: '¿Cuál es la instrucción DML para eliminar registros de una tabla?',
+    options: [
       'REMOVE',
       'DELETE',
       'DROP',
       'ERASE'
     ],
-    'correctAnswer': 'DELETE'
+    correctAnswer: 'DELETE'
   },
   {
-    'question': '¿Qué cláusula se usa con UPDATE y DELETE para especificar qué registros afectar?',
-    'options': [
+    question: '¿Qué cláusula se usa con UPDATE y DELETE para especificar qué registros afectar?',
+    options: [
       'WHERE',
       'SET',
       'FROM',
       'LIKE'
     ],
-    'correctAnswer': 'WHERE'
+    correctAnswer: 'WHERE'
   },
   {
-    'question': '¿Qué ocurre si omites la cláusula WHERE en un DELETE?',
-    'options': [
+    question: '¿Qué ocurre si omites la cláusula WHERE en un DELETE?',
+    options: [
       'Se elimina un solo registro al azar',
       'Se borra la tabla completa',
       'No se elimina ningún registro',
       'Se eliminan todos los registros de la tabla'
     ],
-    'correctAnswer': 'Se eliminan todos los registros de la tabla'
+    correctAnswer: 'Se eliminan todos los registros de la tabla'
   },
   {
-    'question': '¿Qué comando se usa para recuperar datos de una tabla?',
-    'options': [
+    question: '¿Qué comando se usa para recuperar datos de una tabla?',
+    options: [
       'GET',
       'RETRIEVE',
       'SELECT',
       'FETCH'
     ],
-    'correctAnswer': 'SELECT'
+    correctAnswer: 'SELECT'
   },
   {
-    'question': '¿Qué palabra clave se usa en un SELECT para eliminar duplicados?',
-    'options': [
+    question: '¿Qué palabra clave se usa en un SELECT para eliminar duplicados?',
+    options: [
       'DISTINCT',
       'UNIQUE',
       'DIFFERENT',
       'ONLY'
     ],
-    'correctAnswer': 'DISTINCT'
+    correctAnswer: 'DISTINCT'
   },
   {
-    'question': '¿Qué comando se usa para eliminar todos los registros pero conservar la estructura de la tabla?',
-    'options': [
+    question: '¿Qué comando se usa para eliminar todos los registros pero conservar la estructura de la tabla?',
+    options: [
       'DROP',
       'DELETE',
       'TRUNCATE',
       'ERASE'
     ],
-    'correctAnswer': 'TRUNCATE'
+    correctAnswer: 'TRUNCATE'
   },
   {
-    'question': '¿Qué operador se utiliza para buscar coincidencias parciales en una consulta SELECT?',
-    'options': [
+    question: '¿Qué operador se utiliza para buscar coincidencias parciales en una consulta SELECT?',
+    options: [
       '=',
       'LIKE',
       'IN',
       'IS'
     ],
-    'correctAnswer': 'LIKE'
+    correctAnswer: 'LIKE'
   },
   {
-    'question': '¿Cuál es el orden correcto de una consulta SELECT básica?',
-    'options': [
+    question: '¿Cuál es el orden correcto de una consulta SELECT básica?',
+    options: [
       'FROM, SELECT, WHERE',
       'SELECT, WHERE, FROM',
       'SELECT, FROM, WHERE',
       'WHERE, FROM, SELECT'
     ],
-    'correctAnswer': 'SELECT, FROM, WHERE'
+    correctAnswer: 'SELECT, FROM, WHERE'
   },
   {
-    'question': '¿Qué comando permite modificar múltiples campos en un solo UPDATE?',
-    'options': [
+    question: '¿Qué comando permite modificar múltiples campos en un solo UPDATE?',
+    options: [
       'SET campo1 = valor1, campo2 = valor2',
       'UPDATE campo1, campo2',
       'MODIFY ALL',
       'SET MULTIPLE'
     ],
-    'correctAnswer': 'SET campo1 = valor1, campo2 = valor2'
+    correctAnswer: 'SET campo1 = valor1, campo2 = valor2'
   },
   {
-    'question': '¿Cuál de las siguientes consultas es válida para insertar datos?',
-    'options': [
+    question: '¿Cuál de las siguientes consultas es válida para insertar datos?',
+    options: [
       'INSERT INTO tabla VALUES (1, \'Juan\')',
       'INSERT tabla SET (1, \'Juan\')',
       'ADD VALUES (1, \'Juan\') INTO tabla',
       'NEW RECORD INTO tabla (1, \'Juan\')'
     ],
-    'correctAnswer': 'INSERT INTO tabla VALUES (1, \'Juan\')'
+    correctAnswer: 'INSERT INTO tabla VALUES (1, \'Juan\')'
   },
   {
-    'question': '¿Qué comando permite obtener el número total de filas en una tabla?',
-    'options': [
+    question: '¿Qué comando permite obtener el número total de filas en una tabla?',
+    options: [
       'SELECT * FROM tabla',
       'SELECT COUNT(*) FROM tabla',
       'GET TOTAL FROM tabla',
       'SHOW ALL FROM tabla'
     ],
-    'correctAnswer': 'SELECT COUNT(*) FROM tabla'
+    correctAnswer: 'SELECT COUNT(*) FROM tabla'
   },
   {
-    'question': '¿Qué cláusula se usa para ordenar resultados en una consulta SELECT?',
-    'options': [
+    question: '¿Qué cláusula se usa para ordenar resultados en una consulta SELECT?',
+    options: [
       'SORT BY',
       'ORDER BY',
       'GROUP BY',
       'ALIGN BY'
     ],
-    'correctAnswer': 'ORDER BY'
+    correctAnswer: 'ORDER BY'
   },
   {
-    'question': '¿Qué operador se usa para combinar condiciones en una cláusula WHERE?',
-    'options': [
+    question: '¿Qué operador se usa para combinar condiciones en una cláusula WHERE?',
+    options: [
       'AND / OR',
       'IF / ELSE',
       'JOIN / ON',
       'WITH / IN'
     ],
-    'correctAnswer': 'AND / OR'
+    correctAnswer: 'AND / OR'
   },
   {
-    'question': '¿Qué operador DML se usa para verificar si un campo tiene valor NULL?',
-    'options': [
+    question: '¿Qué operador DML se usa para verificar si un campo tiene valor NULL?',
+    options: [
       'IS NULL',
       '== NULL',
       'IS EMPTY',
       '= NULL'
     ],
-    'correctAnswer': 'IS NULL'
+    correctAnswer: 'IS NULL'
   },
   {
-    'question': '¿Cómo se inserta un dato en una columna específica?',
-    'options': [
+    question: '¿Cómo se inserta un dato en una columna específica?',
+    options: [
       'INSERT INTO tabla (columna) VALUE (\'dato\')',
       'INSERT INTO tabla SET columna = \'dato\'',
       'INSERT (columna) INTO tabla VALUES (\'dato\')',
       'INSERT INTO tabla (columna) VALUES (\'dato\')'
     ],
-    'correctAnswer': 'INSERT INTO tabla (columna) VALUES (\'dato\')'
+    correctAnswer: 'INSERT INTO tabla (columna) VALUES (\'dato\')'
   },
   {
-    'question': '¿Qué palabra clave permite agrupar resultados similares en SELECT?',
-    'options': [
+    question: '¿Qué palabra clave permite agrupar resultados similares en SELECT?',
+    options: [
       'GROUP BY',
       'ORDER BY',
       'MERGE BY',
       'SORT BY'
     ],
-    'correctAnswer': 'GROUP BY'
+    correctAnswer: 'GROUP BY'
   },
   {
-    'question': '¿Qué función permite calcular el promedio de una columna numérica?',
-    'options': [
+    question: '¿Qué función permite calcular el promedio de una columna numérica?',
+    options: [
       'SUM()',
       'COUNT()',
       'AVG()',
       'TOTAL()'
     ],
-    'correctAnswer': 'AVG()'
+    correctAnswer: 'AVG()'
   },
   {
-    'question': '¿Qué cláusula se usa para filtrar grupos después de agrupar?',
-    'options': [
+    question: '¿Qué cláusula se usa para filtrar grupos después de agrupar?',
+    options: [
       'HAVING',
       'WHERE',
       'GROUP FILTER',
       'AFTER GROUP'
     ],
-    'correctAnswer': 'HAVING'
+    correctAnswer: 'HAVING'
   },
   {
     question: '¿Qué sección del archivo my.ini define las opciones del cliente de MySQL?',
@@ -1485,404 +1485,601 @@ export const questionsBaseDeDatos: Question[] = [
     correctAnswer: 'log-error'
   },
   {
-    'question': '¿Cuál de los siguientes tipos de copia de seguridad guarda todos los datos seleccionados sin depender de copias anteriores?',
-    'options': [
+    question: '¿Cuál de los siguientes tipos de copia de seguridad guarda todos los datos seleccionados sin depender de copias anteriores?',
+    options: [
       'Copia completa',
       'Copia de logs',
       'Copia incremental',
       'Copia diferencial'
     ],
-    'correctAnswer': 'Copia completa'
+    correctAnswer: 'Copia completa'
   },
   {
-    'question': '¿Cuál es el efecto de usar LIMIT 5 en una consulta SQL?',
-    'options': [
+    question: '¿Cuál es el efecto de usar LIMIT 5 en una consulta SQL?',
+    options: [
       'Devuelve del 11º al 15º resultado',
       'Devuelve los primeros 5 resultados',
       'Muestra los resultados hasta el décimo',
       'Devuelve 10 resultados desde el quinto'
     ],
-    'correctAnswer': 'Devuelve los primeros 5 resultados'
+    correctAnswer: 'Devuelve los primeros 5 resultados'
   },
   {
-    'question': '¿Cuál es la clave principal de una tabla resultado de una relación N:M?',
-    'options': [
+    question: '¿Cuál es la clave principal de una tabla resultado de una relación N:M?',
+    options: [
       'La combinación de las claves primarias de ambas entidades',
       'La clave foránea de una de las entidades',
       'La clave primaria de la entidad fuerte',
       'Un campo autoincremental'
     ],
-    'correctAnswer': 'La combinación de las claves primarias de ambas entidades'
+    correctAnswer: 'La combinación de las claves primarias de ambas entidades'
   },
   {
-    'question': '¿Qué cláusula permite ordenar los resultados de una consulta SQL por varias columnas?',
-    'options': [
+    question: '¿Qué cláusula permite ordenar los resultados de una consulta SQL por varias columnas?',
+    options: [
       'SORT BY',
       'GROUP BY',
       'ARRANGE BY',
       'ORDER BY columna1, columna2'
     ],
-    'correctAnswer': 'ORDER BY columna1, columna2'
+    correctAnswer: 'ORDER BY columna1, columna2'
   },
   {
-    'question': '¿Qué devuelve esta consulta? SELECT Cliente.Nombre FROM Cliente WHERE idCliente NOT IN (SELECT idCliente FROM Orden);',
-    'options': [
+    question: '¿Qué devuelve esta consulta? SELECT Cliente.Nombre FROM Cliente WHERE idCliente NOT IN (SELECT idCliente FROM Orden);',
+    options: [
       'Clientes sin pedidos',
       'Clientes con pedidos pendientes',
       'Clientes que han hecho más de un pedido',
       'Clientes que cancelaron sus pedidos'
     ],
-    'correctAnswer': 'Clientes sin pedidos'
+    correctAnswer: 'Clientes sin pedidos'
   },
   {
-    'question': '¿Qué devuelve esta consulta? SELECT Plato.Nombre, COUNT(*) FROM DetalleOrden JOIN Plato ON DetalleOrden.idPlato = Plato.idPlato GROUP BY Plato.Nombre;',
-    'options': [
+    question: '¿Qué devuelve esta consulta? SELECT Plato.Nombre, COUNT(*) FROM DetalleOrden JOIN Plato ON DetalleOrden.idPlato = Plato.idPlato GROUP BY Plato.Nombre;',
+    options: [
       'El número de veces que se ha pedido cada plato',
       'El número de ingredientes por plato',
       'Los platos ordenados por precio',
       'La cantidad total vendida por plato'
     ],
-    'correctAnswer': 'El número de veces que se ha pedido cada plato'
+    correctAnswer: 'El número de veces que se ha pedido cada plato'
   },
   {
-    'question': "¿Qué devuelve esta subconsulta? SELECT NOMCE FROM TCENTR WHERE NUMCE IN (SELECT NUMCE FROM TDEPTO WHERE NUMDE IN (SELECT NUMDE FROM TEMPLE WHERE CARGO = 'Jefe'));",
-    'options': [
+    question: "¿Qué devuelve esta subconsulta? SELECT NOMCE FROM TCENTR WHERE NUMCE IN (SELECT NUMCE FROM TDEPTO WHERE NUMDE IN (SELECT NUMDE FROM TEMPLE WHERE CARGO = 'Jefe'));",
+    options: [
       'Centros sin jefes',
       'Centros con salario promedio alto',
       'Centros con más de un departamento',
       'Centros donde trabaja al menos un jefe'
     ],
-    'correctAnswer': 'Centros donde trabaja al menos un jefe'
+    correctAnswer: 'Centros donde trabaja al menos un jefe'
   },
   {
-    'question': '¿Qué efecto tiene ON DELETE SET NULL al definir una clave foránea?',
-    'options': [
+    question: '¿Qué efecto tiene ON DELETE SET NULL al definir una clave foránea?',
+    options: [
       'Elimina los registros relacionados',
       'Bloquea la operación de eliminación',
       'No permite claves foráneas vacías',
       'Establece los valores foráneos como NULL'
     ],
-    'correctAnswer': 'Establece los valores foráneos como NULL'
+    correctAnswer: 'Establece los valores foráneos como NULL'
   },
   {
-    'question': '¿Qué estrategia de implementación permite representar una jerarquía con generalización en una sola tabla en SQL?',
-    'options': [
+    question: '¿Qué estrategia de implementación permite representar una jerarquía con generalización en una sola tabla en SQL?',
+    options: [
       'Tabla puente',
       'Tabla por subentidad',
       'Tabla única con columna discriminadora',
       'Tabla por superentidad'
     ],
-    'correctAnswer': 'Tabla única con columna discriminadora'
+    correctAnswer: 'Tabla única con columna discriminadora'
   },
   {
-    'question': '¿Qué función SQL devuelve la cantidad de registros en una tabla?',
-    'options': [
+    question: '¿Qué función SQL devuelve la cantidad de registros en una tabla?',
+    options: [
       'NUMBER()',
       'TOTAL()',
       'COUNT()',
       'SUM()'
     ],
-    'correctAnswer': 'COUNT()'
+    correctAnswer: 'COUNT()'
   },
   {
-    'question': '¿Qué hace esta consulta? SELECT TURNO.Turno, MAX(TURNO.NumOrden) FROM TURNO GROUP BY TURNO.Turno;',
-    'options': [
+    question: '¿Qué hace esta consulta? SELECT TURNO.Turno, MAX(TURNO.NumOrden) FROM TURNO GROUP BY TURNO.Turno;',
+    options: [
       'Muestra el número de órdenes por turno',
       'Muestra la última orden registrada por turno',
       'Cuenta todos los turnos disponibles',
       'Muestra el nombre de los empleados por turno'
     ],
-    'correctAnswer': 'Muestra la última orden registrada por turno'
+    correctAnswer: 'Muestra la última orden registrada por turno'
   },
   {
-    'question': '¿Qué hace esta consulta? SELECT NOMEM FROM TEMPLE WHERE SALAR < (SELECT AVG(SALAR) FROM TEMPLE);',
-    'options': [
+    question: '¿Qué hace esta consulta? SELECT NOMEM FROM TEMPLE WHERE SALAR < (SELECT AVG(SALAR) FROM TEMPLE);',
+    options: [
       'Empleados con salario exacto al promedio',
       'Empleados sin salario definido',
       'Empleados con salario mayor al promedio',
       'Empleados con salario inferior al promedio'
     ],
-    'correctAnswer': 'Empleados con salario inferior al promedio'
+    correctAnswer: 'Empleados con salario inferior al promedio'
   },
   {
-    'question': '¿Qué hace esta consulta? SELECT * FROM Orden ORDER BY Fecha ASC LIMIT 1;',
-    'options': [
+    question: '¿Qué hace esta consulta? SELECT * FROM Orden ORDER BY Fecha ASC LIMIT 1;',
+    options: [
       'Orden con cliente prioritario',
       'Orden con mayor total',
       'Orden más antigua',
       'Orden más reciente'
     ],
-    'correctAnswer': 'Orden más antigua'
+    correctAnswer: 'Orden más antigua'
   },
   {
-    'question': '¿Qué instrucción se utiliza para eliminar permanentemente una tabla y su definición en SQL?',
-    'options': [
+    question: '¿Qué instrucción se utiliza para eliminar permanentemente una tabla y su definición en SQL?',
+    options: [
       'CLEAR TABLE',
       'DROP TABLE',
       'DELETE FROM tabla',
       'REMOVE RECORDS'
     ],
-    'correctAnswer': 'DROP TABLE'
+    correctAnswer: 'DROP TABLE'
   },
   {
-    'question': '¿Qué muestra esta consulta? SELECT Empresa.Nombre FROM Empresa JOIN Cliente ON Empresa.idCliente = Cliente.idCliente;',
-    'options': [
+    question: '¿Qué muestra esta consulta? SELECT Empresa.Nombre FROM Empresa JOIN Cliente ON Empresa.idCliente = Cliente.idCliente;',
+    options: [
       'Empresas que tienen asociado un cliente',
       'Nombres duplicados de empresas',
       'Empresas sin clientes',
       'Clientes con múltiples empresas'
     ],
-    'correctAnswer': 'Empresas que tienen asociado un cliente'
+    correctAnswer: 'Empresas que tienen asociado un cliente'
   },
   {
-    'question': '¿Qué obtiene esta consulta? SELECT Cliente.Nombre FROM Cliente LEFT JOIN Orden ON Cliente.idCliente = Orden.idCliente WHERE Orden.idCliente IS NULL;',
-    'options': [
+    question: '¿Qué obtiene esta consulta? SELECT Cliente.Nombre FROM Cliente LEFT JOIN Orden ON Cliente.idCliente = Orden.idCliente WHERE Orden.idCliente IS NULL;',
+    options: [
       'Clientes con órdenes canceladas',
       'Clientes con facturación superior a la media',
       'Clientes que no han realizado ninguna orden',
       'Clientes que han realizado más de una orden'
     ],
-    'correctAnswer': 'Clientes que no han realizado ninguna orden'
+    correctAnswer: 'Clientes que no han realizado ninguna orden'
   },
   {
-    'question': "¿Qué obtiene la consulta? SELECT Nombre FROM Mesero WHERE FechaIncorporacion < '2020-01-01';",
-    'options': [
+    question: "¿Qué obtiene la consulta? SELECT Nombre FROM Mesero WHERE FechaIncorporacion < '2020-01-01';",
+    options: [
       'Meseros incorporados antes de 2020',
       'Meseros con contrato temporal',
       'Meseros sin órdenes asignadas',
       'Meseros que han atendido más de 10 órdenes'
     ],
-    'correctAnswer': 'Meseros incorporados antes de 2020'
+    correctAnswer: 'Meseros incorporados antes de 2020'
   },
   {
-    'question': '¿Qué ocurre al transformar una relación débil a tabla?',
-    'options': [
+    question: '¿Qué ocurre al transformar una relación débil a tabla?',
+    options: [
       'Se ignora porque no puede tener independencia',
       'Hereda la clave primaria de la relación fuerte',
       'Se convierte en un atributo derivado',
       'Su clave se convierte en clave foránea'
     ],
-    'correctAnswer': 'Hereda la clave primaria de la relación fuerte'
+    correctAnswer: 'Hereda la clave primaria de la relación fuerte'
   },
   {
-    'question': '¿Qué ocurre si se ejecuta un DELETE sin cláusula WHERE en una tabla con miles de registros?',
-    'options': [
+    question: '¿Qué ocurre si se ejecuta un DELETE sin cláusula WHERE en una tabla con miles de registros?',
+    options: [
       'Aparece un error de sintaxis',
       'No ocurre nada',
       'Se borra solo el primer registro',
       'Se eliminan todos los registros de la tabla'
     ],
-    'correctAnswer': 'Se eliminan todos los registros de la tabla'
+    correctAnswer: 'Se eliminan todos los registros de la tabla'
   },
   {
-    'question': '¿Qué operador lógico se utiliza en SQL para verificar si un valor no está dentro de un conjunto?',
-    'options': [
+    question: '¿Qué operador lógico se utiliza en SQL para verificar si un valor no está dentro de un conjunto?',
+    options: [
       'NOT BETWEEN',
       'IS NULL',
       'EXCEPT',
       'NOT IN'
     ],
-    'correctAnswer': 'NOT IN'
+    correctAnswer: 'NOT IN'
   },
   {
-    'question': '¿Qué operador se usa en SQL para buscar coincidencias parciales en texto?',
-    'options': [
+    question: '¿Qué operador se usa en SQL para buscar coincidencias parciales en texto?',
+    options: [
       'EQUALS',
       'FIND',
       'MATCH',
       'LIKE'
     ],
-    'correctAnswer': 'LIKE'
+    correctAnswer: 'LIKE'
   },
   {
-    'question': '¿Qué palabra clave en SQL se utiliza para asegurar que los valores de una columna sean únicos?',
-    'options': [
+    question: '¿Qué palabra clave en SQL se utiliza para asegurar que los valores de una columna sean únicos?',
+    options: [
       'NOT NULL',
       'UNIQUE',
       'DISTINCT',
       'PRIMARY'
     ],
-    'correctAnswer': 'UNIQUE'
+    correctAnswer: 'UNIQUE'
   },
   {
-    'question': '¿Qué representa la siguiente situación en un diagrama ER: una entidad EMPLEADO vinculada a sí misma mediante una relación LLAMA?',
-    'options': [
+    question: '¿Qué representa la siguiente situación en un diagrama ER: una entidad EMPLEADO vinculada a sí misma mediante una relación LLAMA?',
+    options: [
       'Entidad débil',
       'Relación jerárquica',
       'Relación reflexiva',
       'Atributo compuesto'
     ],
-    'correctAnswer': 'Relación reflexiva'
+    correctAnswer: 'Relación reflexiva'
   },
   {
-    'question': '¿Qué representa un atributo subrayado en un modelo ER?',
-    'options': [
+    question: '¿Qué representa un atributo subrayado en un modelo ER?',
+    options: [
       'Es un atributo compuesto',
       'Es un atributo redundante',
       'Es un atributo clave (clave primaria)',
       'Es un atributo multivaluado'
     ],
-    'correctAnswer': 'Es un atributo clave (clave primaria)'
+    correctAnswer: 'Es un atributo clave (clave primaria)'
   },
   {
-    'question': '¿Qué representa un rombo en un diagrama entidad-relación?',
-    'options': [
+    question: '¿Qué representa un rombo en un diagrama entidad-relación?',
+    options: [
       'Un atributo multivaluado',
       'Una relación entre entidades',
       'Una clave primaria',
       'Una tabla de base de datos'
     ],
-    'correctAnswer': 'Una relación entre entidades'
+    correctAnswer: 'Una relación entre entidades'
   },
   {
-    'question': "¿Qué resultado da esta consulta? SELECT COUNT(*) FROM Orden WHERE Fecha BETWEEN '2024-01-01' AND '2024-01-31';",
-    'options': [
+    question: "¿Qué resultado da esta consulta? SELECT COUNT(*) FROM Orden WHERE Fecha BETWEEN '2024-01-01' AND '2024-01-31';",
+    options: [
       'Total de productos vendidos',
       'Número de clientes en enero',
       'Número total de órdenes en enero',
       'Total facturado en enero'
     ],
-    'correctAnswer': 'Número total de órdenes en enero'
+    correctAnswer: 'Número total de órdenes en enero'
   },
   {
-    'question': '¿Qué sentencia elimina completamente una tabla y todos sus datos en MySQL?',
-    'options': [
+    question: '¿Qué sentencia elimina completamente una tabla y todos sus datos en MySQL?',
+    options: [
       'DROP TABLE nombre;',
       'REMOVE TABLE nombre;',
       'CLEAR TABLE nombre;',
       'DELETE TABLE nombre;'
     ],
-    'correctAnswer': 'DROP TABLE nombre;'
+    correctAnswer: 'DROP TABLE nombre;'
   },
   {
-    'question': '¿Qué sentencia se utiliza para cambiar el nombre de una tabla en MySQL?',
-    'options': [
+    question: '¿Qué sentencia se utiliza para cambiar el nombre de una tabla en MySQL?',
+    options: [
       'ALTER TABLE nombre RENAME TO nuevo_nombre',
       'CHANGE TABLE nombre',
       'MODIFY TABLE nombre',
       'RENAME TABLE nombre AS nuevo_nombre'
     ],
-    'correctAnswer': 'ALTER TABLE nombre RENAME TO nuevo_nombre'
+    correctAnswer: 'ALTER TABLE nombre RENAME TO nuevo_nombre'
   },
   {
-    'question': '¿Qué sentencia SQL se utiliza para agregar una nueva columna a una tabla existente?',
-    'options': [
+    question: '¿Qué sentencia SQL se utiliza para agregar una nueva columna a una tabla existente?',
+    options: [
       'INSERT COLUMN',
       'UPDATE COLUMN',
       'ALTER TABLE ... ADD COLUMN',
       'MODIFY TABLE'
     ],
-    'correctAnswer': 'ALTER TABLE ... ADD COLUMN'
+    correctAnswer: 'ALTER TABLE ... ADD COLUMN'
   },
   {
-    'question': '¿Qué significa que una relación tenga una cardinalidad 1:N entre dos entidades?',
-    'options': [
+    question: '¿Qué significa que una relación tenga una cardinalidad 1:N entre dos entidades?',
+    options: [
       'Ambas entidades deben coincidir en valores',
       'Cada entidad puede tener solo un valor',
       'Hay una correspondencia muchos a muchos',
       'Una entidad del lado 1 se relaciona con varias del lado N'
     ],
-    'correctAnswer': 'Una entidad del lado 1 se relaciona con varias del lado N'
+    correctAnswer: 'Una entidad del lado 1 se relaciona con varias del lado N'
   },
   {
-    'question': '¿Qué sucede con los atributos de una relación si esta es eliminada del modelo relacional?',
-    'options': [
+    question: '¿Qué sucede con los atributos de una relación si esta es eliminada del modelo relacional?',
+    options: [
       'Se transforman en atributos de una entidad',
       'Se pierden, ya que solo pertenecen a la relación',
       'Se agrupan como metadatos',
       'Se convierten en claves foráneas'
     ],
-    'correctAnswer': 'Se pierden, ya que solo pertenecen a la relación'
+    correctAnswer: 'Se pierden, ya que solo pertenecen a la relación'
   },
   {
-    'question': '¿Qué tipo de atributo en un modelo ER puede descomponerse en subatributos más simples?',
-    'options': [
+    question: '¿Qué tipo de atributo en un modelo ER puede descomponerse en subatributos más simples?',
+    options: [
       'Atributo compuesto',
       'Atributo derivado',
       'Atributo multivaluado',
       'Atributo clave'
     ],
-    'correctAnswer': 'Atributo compuesto'
+    correctAnswer: 'Atributo compuesto'
   },
   {
-    'question': '¿Qué tipo de atributo requiere su propia tabla si un solo registro puede tener varios valores para ese atributo?',
-    'options': [
+    question: '¿Qué tipo de atributo requiere su propia tabla si un solo registro puede tener varios valores para ese atributo?',
+    options: [
       'Atributo compuesto',
       'Atributo derivado',
       'Atributo multivaluado',
       'Atributo redundante'
     ],
-    'correctAnswer': 'Atributo multivaluado'
+    correctAnswer: 'Atributo multivaluado'
   },
   {
-    'question': '¿Qué tipo de copia de seguridad es más rápida de ejecutar pero requiere siempre la última copia completa para poder restaurar?',
-    'options': [
+    question: '¿Qué tipo de copia de seguridad es más rápida de ejecutar pero requiere siempre la última copia completa para poder restaurar?',
+    options: [
       'Copia diferencial',
       'Copia lógica',
       'Copia incremental',
       'Copia manual'
     ],
-    'correctAnswer': 'Copia incremental'
+    correctAnswer: 'Copia incremental'
   },
   {
-    'question': '¿Qué tipo de copia se ejecuta después de una copia completa y registra los cambios desde esa copia completa, sin considerar incrementales anteriores?',
-    'options': [
+    question: '¿Qué tipo de copia se ejecuta después de una copia completa y registra los cambios desde esa copia completa, sin considerar incrementales anteriores?',
+    options: [
       'Copia de respaldo lógico',
       'Copia diferencial',
       'Copia automática',
       'Copia de logs'
     ],
-    'correctAnswer': 'Copia diferencial'
+    correctAnswer: 'Copia diferencial'
   },
   {
-    'question': '¿Qué tipo de JOIN devuelve todas las filas de la tabla izquierda y las coincidentes de la derecha o NULL si no hay coincidencia?',
-    'options': [
+    question: '¿Qué tipo de JOIN devuelve todas las filas de la tabla izquierda y las coincidentes de la derecha o NULL si no hay coincidencia?',
+    options: [
       'INNER JOIN',
       'RIGHT JOIN',
       'FULL OUTER JOIN',
       'LEFT JOIN'
     ],
-    'correctAnswer': 'LEFT JOIN'
+    correctAnswer: 'LEFT JOIN'
   },
   {
-    'question': '¿Qué tipo de relación existe cuando una entidad se relaciona con otra y ambas representan el mismo conjunto de elementos?',
-    'options': [
+    question: '¿Qué tipo de relación existe cuando una entidad se relaciona con otra y ambas representan el mismo conjunto de elementos?',
+    options: [
       'Relación reflexiva',
       'Asociación débil',
       'Generalización',
       'Agregación'
     ],
-    'correctAnswer': 'Relación reflexiva'
+    correctAnswer: 'Relación reflexiva'
   },
   {
-    'question': '¿Qué ventaja tiene una copia completa frente a una copia incremental?',
-    'options': [
+    question: '¿Qué ventaja tiene una copia completa frente a una copia incremental?',
+    options: [
       'Consume menos espacio',
       'Es más simple de restaurar',
       'Es más rápida',
       'No necesita programación previa'
     ],
-    'correctAnswer': 'Es más simple de restaurar'
+    correctAnswer: 'Es más simple de restaurar'
   },
   {
-    'question': 'En un diagrama ER, se modela una entidad general llamada "Vehículo" con las subentidades "Coche" y "Moto". ¿Qué tipo de relación representa esta estructura?',
-    'options': [
+    question: 'En un diagrama ER, se modela una entidad general llamada "Vehículo" con las subentidades "Coche" y "Moto". ¿Qué tipo de relación representa esta estructura?',
+    options: [
       'Relación reflexiva',
       'Agregación',
       'Generalización/especialización',
       'Asociación débil'
     ],
-    'correctAnswer': 'Generalización/especialización'
+    correctAnswer: 'Generalización/especialización'
   },
   {
-    'question': 'En un diagrama ER, un atributo que depende de otros atributos se denomina:',
-    'options': [
+    question: 'En un diagrama ER, un atributo que depende de otros atributos se denomina:',
+    options: [
       'Atributo multivaluado',
       'Atributo derivado',
       'Atributo independiente',
       'Atributo compuesto'
     ],
-    'correctAnswer': 'Atributo derivado'
+    correctAnswer: 'Atributo derivado'
+  },
+  {
+    question: '¿Qué lenguaje se utiliza para realizar consultas en bases de datos relacionales?',
+    options: ['HTML', 'SQL', 'XML', 'PHP'],
+    correctAnswer: 'SQL'
+  },
+  {
+    question: '¿Qué comando se utiliza para eliminar una tabla en SQL?',
+    options: ['DELETE TABLE', 'REMOVE TABLE', 'DROP TABLE', 'CLEAR TABLE'],
+    correctAnswer: 'DROP TABLE'
+  },
+  {
+    question: '¿Cuál es la clave primaria en una tabla?',
+    options: ['Una clave repetida', 'Una clave que puede ser nula', 'Una clave única que identifica cada fila', 'Una clave de otro campo'],
+    correctAnswer: 'Una clave única que identifica cada fila'
+  },
+  {
+    question: '¿Qué tipo de JOIN devuelve solo las filas que tienen coincidencias en ambas tablas?',
+    options: ['LEFT JOIN', 'RIGHT JOIN', 'FULL JOIN', 'INNER JOIN'],
+    correctAnswer: 'INNER JOIN'
+  },
+  {
+    question: '¿Cuál es el objetivo de normalizar una base de datos?',
+    options: ['Aumentar la redundancia', 'Reducir el rendimiento', 'Evitar duplicidades y mejorar la estructura', 'Eliminar claves primarias'],
+    correctAnswer: 'Evitar duplicidades y mejorar la estructura'
+  },
+  {
+    question: '¿Qué significa ACID en bases de datos?',
+    options: ['Alta Capacidad de Ingreso de Datos', 'Atomicidad, Consistencia, Aislamiento, Durabilidad', 'Acceso Concurrente a Información Dinámica', 'Archivo de Columnas de Información y Datos'],
+    correctAnswer: 'Atomicidad, Consistencia, Aislamiento, Durabilidad'
+  },
+  {
+    question: '¿Qué comando se usa para actualizar datos en SQL?',
+    options: ['MODIFY', 'CHANGE', 'UPDATE', 'REPLACE'],
+    correctAnswer: 'UPDATE'
+  },
+  {
+    question: '¿Qué comando se usa para agregar una nueva fila a una tabla?',
+    options: ['INSERT INTO', 'ADD ROW', 'NEW ROW', 'APPEND'],
+    correctAnswer: 'INSERT INTO'
+  },
+  {
+    question: '¿Qué es un índice en una base de datos?',
+    options: ['Una restricción de datos', 'Un resumen de la base de datos', 'Un mecanismo para acelerar búsquedas', 'Una clave primaria duplicada'],
+    correctAnswer: 'Un mecanismo para acelerar búsquedas'
+  },
+  {
+    question: '¿Qué tipo de dato se utiliza para almacenar texto en SQL?',
+    options: ['INT', 'CHAR o VARCHAR', 'DATE', 'FLOAT'],
+    correctAnswer: 'CHAR o VARCHAR'
+  },
+
+  {
+    question: '¿Cuál es el propósito de una clave foránea?',
+    options: ['Eliminar filas', 'Crear tablas', 'Relacionar dos tablas', 'Insertar registros'],
+    correctAnswer: 'Relacionar dos tablas'
+  },
+  {
+    question: '¿Cuál es el resultado de una cláusula SELECT *?',
+    options: ['Todas las columnas de una tabla', 'Solo columnas con datos numéricos', 'Columnas únicas', 'Columnas sin valores nulos'],
+    correctAnswer: 'Todas las columnas de una tabla'
+  },
+  {
+    question: '¿Qué comando crea una nueva tabla en SQL?',
+    options: ['MAKE TABLE', 'CREATE TABLE', 'NEW TABLE', 'TABLE CREATE'],
+    correctAnswer: 'CREATE TABLE'
+  },
+  {
+    question: '¿Qué significa una relación 1:N?',
+    options: ['Una fila en una tabla está relacionada con muchas filas en otra', 'Muchas filas en una tabla están relacionadas con una fila', 'Una fila con una fila', 'Relaciones cruzadas'],
+    correctAnswer: 'Una fila en una tabla está relacionada con muchas filas en otra'
+  },
+  {
+    question: '¿Qué función de SQL devuelve la cantidad de filas?',
+    options: ['SUM()', 'COUNT()', 'AVG()', 'TOTAL()'],
+    correctAnswer: 'COUNT()'
+  },
+  {
+    question: '¿Qué palabra clave se usa para ordenar los resultados?',
+    options: ['ORDER', 'SORT', 'BY', 'ORDER BY'],
+    correctAnswer: 'ORDER BY'
+  },
+  {
+    question: '¿Qué significa el tipo de dato DATE en SQL?',
+    options: ['Valor numérico', 'Una fecha', 'Texto largo', 'Variable de texto'],
+    correctAnswer: 'Una fecha'
+  },
+  {
+    question: '¿Cuál es el operador lógico para combinar condiciones?',
+    options: ['IF', 'AND/OR', 'ELSE', 'CASE'],
+    correctAnswer: 'AND/OR'
+  },
+  {
+    question: '¿Cuál es el resultado de la cláusula GROUP BY?',
+    options: ['Agrupa filas con los mismos valores', 'Elimina valores duplicados', 'Ordena por fecha', 'Muestra solo claves primarias'],
+    correctAnswer: 'Agrupa filas con los mismos valores'
+  },
+  {
+    question: '¿Qué comando se usa para eliminar todas las filas de una tabla?',
+    options: ['DELETE ALL', 'DROP', 'REMOVE', 'DELETE FROM tabla'],
+    correctAnswer: 'DELETE FROM tabla'
+  },
+
+  {
+    question: '¿Qué es una transacción en una base de datos?',
+    options: ['Una tabla temporal', 'Una operación automática', 'Un conjunto de operaciones SQL que se ejecutan como una unidad', 'Una copia de seguridad'],
+    correctAnswer: 'Un conjunto de operaciones SQL que se ejecutan como una unidad'
+  },
+  {
+    question: '¿Qué comando se usa para hacer una copia de seguridad en MySQL?',
+    options: ['mysqldump', 'mysqlsave', 'backupdb', 'exportdb'],
+    correctAnswer: 'mysqldump'
+  },
+  {
+    question: '¿Cuál de las siguientes es una base de datos NoSQL?',
+    options: ['MySQL', 'PostgreSQL', 'MongoDB', 'Oracle'],
+    correctAnswer: 'MongoDB'
+  },
+  {
+    question: '¿Qué operador se utiliza para buscar un patrón en una consulta SQL?',
+    options: ['LIKE', 'IN', 'BETWEEN', 'WHERE'],
+    correctAnswer: 'LIKE'
+  },
+  {
+    question: '¿Cuál es el propósito de la cláusula HAVING?',
+    options: ['Limitar el número de filas', 'Filtrar columnas', 'Filtrar resultados después del GROUP BY', 'Renombrar tablas'],
+    correctAnswer: 'Filtrar resultados después del GROUP BY'
+  },
+  {
+    question: '¿Qué hace la sentencia COMMIT?',
+    options: ['Cancela la transacción', 'Guarda los cambios de forma permanente', 'Deshace los cambios', 'Reinicia la tabla'],
+    correctAnswer: 'Guarda los cambios de forma permanente'
+  },
+  {
+    question: '¿Qué significa que una base de datos sea relacional?',
+    options: ['Usa XML', 'Relaciona entidades y atributos', 'Almacena archivos', 'Se basa en filas y columnas relacionadas entre sí'],
+    correctAnswer: 'Se basa en filas y columnas relacionadas entre sí'
+  },
+  {
+    question: '¿Qué tipo de relación representa una tabla de intersección?',
+    options: ['1:1', '1:N', 'N:M', 'N:0'],
+    correctAnswer: 'N:M'
+  },
+  {
+    question: '¿Qué hace el comando ROLLBACK?',
+    options: ['Confirma los cambios', 'Revierte una transacción', 'Elimina una base de datos', 'Actualiza la tabla'],
+    correctAnswer: 'Revierte una transacción'
+  },
+  {
+    question: '¿Qué significa NULL en SQL?',
+    options: ['0', 'Dato vacío', 'Dato incorrecto', 'Ausencia de valor'],
+    correctAnswer: 'Ausencia de valor'
+  },
+  {
+    question: '¿Qué comando sirve para cambiar el nombre de una tabla?',
+    options: ['RENAME TABLE', 'MODIFY NAME', 'ALTER RENAME', 'CHANGE TABLE'],
+    correctAnswer: 'RENAME TABLE'
+  },
+  {
+    question: '¿Qué es una vista (VIEW) en SQL?',
+    options: ['Una tabla vacía', 'Una tabla temporal', 'Una tabla virtual basada en una consulta', 'Una copia de seguridad'],
+    correctAnswer: 'Una tabla virtual basada en una consulta'
+  },
+  {
+    question: '¿Cuál es el propósito de una restricción UNIQUE?',
+    options: ['Permitir valores nulos', 'Evitar claves foráneas', 'Evitar valores duplicados', 'Eliminar duplicados al final'],
+    correctAnswer: 'Evitar valores duplicados'
+  },
+  {
+    question: '¿Qué comando se usa para otorgar permisos?',
+    options: ['GIVE', 'GRANT', 'ALLOW', 'PERMIT'],
+    correctAnswer: 'GRANT'
+  },
+  {
+    question: '¿Qué comando elimina todos los datos de una tabla pero no la estructura?',
+    options: ['DROP', 'DELETE', 'TRUNCATE', 'REMOVE'],
+    correctAnswer: 'TRUNCATE'
+  },
+  {
+    question: '¿Qué tipo de dato se utiliza para almacenar valores TRUE o FALSE?',
+    options: ['BOOLEAN', 'INT', 'BIT', 'TINYINT'],
+    correctAnswer: 'BOOLEAN'
+  },
+  {
+    question: '¿Qué es un trigger (disparador)?',
+    options: ['Un índice automático', 'Una vista', 'Una función que se ejecuta ante ciertos eventos', 'Una consulta compleja'],
+    correctAnswer: 'Una función que se ejecuta ante ciertos eventos'
+  },
+  {
+    question: '¿Qué es un procedimiento almacenado?',
+    options: ['Un archivo externo', 'Una función guardada que se puede ejecutar', 'Una clave secundaria', 'Un índice compuesto'],
+    correctAnswer: 'Una función guardada que se puede ejecutar'
+  },
+  {
+    question: '¿Qué comando se usa para ver la estructura de una tabla en MySQL?',
+    options: ['DESCRIBE', 'SHOW STRUCTURE', 'TABLE INFO', 'TABLE FORMAT'],
+    correctAnswer: 'DESCRIBE'
   }
     
 ];
