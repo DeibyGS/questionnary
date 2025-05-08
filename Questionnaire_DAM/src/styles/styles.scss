@@ -416,19 +416,20 @@ footer {
   display: flex;
   flex-direction: column;
   gap: $gap-medium;
-  width: 100%;
+  width: 80vw;
 
   &__item{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem; 
   border-radius: 10px;
   background-color: #fff;
   border-left: 6px solid #4caf50;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
 
       &:hover{
         transform: translateY(-3px);
