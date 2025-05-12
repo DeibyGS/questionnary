@@ -2470,6 +2470,406 @@ export const questionsSistemasInformaticos: Question[] = [
       '192.168.1.254'
     ],
     correctAnswer: '192.168.1.1'
+  },
+  {
+    question: '¿Cuál de estas funciones realiza la placa base?',
+    options: [
+      'Almacenar archivos',
+      'Ejecutar programas del usuario',
+      'Conectar y permitir la comunicación entre todos los componentes del ordenador',
+      'Producir imágenes en la pantalla'
+    ],
+    correctAnswer: 'Conectar y permitir la comunicación entre todos los componentes del ordenador'
+  },
+  {
+    question: '¿Cuál de las siguientes afirmaciones es cierta sobre IPv6?',
+    options: [
+      'Usa 8 bloques hexadecimales de 16 bits',
+      'Usa direcciones de 32 bits',
+      'Es incompatible con redes IPv4',
+      'Usa puntos para separar los bloques'
+    ],
+    correctAnswer: 'Usa 8 bloques hexadecimales de 16 bits'
+  },
+  {
+    question: '¿Cuál de las siguientes direcciones IP es de clase A?',
+    options: [
+      '224.0.0.1',
+      '192.168.1.1',
+      '172.16.0.1',
+      '10.0.0.1'
+    ],
+    correctAnswer: '10.0.0.1'
+  },
+  {
+    question: '¿Cuál de las siguientes direcciones IP es una dirección de tipo B?',
+    options: [
+      '66.220.144.0',
+      '172.16.0.1',
+      '8.8.8.8',
+      '1.1.1.1'
+    ],
+    correctAnswer: '172.16.0.1'
+  },
+  {
+    question: '¿Cuál de los siguientes elementos es un ejemplo de hardware?',
+    options: [
+      'Linux',
+      'Microsoft Word',
+      'Disco duro',
+      'Firmware'
+    ],
+    correctAnswer: 'Disco duro'
+  },
+  {
+    question: '¿Cuál es el número máximo de direcciones IP que puede contener una red clase C?',
+    options: [
+      '256',
+      '128',
+      '254',
+      '64'
+    ],
+    correctAnswer: '254'
+  },
+  {
+    question: '¿Cuál es el principal motivo de la creación de IPv6?',
+    options: [
+      'Mejorar la velocidad de navegación',
+      'Aumentar la cantidad de direcciones disponibles',
+      'Evitar la fragmentación de paquetes',
+      'Cambiar el formato de las IP públicas'
+    ],
+    correctAnswer: 'Aumentar la cantidad de direcciones disponibles'
+  },
+  {
+    question: '¿Cuál es el valor decimal del número binario 1010?',
+    options: [
+      '15',
+      '8',
+      '10',
+      '12'
+    ],
+    correctAnswer: '10'
+  },
+  {
+    question: '¿Cuál es una ventaja de una dirección IP estática frente a una dinámica?',
+    options: [
+      'Es más barata',
+      'Es más fácil de cambiar',
+      'Es constante y facilita servicios como servidores web',
+      'No requiere configuración manual'
+    ],
+    correctAnswer: 'Es constante y facilita servicios como servidores web'
+  },
+  {
+    question: '¿Qué característica define a una dirección IP pública?',
+    options: [
+      'Es accesible desde internet',
+      'Solo se usa dentro de redes locales',
+      'Puede ser usada por cualquier dispositivo interno',
+      'Cambia cada vez que reiniciamos el router'
+    ],
+    correctAnswer: 'Es accesible desde internet'
+  },
+  {
+    question: '¿Qué comando muestra la ruta absoluta del directorio actual?',
+    options: [
+      'pwd',
+      'whoami',
+      'ls',
+      'cd'
+    ],
+    correctAnswer: 'pwd'
+  },
+  {
+    question: '¿Qué comando permite ver todos los archivos, incluidos los ocultos, con detalles como permisos y fecha?',
+    options: [
+      'ls -l',
+      'ls -a',
+      'ls -R',
+      'ls -la'
+    ],
+    correctAnswer: 'ls -la'
+  },
+  {
+    question: '¿Qué comando se usa para cambiar de directorio?',
+    options: [
+      'cd',
+      'pwd',
+      'cp',
+      'ls'
+    ],
+    correctAnswer: 'cd'
+  },
+  {
+    question: '¿Qué comando se usa para mover un archivo a otra ubicación?',
+    options: [
+      'mv',
+      'rm',
+      'cp',
+      'ls'
+    ],
+    correctAnswer: 'mv'
+  },
+  {
+    question: '¿Qué comando se utiliza para copiar un archivo?',
+    options: [
+      'cp',
+      'copy',
+      'mv',
+      'push'
+    ],
+    correctAnswer: 'cp'
+  },
+  {
+    question: '¿Qué comando sirve para crear un archivo vacío?',
+    options: [
+      'cp',
+      'mkdir',
+      'touch',
+      'nano'
+    ],
+    correctAnswer: 'touch'
+  },
+  {
+    question: '¿Qué componente es conocido como el "cerebro" del ordenador?',
+    options: [
+      'ROM',
+      'BIOS',
+      'SSD',
+      'CPU'
+    ],
+    correctAnswer: 'CPU'
+  },
+  {
+    question: '¿Qué componente se encarga de iniciar el hardware y cargar el sistema operativo?',
+    options: [
+      'RAM',
+      'BIOS',
+      'CPU',
+      'SSD'
+    ],
+    correctAnswer: 'BIOS'
+  },
+  {
+    question: '¿Qué diferencia principal existe entre la RAM y la ROM?',
+    options: [
+      'La RAM almacena el sistema operativo, la ROM no',
+      'La RAM se borra al apagar el equipo, la ROM no',
+      'La RAM guarda programas, la ROM no tiene datos',
+      'La RAM es permanente y la ROM es temporal'
+    ],
+    correctAnswer: 'La RAM se borra al apagar el equipo, la ROM no'
+  },
+  {
+    question: '¿Qué diferencia principal hay entre `ls -l` y `ls -la`?',
+    options: [
+      '`ls -la` muestra menos detalles',
+      '`ls -l` muestra los archivos ocultos',
+      '`ls -l` no muestra archivos ocultos y `ls -la` sí',
+      '`ls -la` muestra archivos de solo lectura'
+    ],
+    correctAnswer: '`ls -l` no muestra archivos ocultos y `ls -la` sí'
+  },
+  {
+    question: '¿Qué dirección IP pertenece al rango de clase B?',
+    options: [
+      '192.0.2.1',
+      '224.0.0.1',
+      '172.20.0.1',
+      '10.1.1.1'
+    ],
+    correctAnswer: '172.20.0.1'
+  },
+  {
+    question: '¿Qué es el firmware?',
+    options: [
+      'Un programa que se ejecuta en la nube',
+      'Software almacenado en una memoria no volátil',
+      'Un componente físico del ordenador',
+      'Sistema operativo para móviles'
+    ],
+    correctAnswer: 'Software almacenado en una memoria no volátil'
+  },
+  {
+    question: '¿Qué función cumple el chipset norte en una placa base?',
+    options: [
+      'Almacenar el sistema operativo',
+      'Gestionar puertos USB',
+      'Controlar la tarjeta gráfica y la RAM',
+      'Controlar la red y el sonido'
+    ],
+    correctAnswer: 'Controlar la tarjeta gráfica y la RAM'
+  },
+  {
+    question: '¿Qué hace el comando `cd ..`?',
+    options: [
+      'Cambia al directorio raíz',
+      'Va al directorio del usuario',
+      'Sube un nivel en la jerarquía de directorios',
+      'Cambia al directorio anterior'
+    ],
+    correctAnswer: 'Sube un nivel en la jerarquía de directorios'
+  },
+  {
+    question: '¿Qué hace el comando `chmod o-x archivo.sh`?',
+    options: [
+      'Quita permiso de ejecución al grupo',
+      'Quita permiso de ejecución a otros (usuarios no propietarios ni del grupo)',
+      'Quita permiso de ejecución al propietario',
+      'Da permiso de ejecución a todos'
+    ],
+    correctAnswer: 'Quita permiso de ejecución a otros (usuarios no propietarios ni del grupo)'
+  },
+  {
+    question: '¿Qué hace el comando `chmod u+r archivo.txt`?',
+    options: [
+      'Asigna todos los permisos al usuario',
+      'Da permiso de lectura al usuario (propietario)',
+      'Quita permiso de lectura al usuario',
+      'Da permiso de lectura al grupo'
+    ],
+    correctAnswer: 'Da permiso de lectura al usuario (propietario)'
+  },
+  {
+    question: '¿Qué hace el símbolo `<` en un comando?',
+    options: [
+      'Redirige errores a un archivo',
+      'Redirige la salida estándar a un archivo',
+      'Redirige la entrada desde un archivo',
+      'Muestra el contenido del archivo'
+    ],
+    correctAnswer: 'Redirige la entrada desde un archivo'
+  },
+  {
+    question: '¿Qué hace el símbolo `>` en un comando?',
+    options: [
+      'Muestra el contenido de un archivo',
+      'Redirige la salida a un archivo, sobrescribiéndolo',
+      'Redirige la entrada desde un archivo',
+      'Ejecuta el archivo como root'
+    ],
+    correctAnswer: 'Redirige la salida a un archivo, sobrescribiéndolo'
+  },
+  {
+    question: '¿Qué hace el símbolo `2>` en un comando?',
+    options: [
+      'Redirige los errores estándar a un archivo',
+      'Duplica el archivo de salida',
+      'Redirige la salida estándar al archivo',
+      'Redirige la salida de texto plano'
+    ],
+    correctAnswer: 'Redirige los errores estándar a un archivo'
+  },
+  {
+    question: '¿Qué opción de `chmod` permite quitar el permiso de escritura a todos los usuarios?',
+    options: [
+      'chmod u-w archivo.txt',
+      'chmod a+w archivo.txt',
+      'chmod a-w archivo.txt',
+      'chmod g-w archivo.txt'
+    ],
+    correctAnswer: 'chmod a-w archivo.txt'
+  },
+  {
+    question: '¿Qué parte identifica la red en la IP 192.168.1.100 con máscara 255.255.255.0?',
+    options: [
+      '192.168.1',
+      '168.1.100',
+      '192',
+      '100'
+    ],
+    correctAnswer: '192.168.1'
+  },
+  {
+    question: '¿Qué parte representa el host en la IP 10.0.5.25 con máscara 255.0.0.0?',
+    options: [
+      '10',
+      '0.5.25',
+      '0',
+      '5.25'
+    ],
+    correctAnswer: '0.5.25'
+  },
+  {
+    question: '¿Qué protocolo IP permite un mayor número de direcciones?',
+    options: [
+      'IPX/SPX',
+      'ARP',
+      'IPv4',
+      'IPv6'
+    ],
+    correctAnswer: 'IPv6'
+  },
+  {
+    question: '¿Qué representa la letra `g` en los permisos al usar `chmod`?',
+    options: [
+      'Grupo del archivo',
+      'Usuario (user)',
+      'Otros (others)',
+      'Propietario raíz'
+    ],
+    correctAnswer: 'Grupo del archivo'
+  },
+  {
+    question: '¿Qué tipo de almacenamiento es más rápido?',
+    options: [
+      'Cinta magnética',
+      'SSD',
+      'HDD',
+      'CD-ROM'
+    ],
+    correctAnswer: 'SSD'
+  },
+  {
+    question: '¿Qué tipo de IP es 127.0.0.1?',
+    options: [
+      'Tipo C',
+      'Tipo D',
+      'Tipo B',
+      'Tipo A'
+    ],
+    correctAnswer: 'Tipo A'
+  },
+  {
+    question: '¿Qué tipo de IP es la 169.254.0.10?',
+    options: [
+      'Tipo A',
+      'Tipo B',
+      'Tipo D',
+      'Tipo C'
+    ],
+    correctAnswer: 'Tipo B'
+  },
+  {
+    question: '¿Qué tipo de memoria se borra al apagar el ordenador?',
+    options: [
+      'SSD',
+      'ROM',
+      'RAM',
+      'Memoria flash'
+    ],
+    correctAnswer: 'RAM'
+  },
+  {
+    question: 'En una red de clase C, ¿cuántas direcciones se pueden asignar a hosts?',
+    options: [
+      '252',
+      '254',
+      '255',
+      '256'
+    ],
+    correctAnswer: '254'
+  },
+  {
+    question: 'Una dirección IP dinámica se caracteriza por:',
+    options: [
+      'Estar reservada para redes privadas',
+      'Ser configurada manualmente por el usuario',
+      'Ser asignada automáticamente por un servidor',
+      'Ser fija y constante en el tiempo'
+    ],
+    correctAnswer: 'Ser asignada automáticamente por un servidor'
   }
   
   
