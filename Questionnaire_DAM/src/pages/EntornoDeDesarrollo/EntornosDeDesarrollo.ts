@@ -2322,6 +2322,406 @@ export const questionsEntornosDesarrollo: Question[] = [
       'Visualizar imágenes'
     ],
     correctAnswer: 'Interactuar con el sistema operativo mediante comandos'
+  },
+  {
+    question: '¿Cómo se representa un caso de uso en UML?',
+    options: [
+      'Como una flecha',
+      'Como una elipse',
+      'Como un rectángulo',
+      'Como un círculo'
+    ],
+    correctAnswer: 'Como una elipse'
+  },
+  {
+    question: "¿Cuál de los siguientes es un síntoma de 'Feature Envy'?",
+    options: [
+      'El método usa datos de otra clase más que de la suya',
+      'El método está declarado como estático',
+      'El método contiene varias excepciones',
+      'El método está mal indentado'
+    ],
+    correctAnswer: 'El método usa datos de otra clase más que de la suya'
+  },
+  {
+    question: '¿Cuál de los siguientes representa un atributo de una clase con demasiadas responsabilidades?',
+    options: [
+      'Atributos privados',
+      'Muchos métodos o atributos',
+      'Comentarios extensos',
+      'Nombre corto'
+    ],
+    correctAnswer: 'Muchos métodos o atributos'
+  },
+  {
+    question: '¿Cuál es la finalidad de la documentación de pruebas en el ciclo de vida del software?',
+    options: [
+      'Mejorar el rendimiento del código',
+      'Prevenir problemas en la interfaz gráfica',
+      'Ninguna de las anteriores',
+      'Verificar que el software cumpla con los requisitos'
+    ],
+    correctAnswer: 'Verificar que el software cumpla con los requisitos'
+  },
+  {
+    question: '¿Cuál es la principal ventaja de usar un lenguaje de alto nivel frente a uno de bajo nivel?',
+    options: [
+      'Mejor rendimiento sin compilación',
+      'Mayor control sobre el hardware',
+      'Menor seguridad',
+      'Mayor legibilidad y facilidad de mantenimiento'
+    ],
+    correctAnswer: 'Mayor legibilidad y facilidad de mantenimiento'
+  },
+  {
+    question: '¿Cuál es la principal ventaja del modelo en cascada?',
+    options: [
+      'Requiere poco feedback del cliente',
+      'Permite iterar sobre los entregables',
+      'Flexibilidad para adaptarse a cambios',
+      'Buena para proyectos con requisitos bien definidos desde el inicio'
+    ],
+    correctAnswer: 'Buena para proyectos con requisitos bien definidos desde el inicio'
+  },
+  {
+    question: '¿Cuál es una desventaja clave de usar un lenguaje de alto nivel frente a uno de bajo nivel?',
+    options: [
+      'Menor control sobre el hardware',
+      'Facilidad de escritura y mantenimiento del código',
+      'Más consumo de recursos',
+      'Mejor compresión de los datos'
+    ],
+    correctAnswer: 'Menor control sobre el hardware'
+  },
+  {
+    question: '¿En qué fase del ciclo de vida del software se implementa el diseño del sistema mediante código?',
+    options: [
+      'Análisis de Requisitos',
+      'Mantenimiento',
+      'Implementación',
+      'Pruebas'
+    ],
+    correctAnswer: 'Implementación'
+  },
+  {
+    question: '¿En qué fase del ciclo de vida del software se realizan ajustes a los requisitos, arquitectura y diseño?',
+    options: [
+      'Pruebas',
+      'Análisis',
+      'Implementación',
+      'Mantenimiento'
+    ],
+    correctAnswer: 'Mantenimiento'
+  },
+  {
+    question: '¿En qué tipo de proyectos es más adecuado el modelo iterativo?',
+    options: [
+      'Proyectos con alta regulación o certificación',
+      'Proyectos con un diseño final predefinido',
+      'Proyectos con requisitos cambiantes y evolutivos',
+      'Proyectos con requisitos estables'
+    ],
+    correctAnswer: 'Proyectos con requisitos cambiantes y evolutivos'
+  },
+  {
+    question: '¿Por qué es importante documentar el software?',
+    options: [
+      'Garantiza la seguridad del código',
+      'Facilita el mantenimiento y la colaboración',
+      'Acelera el desarrollo de software',
+      'Ninguna de las anteriores'
+    ],
+    correctAnswer: 'Facilita el mantenimiento y la colaboración'
+  },
+  {
+    question: '¿Por qué las máquinas virtuales son útiles en entornos de desarrollo?',
+    options: [
+      'No requieren pruebas',
+      'No consumen memoria',
+      'Facilitan la replicación de entornos para distintos proyectos',
+      'El software se ejecuta más rápido'
+    ],
+    correctAnswer: 'Facilitan la replicación de entornos para distintos proyectos'
+  },
+  {
+    question: '¿Por qué se recomienda dividir las responsabilidades de una clase en componentes más pequeños?',
+    options: [
+      'Automatiza todo el proceso de pruebas',
+      'Reduce la cantidad de casos necesarios en pruebas',
+      'Evita escribir comentarios detallados',
+      'Facilita la reutilización del código'
+    ],
+    correctAnswer: 'Facilita la reutilización del código'
+  },
+  {
+    question: '¿Qué característica define el modelo ágil?',
+    options: [
+      'Enfoque en documentación exhaustiva',
+      'Requisitos fijos desde el inicio',
+      'Fases secuenciales y bien definidas',
+      'Equipos multifuncionales y trabajo colaborativo'
+    ],
+    correctAnswer: 'Equipos multifuncionales y trabajo colaborativo'
+  },
+  {
+    question: '¿Qué caracteriza a la metodología ágil Scrum respecto a la priorización de requisitos?',
+    options: [
+      'El equipo de desarrollo define las prioridades',
+      'Es responsabilidad del Scrum Master',
+      'No existe backlog en Scrum',
+      'Es responsabilidad del Product Owner'
+    ],
+    correctAnswer: 'Es responsabilidad del Product Owner'
+  },
+  {
+    question: '¿Qué caracteriza a una prueba funcional o de caja negra?',
+    options: [
+      'Se enfoca en la estructura interna del sistema',
+      'Analiza el rendimiento del sistema',
+      'Se prueba el sistema sin conocer su estructura interna',
+      'Depende de los valores esperados de las variables'
+    ],
+    correctAnswer: 'Se prueba el sistema sin conocer su estructura interna'
+  },
+  {
+    question: '¿Qué comando de Git permite subir los cambios locales al repositorio remoto?',
+    options: [
+      'git export',
+      'git deploy',
+      'git upload',
+      'git push'
+    ],
+    correctAnswer: 'git push'
+  },
+  {
+    question: '¿Qué comando en Git Bash verifica si la conexión SSH con GitHub es correcta?',
+    options: [
+      'ssh git@github.com',
+      'git test ssh',
+      'ssh -T git@github.com',
+      'git --check ssh'
+    ],
+    correctAnswer: 'ssh -T git@github.com'
+  },
+  {
+    question: '¿Qué comando en Git permite configurar el nombre de usuario global?',
+    options: [
+      'git config user.name',
+      'git name set',
+      'git init user.name',
+      'git config --global user.name'
+    ],
+    correctAnswer: 'git config --global user.name'
+  },
+  {
+    question: '¿Cuál es el comando correcto para configurar el correo electrónico global en Git?',
+    options: [
+      'git mail config --global',
+      'git config user.email "correo@example.com"',
+      'git config --global user.email "correo@example.com"',
+      'git config user.name'
+    ],
+    correctAnswer: 'git config --global user.email "correo@example.com"'
+  },
+  {
+    question: '¿Qué desventaja presenta el modelo en cascada en proyectos con requisitos cambiantes?',
+    options: [
+      'No requiere documentación',
+      'Tiene poca capacidad de adaptación',
+      'No necesita pruebas',
+      'Es demasiado flexible'
+    ],
+    correctAnswer: 'Tiene poca capacidad de adaptación'
+  },
+  {
+    question: '¿Qué diferencia a la agregación de la composición?',
+    options: [
+      'En la composición, la vida del contenido depende del contenedor',
+      'En la agregación no hay relación de pertenencia',
+      'En la composición los objetos existen de forma independiente',
+      'No existe diferencia real'
+    ],
+    correctAnswer: 'En la composición, la vida del contenido depende del contenedor'
+  },
+  {
+    question: '¿Qué documento se elabora durante el análisis de requisitos?',
+    options: [
+      'Manual de usuario',
+      'Plan de pruebas',
+      'Especificación funcional',
+      'Informe de validación'
+    ],
+    correctAnswer: 'Especificación funcional'
+  },
+  {
+    question: '¿Qué elemento garantiza la trazabilidad entre requisitos y casos de prueba?',
+    options: [
+      'El entorno de desarrollo',
+      'El cronograma de entregas',
+      'El backlog',
+      'La documentación estructurada del proyecto'
+    ],
+    correctAnswer: 'La documentación estructurada del proyecto'
+  },
+  {
+    question: '¿Qué fase del ciclo de vida del software está encargada de poner el sistema en producción?',
+    options: [
+      'Mantenimiento',
+      'Pruebas',
+      'Implementación',
+      'Diseño'
+    ],
+    correctAnswer: 'Implementación'
+  },
+  {
+    question: '¿Qué fase del ciclo de vida del software se encarga de identificar y documentar los requisitos?',
+    options: [
+      'Implementación',
+      'Diseño',
+      'Análisis de requisitos',
+      'Análisis'
+    ],
+    correctAnswer: 'Análisis'
+  },
+  {
+    question: '¿Qué fase del ciclo de vida del software se enfoca en asegurar que las funcionalidades clave del sistema funcionen correctamente?',
+    options: [
+      'Diseño',
+      'Mantenimiento',
+      'Implementación',
+      'Pruebas funcionales'
+    ],
+    correctAnswer: 'Pruebas funcionales'
+  },
+  {
+    question: '¿Qué función tiene el hipervisor en un entorno de virtualización?',
+    options: [
+      'Gestionar el diseño del sistema',
+      'Compilar el kernel',
+      'Traducir código de alto nivel',
+      'Administrar y aislar máquinas virtuales sobre el hardware físico'
+    ],
+    correctAnswer: 'Administrar y aislar máquinas virtuales sobre el hardware físico'
+  },
+  {
+    question: '¿Qué herramienta gráfica permite trabajar con ramas y commits en Git sin usar terminal?',
+    options: [
+      'GitHub CLI',
+      'Git Manual',
+      'Git Script',
+      'Git GUI'
+    ],
+    correctAnswer: 'Git GUI'
+  },
+  {
+    question: '¿Qué IDE es más utilizado para desarrollar aplicaciones empresariales en Java?',
+    options: [
+      'Eclipse',
+      'PyCharm',
+      'Visual Studio',
+      'Android Studio'
+    ],
+    correctAnswer: 'Eclipse'
+  },
+  {
+    question: '¿Qué indica la presencia de muchos condicionales y bucles anidados en un método?',
+    options: [
+      'Bajo acoplamiento',
+      'Complejidad ciclomática elevada',
+      'Alta cohesión',
+      'Modularidad'
+    ],
+    correctAnswer: 'Complejidad ciclomática elevada'
+  },
+  {
+    question: '¿Qué permite determinar la complejidad ciclomática de una función?',
+    options: [
+      'El número de variables locales',
+      'El número de comentarios por línea',
+      'El número de clases',
+      'La cantidad de decisiones y bifurcaciones que contiene el flujo del código'
+    ],
+    correctAnswer: 'La cantidad de decisiones y bifurcaciones que contiene el flujo del código'
+  },
+  {
+    question: "¿Qué problema representa la 'Intimidad inapropiada' en el código?",
+    options: [
+      'Uso incorrecto de bucles',
+      'Exceso de clases abstractas',
+      'Un método accede demasiado a datos de otra clase',
+      'Uso excesivo de variables globales'
+    ],
+    correctAnswer: 'Un método accede demasiado a datos de otra clase'
+  },
+  {
+    question: '¿Qué representa una entrada fuera del rango permitido en una clase de equivalencia?',
+    options: [
+      'Un dato opcional',
+      'Una entrada crítica',
+      'Un valor duplicado',
+      'Una partición inválida'
+    ],
+    correctAnswer: 'Una partición inválida'
+  },
+  {
+    question: '¿Qué técnica permite agrupar entradas de prueba válidas en subconjuntos que representen clases?',
+    options: [
+      'Clases de equivalencia',
+      'Técnicas de refactorización',
+      'Pruebas unitarias',
+      'Análisis de regresión'
+    ],
+    correctAnswer: 'Clases de equivalencia'
+  },
+  {
+    question: "¿Qué técnica permite detectar automáticamente 'malos olores' en el código?",
+    options: [
+      'Compilar frecuentemente',
+      'Uso de herramientas de análisis estático',
+      'Pruebas funcionales',
+      'Documentación extensa'
+    ],
+    correctAnswer: 'Uso de herramientas de análisis estático'
+  },
+  {
+    question: '¿Qué técnica se usa para agrupar entradas de prueba válidas en clases representativas?',
+    options: [
+      'Pruebas unitarias',
+      'Clases de equivalencia',
+      'Análisis de regresión',
+      'Refactorización de código'
+    ],
+    correctAnswer: 'Clases de equivalencia'
+  },
+  {
+    question: '¿Qué tipo de máquina virtual ejecuta un sistema operativo completo de manera aislada?',
+    options: [
+      'Microkernel',
+      'Máquina virtual de hardware',
+      'Máquina virtual de proceso',
+      'Contenedor'
+    ],
+    correctAnswer: 'Máquina virtual de hardware'
+  },
+  {
+    question: '¿Qué tipo de relación indica que una clase utiliza temporalmente otra sin poseerla en UML?',
+    options: [
+      'Agregación',
+      'Dependencia',
+      'Asociación',
+      'Composición'
+    ],
+    correctAnswer: 'Dependencia'
+  },
+  {
+    question: 'En el ciclo de vida del software, ¿qué fase se encarga de realizar pruebas para asegurar que los módulos interactúan correctamente?',
+    options: [
+      'Diseño',
+      'Implementación',
+      'Análisis',
+      'Pruebas de integración'
+    ],
+    correctAnswer: 'Pruebas de integración'
   }
   
   

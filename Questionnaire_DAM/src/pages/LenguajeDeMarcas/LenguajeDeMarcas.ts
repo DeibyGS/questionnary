@@ -1721,19 +1721,408 @@ export const questionsLenguajeDeMarcas: Question[] = [
       'getElementsByTagName("persona")'
     ],
     correctAnswer: 'getElementsByTagName("persona")'
+  },
+  {
+    question: '¿Cómo se accede al texto dentro de una etiqueta XML, como <nombre>Juan</nombre>?',
+    options: [
+      '.innerValue',
+      '.text()',
+      '.textContent',
+      '.nodeText'
+    ],
+    correctAnswer: '.textContent'
+  },
+  {
+    question: '¿Cómo puedes evitar que un contenedor Flexbox se desborde cuando sus elementos exceden el tamaño disponible?',
+    options: [
+      'Usar overflow: hidden;',
+      'Usar flex-wrap: wrap;',
+      'Usar white-space: nowrap;',
+      'Usar align-items: flex-start;'
+    ],
+    correctAnswer: 'Usar flex-wrap: wrap;'
+  },
+  {
+    question: '¿Cómo se asignan nombres a distintas zonas dentro de una cuadrícula en CSS Grid?',
+    options: [
+      'grid-gap',
+      'grid-row-gap',
+      'grid-template-columns',
+      'grid-template-areas'
+    ],
+    correctAnswer: 'grid-template-areas'
+  },
+  {
+    question: '¿Cómo se comportan los elementos en un grid sin columnas definidas?',
+    options: [
+      'Se alinean en fila',
+      'Da error',
+      'Se vuelven invisibles',
+      'Se apilan en una columna'
+    ],
+    correctAnswer: 'Se apilan en una columna'
+  },
+  {
+    question: '¿Cómo se indica en Flexbox que los elementos deben organizarse de arriba a abajo, en vez de de izquierda a derecha?',
+    options: [
+      'align-self: stretch;',
+      'display: inline-flex;',
+      'justify-items: center;',
+      'flex-direction: column;'
+    ],
+    correctAnswer: 'flex-direction: column;'
+  },
+  {
+    question: '¿Cuál de estas propiedades de Flexbox permite cambiar el orden visual de los elementos sin modificar el HTML?',
+    options: [
+      'flex-basis',
+      'gap',
+      'order',
+      'align-self'
+    ],
+    correctAnswer: 'order'
+  },
+  {
+    question: '¿Cuál de las siguientes clases de Bootstrap crea una fila que puede contener columnas?',
+    options: [
+      '.col-12',
+      '.grid-template',
+      '.row',
+      '.d-flex'
+    ],
+    correctAnswer: '.row'
+  },
+  {
+    question: '¿Cuál de las siguientes es una forma correcta de insertar una imagen en HTML?',
+    options: [
+      '<img src="foto.jpg">',
+      '<img href="foto.jpg">',
+      '<pic src="foto.jpg">',
+      '<image src="foto.jpg">'
+    ],
+    correctAnswer: '<img src="foto.jpg">'
+  },
+  {
+    question: '¿Cuál es la función de la propiedad align-content en CSS Grid?',
+    options: [
+      'Controlar la alineación de las áreas de la cuadrícula en el contenedor',
+      'Controlar el espaciado entre las columnas',
+      'Controlar cómo se alinean las filas dentro de un contenedor',
+      'Definir el comportamiento de los elementos dentro de una celda de la cuadrícula'
+    ],
+    correctAnswer: 'Controlar la alineación de las áreas de la cuadrícula en el contenedor'
+  },
+  {
+    question: '¿Cuál es la función del elemento aside en HTML5?',
+    options: [
+      'Sirve para definir secciones principales de la página',
+      'Es un sinónimo de <div>',
+      'Representa contenido tangencial o complementario al contenido principal',
+      'Reemplaza al <img> cuando hay imágenes'
+    ],
+    correctAnswer: 'Representa contenido tangencial o complementario al contenido principal'
+  },
+  {
+    question: '¿Cuál es la propiedad de CSS Grid que define el número de filas en una cuadrícula?',
+    options: [
+      'grid-template-areas',
+      'grid-template-rows',
+      'grid-auto-rows',
+      'grid-template-columns'
+    ],
+    correctAnswer: 'grid-template-rows'
+  },
+  {
+    question: '¿Qué afirmación sobre el atributo id en HTML es correcta?',
+    options: [
+      'Se escribe con punto (.)',
+      'Puede aplicarse a varios elementos',
+      'Solo se puede usar en formularios',
+      'Debe ser único dentro de la página'
+    ],
+    correctAnswer: 'Debe ser único dentro de la página'
+  },
+  {
+    question: '¿Qué clase de Bootstrap aplica bordes redondeados a una imagen sin hacerla circular?',
+    options: [
+      '.img-rounded',
+      '.img-soft',
+      '.rounded-circle',
+      '.rounded'
+    ],
+    correctAnswer: '.img-rounded'
+  },
+  {
+    question: '¿Qué combinación de elementos HTML5 es correcta según su uso semántico?',
+    options: [
+      'nav para artículos y aside para publicidades',
+      'article para una noticia completa y aside para contenido complementario',
+      'nav para comentarios y aside para el contenido principal',
+      'nav para encabezados y article para menús'
+    ],
+    correctAnswer: 'article para una noticia completa y aside para contenido complementario'
+  },
+  {
+    question: '¿Qué combinación de propiedades permite nombrar áreas en una cuadrícula CSS y luego asignarlas a elementos?',
+    options: [
+      'grid-columns y grid-rows',
+      'justify-content y align-items',
+      'grid-template-areas y grid-area',
+      'grid-template-columns y grid-template-rows'
+    ],
+    correctAnswer: 'grid-template-areas y grid-area'
+  },
+  {
+    question: '¿Qué contiene e.target.result dentro del evento onload del FileReader?',
+    options: [
+      'El nombre del archivo',
+      'El tipo MIME del archivo',
+      'El contenido del archivo leído',
+      'El tamaño del archivo'
+    ],
+    correctAnswer: 'El contenido del archivo leído'
+  },
+  {
+    question: '¿Qué contiene e.target.result cuando se utiliza readAsText() con FileReader?',
+    options: [
+      'Un array de bytes',
+      'Una cadena de texto con el contenido del archivo',
+      'Una cadena codificada en base64',
+      'Un objeto JSON'
+    ],
+    correctAnswer: 'Una cadena de texto con el contenido del archivo'
+  },
+  {
+    question: '¿Qué devuelve element.value si el campo está vacío pero el elemento existe?',
+    options: [
+      'undefined',
+      'null',
+      'false',
+      '""'
+    ],
+    correctAnswer: '""'
+  },
+  {
+    question: '¿Qué hace el método readAsText() de FileReader en JavaScript?',
+    options: [
+      'Escribir contenido en un archivo',
+      'Convertir texto en XML',
+      'Leer archivos binarios',
+      'Leer un archivo como texto plano'
+    ],
+    correctAnswer: 'Leer un archivo como texto plano'
+  },
+  {
+    question: '¿Qué hace la expresión repeat(3, 1fr) dentro de grid-template-columns?',
+    options: [
+      'Aplica tres filas automáticas',
+      'Establece márgenes entre columnas',
+      'Crea tres columnas que comparten el espacio disponible de forma equitativa',
+      'Repite el contenido tres veces'
+    ],
+    correctAnswer: 'Crea tres columnas que comparten el espacio disponible de forma equitativa'
+  },
+  {
+    question: '¿Qué método convierte texto XML en un documento navegable?',
+    options: [
+      'createElementFromXML()',
+      'DOMParser.parseFromString()',
+      'FileParser.readAsDOM()',
+      'XMLLoader.parse()'
+    ],
+    correctAnswer: 'DOMParser.parseFromString()'
+  },
+  {
+    question: '¿Qué método se usa para obtener todos los nodos de un documento XML?',
+    options: [
+      'getElementsByTagName("persona")',
+      'queryXML("persona")',
+      'getElementById("persona")',
+      'selectNodes("persona")'
+    ],
+    correctAnswer: 'getElementsByTagName("persona")'
+  },
+  {
+    question: '¿Qué método se utiliza en JavaScript para seleccionar todos los elementos con una determinada clase?',
+    options: [
+      'selectByClassName()',
+      'getElementsByClassName()',
+      'queryByClass()',
+      'getElementById()'
+    ],
+    correctAnswer: 'getElementsByClassName()'
+  },
+  {
+    question: '¿Qué objeto de JavaScript se utiliza para leer el contenido de un archivo cargado por el usuario?',
+    options: [
+      'LocalStorage',
+      'DocumentReader',
+      'JSONParser',
+      'FileReader'
+    ],
+    correctAnswer: 'FileReader'
+  },
+  {
+    question: '¿Qué palabra clave en JavaScript se utiliza para devolver un valor y salir de la función?',
+    options: [
+      'exit',
+      'continue',
+      'break',
+      'return'
+    ],
+    correctAnswer: 'return'
+  },
+  {
+    question: '¿Qué propiedad de CSS Grid permite establecer el espacio entre filas?',
+    options: [
+      'gap',
+      'row-gap',
+      'grid-gap',
+      'column-gap'
+    ],
+    correctAnswer: 'row-gap'
+  },
+  {
+    question: '¿Qué propiedad de Flexbox permite cambiar el orden visual de los elementos sin modificar el HTML?',
+    options: [
+      'align-self',
+      'order',
+      'gap',
+      'flex-basis'
+    ],
+    correctAnswer: 'order'
+  },
+  {
+    question: '¿Qué propiedad debe tener un contenedor para que align-items afecte a sus elementos hijos?',
+    options: [
+      'grid-template-rows:',
+      'width: 100%;',
+      'display: flex;',
+      'float: left;'
+    ],
+    correctAnswer: 'display: flex;'
+  },
+  {
+    question: '¿Qué propiedad en CSS permite que un contenedor Flexbox haga que sus elementos hijos se ajusten al tamaño disponible?',
+    options: [
+      'flex-basis',
+      'align-self',
+      'flex-grow',
+      'justify-items'
+    ],
+    correctAnswer: 'flex-grow'
+  },
+  {
+    question: '¿Qué propiedad se usa en CSS para hacer que el ancho de un elemento no se vea afectado por el padding o el borde?',
+    options: [
+      'border-collapse',
+      'box-model',
+      'display: block',
+      'box-sizing: border-box'
+    ],
+    correctAnswer: 'box-sizing: border-box'
+  },
+  {
+    question: '¿Qué palabra clave evita que se siga ejecutando el resto del código en una función?',
+    options: [
+      'halt',
+      'return',
+      'continue',
+      'pause'
+    ],
+    correctAnswer: 'return'
+  },
+  {
+    question: '¿Qué propiedad y valor de Flexbox permite colocar los elementos hijos en una columna?',
+    options: [
+      'align-items: center;',
+      'flex-direction: column;',
+      'justify-content: flex-start;',
+      'flex-wrap: wrap;'
+    ],
+    correctAnswer: 'flex-direction: column;'
+  },
+  {
+    question: '¿Qué tipo de elemento HTML se necesita para que el usuario seleccione un archivo que luego se lea con FileReader?',
+    options: [
+      '<input type="file">',
+      '<textarea>',
+      '<button>',
+      '<text>'
+    ],
+    correctAnswer: '<input type="file">'
+  },
+  {
+    question: '¿Qué tipo de input es necesario para leer archivos con FileReader?',
+    options: [
+      'type="file"',
+      'type="submit"',
+      'type="hidden"',
+      'type="text"'
+    ],
+    correctAnswer: 'type="file"'
+  },
+  {
+    question: '¿Qué unidad en CSS es relativa al tamaño de fuente del elemento padre?',
+    options: [
+      'em',
+      '%',
+      'rem',
+      'px'
+    ],
+    correctAnswer: 'em'
+  },
+  {
+    question: '¿Qué unidad en CSS Grid permite distribuir automáticamente el espacio restante entre columnas?',
+    options: [
+      'px',
+      '%',
+      'fr',
+      'vw'
+    ],
+    correctAnswer: 'fr'
+  },
+  {
+    question: '¿Qué valor de la propiedad flex-wrap permite que los elementos se acomoden en varias líneas si es necesario?',
+    options: [
+      'wrap',
+      'reverse',
+      'nowrap',
+      'inherit'
+    ],
+    correctAnswer: 'wrap'
+  },
+  {
+    question: "¿Qué valor devuelve document.querySelector('input[name=\"x\"]:checked') si no hay selección?",
+    options: [
+      '"undefined"',
+      '""',
+      'false',
+      'null'
+    ],
+    correctAnswer: 'null'
+  },
+  {
+    question: 'En Flexbox, ¿cómo se distribuyen los elementos cuando se usa justify-content: space-between?',
+    options: [
+      'Los elementos se distribuyen uniformemente con espacio entre ellos, pero no al principio ni al final.',
+      'Los elementos se distribuyen con espacio alrededor y dentro de ellos.',
+      'Los elementos se colocan de manera que el espacio sea igual en todos los lados.',
+      'Los elementos se alinean al centro con espacio entre ellos.'
+    ],
+    correctAnswer: 'Los elementos se distribuyen uniformemente con espacio entre ellos, pero no al principio ni al final.'
+  },
+  {
+    question: 'Si quieres que las columnas se generen automáticamente con un ancho fijo en un contenedor Grid, ¿qué propiedad utilizarías?',
+    options: [
+      'grid-gap',
+      'grid-template-rows',
+      'grid-auto-columns',
+      'justify-content'
+    ],
+    correctAnswer: 'grid-auto-columns'
   }
-    
-        
-      
-    
-      
-        
-      
-      
-        
-      
-      
-      
-  
+
+
 ];
   
