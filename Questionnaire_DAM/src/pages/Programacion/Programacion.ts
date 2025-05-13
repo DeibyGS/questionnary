@@ -1616,6 +1616,406 @@ export const questionsProgramacion: Question[] = [
       '3'
     ],
     correctAnswer: '3'
+  },
+  {
+    question: '¿Qué ocurre si un método en Java está declarado como static?',
+    options: [
+      'Solo puede ser llamado desde objetos instanciados',
+      'Pertenece a la clase y no al objeto',
+      'Puede acceder directamente a variables de instancia',
+      'No puede retornar ningún valor'
+    ],
+    correctAnswer: 'Pertenece a la clase y no al objeto'
+  },
+  {
+    question: '¿Qué palabra clave en Java se utiliza para definir un método que no retorna ningún valor?',
+    options: [
+      'static',
+      'void',
+      'null',
+      'return'
+    ],
+    correctAnswer: 'void'
+  },
+  {
+    question: '¿Qué palabra clave permite implementar una interfaz en Java?',
+    options: [
+      'extends',
+      'interface',
+      'implements',
+      'inherits'
+    ],
+    correctAnswer: 'implements'
+  },
+  {
+    question: '¿Qué palabra clave se utiliza en Java para heredar de una clase abstracta?',
+    options: [
+      'inherits',
+      'extends',
+      'implements',
+      'override'
+    ],
+    correctAnswer: 'extends'
+  },
+  {
+    question: "¿Qué resultado produce el siguiente código? String s = 'Hola'; System.out.println(s.charAt(1));",
+    options: [
+      'H',
+      'l',
+      'o',
+      'a'
+    ],
+    correctAnswer: 'o'
+  },
+  {
+    question: "¿Qué resultado tiene este bloque de código? try { int[] v = new int[2];v[2] = 5; } catch (ArrayIndexOutOfBoundsException e) { System.out.println('Error de índice'); }",
+    options: [
+      'No imprime nada',
+      'Da error de compilación',
+      'Imprime 5',
+      "Imprime 'Error de índice'"
+    ],
+    correctAnswer: "Imprime 'Error de índice'"
+  },
+  {
+    question: "¿Qué salida genera el siguiente código? for (int i = 3; i > 0; i--) { System.out.print(i + ' '); }",
+    options: [
+      '0 1 2',
+      '3 2 1',
+      '3 2 1 0',
+      '1 2 3'
+    ],
+    correctAnswer: '3 2 1'
+  },
+  {
+    question: "¿Qué salida genera este código recursivo? void cuenta(int n) { if (n > 0) { cuenta(n - 1); System.out.print(n + ' '); } } cuenta(3);",
+    options: [
+      '1 2 3',
+      '0 1 2 3',
+      '3 2 1',
+      '2 1 3'
+    ],
+    correctAnswer: '1 2 3'
+  },
+  {
+    question: "¿Qué salida produce este código? List<String> lista = new ArrayList<>(); lista.add('Java'); lista.clear(); System.out.println(lista.size());",
+    options: [
+      '1',
+      '0',
+      'null',
+      'Error'
+    ],
+    correctAnswer: '0'
+  },
+  {
+    question: "¿Qué se imprime al ejecutar este código? List<String> lista = new ArrayList<>(); lista.add('uno'); lista.add('dos'); lista.set(1, 'tres'); System.out.println(lista.get(1));",
+    options: [
+      'Error de compilación',
+      'dos',
+      'tres',
+      'uno'
+    ],
+    correctAnswer: 'tres'
+  },
+  {
+    question: "¿Qué se imprime con este código? String texto = null; try { System.out.println(texto.length()); } catch (NullPointerException e) { System.out.println('Referencia nula'); }",
+    options: [
+      'null',
+      'Referencia nula',
+      '0',
+      'Da error en tiempo de compilación'
+    ],
+    correctAnswer: 'Referencia nula'
+  },
+  {
+    question: '¿Qué se necesita para leer texto desde un archivo en Java con BufferedReader?',
+    options: [
+      'Scanner',
+      'FileOutputStream',
+      'FileReader',
+      'InputStream'
+    ],
+    correctAnswer: 'FileReader'
+  },
+  {
+    question: '¿Qué se requiere para que un botón en Swing detecte clics?',
+    options: [
+      'Implementar KeyEvent',
+      'Crear una subclase de JPanel',
+      'Llamar a repaint()',
+      'Añadir un ActionListener'
+    ],
+    correctAnswer: 'Añadir un ActionListener'
+  },
+  {
+    question: '¿Qué sucede si se intenta acceder a la posición 10 de un array de tamaño 5 en Java?',
+    options: [
+      'Se retorna null',
+      'El programa imprime 0',
+      'Lanza una excepción en tiempo de ejecución',
+      'Se ignora la instrucción'
+    ],
+    correctAnswer: 'Lanza una excepción en tiempo de ejecución'
+  },
+  {
+    question: '¿Qué sucede si un switch en Java no tiene sentencias break entre los case?',
+    options: [
+      'Da error de compilación',
+      'Ejecuta solo el default',
+      'Ejecuta todos los casos desde el coincidente hasta encontrar un break',
+      'Solo se ejecuta el case coincidente'
+    ],
+    correctAnswer: 'Ejecuta todos los casos desde el coincidente hasta encontrar un break'
+  },
+  {
+    question: '¿Qué sucede si una clase no implementa todos los métodos de una interfaz?',
+    options: [
+      'Se ejecutan con valores nulos',
+      'Da error de compilación',
+      'Se generan automáticamente',
+      'Se ejecutan como métodos vacíos'
+    ],
+    correctAnswer: 'Da error de compilación'
+  },
+  {
+    question: '¿Qué sucede si una excepción ocurre y no se captura?',
+    options: [
+      'El programa se detiene con un error',
+      'La excepción se ignora',
+      'El programa continúa normalmente',
+      'Se imprime null'
+    ],
+    correctAnswer: 'El programa se detiene con un error'
+  },
+  {
+    question: '¿Qué valor se imprime con el siguiente código? int x = 4; x *= 3; System.out.println(x);',
+    options: [
+      '7',
+      '3',
+      '1',
+      '12'
+    ],
+    correctAnswer: '12'
+  },
+  {
+    question: '¿Qué valor tiene el atributo length en un array declarado como int[] datos = {1, 2, 3, 4};?',
+    options: [
+      '4',
+      '3',
+      'datos.length no es válido',
+      '5'
+    ],
+    correctAnswer: '4'
+  },
+  {
+    question: '¿Qué ventaja principal tiene usar ArrayList sobre arrays tradicionales en Java?',
+    options: [
+      'No necesitan tipo de dato',
+      'Permiten redimensionar dinámicamente',
+      'Usan menos memoria',
+      'Son más rápidos'
+    ],
+    correctAnswer: 'Permiten redimensionar dinámicamente'
+  },
+  {
+    question: '¿Qué ocurre si un método en Java está declarado como static?',
+    options: [
+      'Solo puede ser llamado desde objetos instanciados',
+      'Pertenece a la clase y no al objeto',
+      'Puede acceder directamente a variables de instancia',
+      'No puede retornar ningún valor'
+    ],
+    correctAnswer: 'Pertenece a la clase y no al objeto'
+  },
+  {
+    question: '¿Qué palabra clave en Java se utiliza para definir un método que no retorna ningún valor?',
+    options: [
+      'static',
+      'void',
+      'null',
+      'return'
+    ],
+    correctAnswer: 'void'
+  },
+  {
+    question: '¿Qué palabra clave permite implementar una interfaz en Java?',
+    options: [
+      'extends',
+      'interface',
+      'implements',
+      'inherits'
+    ],
+    correctAnswer: 'implements'
+  },
+  {
+    question: '¿Qué palabra clave se utiliza en Java para heredar de una clase abstracta?',
+    options: [
+      'inherits',
+      'extends',
+      'implements',
+      'override'
+    ],
+    correctAnswer: 'extends'
+  },
+  {
+    question: "¿Qué resultado produce el siguiente código? String s = 'Hola'; System.out.println(s.charAt(1));",
+    options: [
+      'H',
+      'l',
+      'o',
+      'a'
+    ],
+    correctAnswer: 'o'
+  },
+  {
+    question: "¿Qué resultado tiene este bloque de código? try { int[] v = new int[2];v[2] = 5; } catch (ArrayIndexOutOfBoundsException e) { System.out.println('Error de índice'); }",
+    options: [
+      'No imprime nada',
+      'Da error de compilación',
+      'Imprime 5',
+      "Imprime 'Error de índice'"
+    ],
+    correctAnswer: "Imprime 'Error de índice'"
+  },
+  {
+    question: "¿Qué salida genera el siguiente código? for (int i = 3; i > 0; i--) { System.out.print(i + ' '); }",
+    options: [
+      '0 1 2',
+      '3 2 1',
+      '3 2 1 0',
+      '1 2 3'
+    ],
+    correctAnswer: '3 2 1'
+  },
+  {
+    question: "¿Qué salida genera este código recursivo? void cuenta(int n) { if (n > 0) { cuenta(n - 1); System.out.print(n + ' '); } } cuenta(3);",
+    options: [
+      '1 2 3',
+      '0 1 2 3',
+      '3 2 1',
+      '2 1 3'
+    ],
+    correctAnswer: '1 2 3'
+  },
+  {
+    question: "¿Qué salida produce este código? List<String> lista = new ArrayList<>(); lista.add('Java'); lista.clear(); System.out.println(lista.size());",
+    options: [
+      '1',
+      '0',
+      'null',
+      'Error'
+    ],
+    correctAnswer: '0'
+  },
+  {
+    question: "¿Qué se imprime al ejecutar este código? List<String> lista = new ArrayList<>(); lista.add('uno'); lista.add('dos'); lista.set(1, 'tres'); System.out.println(lista.get(1));",
+    options: [
+      'Error de compilación',
+      'dos',
+      'tres',
+      'uno'
+    ],
+    correctAnswer: 'tres'
+  },
+  {
+    question: "¿Qué se imprime con este código? String texto = null; try { System.out.println(texto.length()); } catch (NullPointerException e) { System.out.println('Referencia nula'); }",
+    options: [
+      'null',
+      'Referencia nula',
+      '0',
+      'Da error en tiempo de compilación'
+    ],
+    correctAnswer: 'Referencia nula'
+  },
+  {
+    question: '¿Qué se necesita para leer texto desde un archivo en Java con BufferedReader?',
+    options: [
+      'Scanner',
+      'FileOutputStream',
+      'FileReader',
+      'InputStream'
+    ],
+    correctAnswer: 'FileReader'
+  },
+  {
+    question: '¿Qué se requiere para que un botón en Swing detecte clics?',
+    options: [
+      'Implementar KeyEvent',
+      'Crear una subclase de JPanel',
+      'Llamar a repaint()',
+      'Añadir un ActionListener'
+    ],
+    correctAnswer: 'Añadir un ActionListener'
+  },
+  {
+    question: '¿Qué sucede si se intenta acceder a la posición 10 de un array de tamaño 5 en Java?',
+    options: [
+      'Se retorna null',
+      'El programa imprime 0',
+      'Lanza una excepción en tiempo de ejecución',
+      'Se ignora la instrucción'
+    ],
+    correctAnswer: 'Lanza una excepción en tiempo de ejecución'
+  },
+  {
+    question: '¿Qué sucede si un switch en Java no tiene sentencias break entre los case?',
+    options: [
+      'Da error de compilación',
+      'Ejecuta solo el default',
+      'Ejecuta todos los casos desde el coincidente hasta encontrar un break',
+      'Solo se ejecuta el case coincidente'
+    ],
+    correctAnswer: 'Ejecuta todos los casos desde el coincidente hasta encontrar un break'
+  },
+  {
+    question: '¿Qué sucede si una clase no implementa todos los métodos de una interfaz?',
+    options: [
+      'Se ejecutan con valores nulos',
+      'Da error de compilación',
+      'Se generan automáticamente',
+      'Se ejecutan como métodos vacíos'
+    ],
+    correctAnswer: 'Da error de compilación'
+  },
+  {
+    question: '¿Qué sucede si una excepción ocurre y no se captura?',
+    options: [
+      'El programa se detiene con un error',
+      'La excepción se ignora',
+      'El programa continúa normalmente',
+      'Se imprime null'
+    ],
+    correctAnswer: 'El programa se detiene con un error'
+  },
+  {
+    question: '¿Qué valor se imprime con el siguiente código? int x = 4; x *= 3; System.out.println(x);',
+    options: [
+      '7',
+      '3',
+      '1',
+      '12'
+    ],
+    correctAnswer: '12'
+  },
+  {
+    question: '¿Qué valor tiene el atributo length en un array declarado como int[] datos = {1, 2, 3, 4};?',
+    options: [
+      '4',
+      '3',
+      'datos.length no es válido',
+      '5'
+    ],
+    correctAnswer: '4'
+  },
+  {
+    question: '¿Qué ventaja principal tiene usar ArrayList sobre arrays tradicionales en Java?',
+    options: [
+      'No necesitan tipo de dato',
+      'Permiten redimensionar dinámicamente',
+      'Usan menos memoria',
+      'Son más rápidos'
+    ],
+    correctAnswer: 'Permiten redimensionar dinámicamente'
   }
 
   
